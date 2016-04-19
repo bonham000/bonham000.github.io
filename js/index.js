@@ -1,6 +1,28 @@
+
+// Page refresh timer countdown:
+
+var c = 0;
+function Counter() {
+  document.getElementById("clock").innerHTML = (30) - (++c) ;
+}
+
+
+// Function for timed page refresh
+
+function TimedRefresh(t) {
+
+setTimeout("location.reload(true);", t);
+
+}
+
+// Animation Ccde:
+
 // Waiting for user to click Welcome Icon:
 $("#enter").click(function() {
   
+  // Code for timed page refresh:
+  $("#enter").click(TimedRefresh(30000));
+
   // Welcome Icon slides up and out of the window:
   $("#enter").animate({top: "-500px"}, 700);
   

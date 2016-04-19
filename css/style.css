@@ -6,6 +6,17 @@ html {
 body {
   font-family: Avenir;
 }
+#clock_div {
+  position: absolute;
+  right: 10%;
+  top: 40%;
+
+}
+#clock {
+  color: rgb(145,145,145);
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
 .content {
   margin-top: 80px;
 }
