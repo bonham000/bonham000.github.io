@@ -32,13 +32,16 @@ $("#enter").click(function() {
   // All other elements animate out of the window:
   $("#img_2").animate({bottom: "-45px"}, 300);
   $("#img_2").animate({left: "-1000px"}, 1500);
+  $("#img_2").animate({top: "-150px"}, 10);
   
   $("#img_3").animate({top: "-25px"}, 300);
   $("#img_3").animate({right: "-150px", top: "-350px"}, 1500);
+  $("#img_3").animate({left: "-500px"}, 10);
   
   $("img_4").animate({right: "25px", bottom: "25px"}, 300);
   $("#img_4").animate({right: "-350px", bottom: "-1000px"}, 1500);
   $("#img_4").animate({left: "-3000px"}, 10);
+  $("#img_4").animate({top: "-2500px"}, 10);
 
   // Code for content animation on main page: 
   $("#sub_title").animate({"margin-top":"0"}, 2000);
@@ -48,3 +51,17 @@ $("#enter").click(function() {
   $("#contact").animate({"margin-top":"50"}, 750);
 
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
