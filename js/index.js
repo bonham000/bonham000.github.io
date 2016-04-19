@@ -24,7 +24,11 @@ $("#enter").click(function() {
   $("#enter").click(TimedRefresh(30000));
 
   // Welcome Icon slides up and out of the window:
+
+  $("#enter").css({background: "rgb(0, 190, 113)", color: "black"}, 25);
+  $("#enter:hover").css({background: "rgb(0, 190, 113)", color: "black"}, 25);
   $("#enter").animate({top: "-500px"}, 700);
+
   
   // Primary blue background fades out;
   $("#img_1").fadeOut(1000);

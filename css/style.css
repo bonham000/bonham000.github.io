@@ -34,6 +34,7 @@ div {
 }
 h1 {
   color: rgb(250,50,50);
+
 }
 h2 {
   margin-top: -15px;
@@ -68,16 +69,16 @@ a#resume {
   margin-top: 50px;
 }
 .fa {
-  padding: 10px;
+  padding: 15px;
 }
 h3 a i {
   color: white;
 }
 .fa-envelope-o:hover {
-  color: rgb(255, 75, 66);
+  color: rgb(252, 9, 83);
 }
 .fa-github-alt:hover {
-  color: rgb(255, 192, 19)
+  color: rgb(255, 229, 0);
 }
 .fa-codepen:hover {
   color: rgb(52, 113, 255);
@@ -123,6 +124,9 @@ img {
   max-width: 800px;
   z-index: 2;
 }
+#img_2:hover {
+  grow: 50px;
+}
 #img_3 {
   right: 0;
   top: 0;
@@ -142,18 +146,19 @@ img {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background: rgb(255, 70, 36);
+  background: rgb(255, 61, 0);
   z-index: 5;
   font-size: 26px;
   font-weight: bold;
-  border: 3px solid rgb(35,35,35);
+  border: 4px solid rgb(35,35,35);
   font-family: Avenir;
   transition-duration: .35s;
 }
 #enter:hover {
   cursor: pointer;
-  background: rgb(15,15,15);
-  color: white;
+  background: rgb(35,35,35);
+  color: rgb(255, 61, 0);
+  text-decoration: underline;
   transition-duration: .5s;
 }
 #img:focus {
