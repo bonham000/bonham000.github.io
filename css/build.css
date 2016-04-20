@@ -2,7 +2,7 @@ body {
   	font-family: 'Raleway', sans-serif;
   	background: linear-gradient(rgba(50,150,225,1),rgba(10,225,135,1));
   	background-attachment: fixed;
-	padding: 65px;
+	padding: 40px;
 }
 div {
 	text-align: center;
