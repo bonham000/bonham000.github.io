@@ -1,4 +1,10 @@
 
+$("#enter").hover(function() {
+
+  $("#lock").toggleClass("fa-lock fa-unlock-alt");
+
+})
+
 // Page refresh timer countdown:
 
 var c = 0;
@@ -25,8 +31,8 @@ $("#enter").click(function() {
 
   // Welcome Icon slides up and out of the window:
 
-  $("#enter").css({background: "rgb(0, 190, 113)", color: "black"}, 25);
-  $("#enter:hover").css({background: "rgb(0, 190, 113)", color: "black"}, 25);
+  $("#enter").css({background: "rgb(16,211,255);", color: "white"}, 25);
+  $("#enter:hover").css({background: "rgb(16,211,255);", color: "white"}, 25);
   $("#enter").animate({top: "-500px"}, 700);
 
   
