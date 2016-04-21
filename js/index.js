@@ -33,7 +33,7 @@ $("#enter").click(function() {
 
   $("#enter").css({background: "rgb(16,211,255);", color: "white"}, 25);
   $("#enter:hover").css({background: "rgb(16,211,255);", color: "white"}, 25);
-  $("#enter").animate({top: "-500px"}, 700);
+  $("#enter").animate({top: "-1000px"}, 1000);
 
   
   // Primary blue background fades out;
