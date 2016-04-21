@@ -34,8 +34,10 @@ $("#enter").click(function() {
   $("#enter").css({background: "rgb(16,211,255);", color: "white"}, 25);
   $("#enter:hover").css({background: "rgb(16,211,255);", color: "white"}, 25);
   $("#enter").animate({top: "-1000px"}, 1000);
+  // Time-delay to apply display:none in order to keep the page at the correct height:
+  setTimeout(function() {
+      $("#enter").css({display: "none"}); }, 1500);
 
-  
   // Primary blue background fades out;
   $("#img_1").fadeOut(1000);
   

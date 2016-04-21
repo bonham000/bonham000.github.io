@@ -16,7 +16,7 @@ body {
 }
 .content {
   position: relative;
-  margin-top: 100px;
+  margin-top: 7.5%;
   text-align: center;
 }
 div {
@@ -132,7 +132,7 @@ img {
   right: 0;
   top: 0;
   max-height: 250px;
-  z-index: 3;  
+  z-index: 3;
 }
 #img_4 {
   right: 0;
