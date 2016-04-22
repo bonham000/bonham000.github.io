@@ -1,4 +1,6 @@
 
+// Toggle lock icon on button hover:
+
 $("#enter").hover(function() {
 
   $("#lock").toggleClass("fa-lock fa-unlock-alt");
@@ -31,26 +33,23 @@ $("#enter").click(function() {
 
   // Welcome Icon slides up and out of the window:
 
-  $("#enter").css({background: "rgb(16,211,255);", color: "white"}, 25);
-  $("#enter:hover").css({background: "rgb(16,211,255);", color: "white"}, 25);
-  $("#enter").animate({top: "-1000px"}, 1000);
+  $("#enter").animate({top: "-1000px"}, 750);
+  $("#enter").css({background: "rgb(16,211,255)", color: "white"});
+  $("#enter:hover").css({background: "rgb(16,211,255)", color: "white"});
   // Time-delay to apply display:none in order to keep the page at the correct height:
   setTimeout(function() {
-      $("#enter").css({display: "none"}); }, 1500);
+      $("#enter").css({display: "none"}); }, 1000);
 
   // Primary blue background fades out;
-  $("#img_1").fadeOut(1000);
+  $("#img_1").fadeOut(1500);
   
   // All other elements animate out of the window:
-  $("#img_2").animate({bottom: "-45px"}, 300);
   $("#img_2").animate({left: "-1000px"}, 1500);
   $("#img_2").animate({top: "-150px"}, 10);
   
-  $("#img_3").animate({top: "-25px"}, 300);
   $("#img_3").animate({right: "-150px", top: "-350px"}, 1500);
   $("#img_3").animate({left: "-500px"}, 10);
   
-  $("img_4").animate({right: "25px", bottom: "25px"}, 300);
   $("#img_4").animate({right: "-350px", bottom: "-1000px"}, 1500);
   $("#img_4").animate({left: "-3000px"}, 10);
   $("#img_4").animate({top: "-2500px"}, 10);
