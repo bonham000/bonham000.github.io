@@ -33,7 +33,6 @@ div {
 }
 h1 {
   color: rgb(255,75,75);
-  font-family: 'Molengo', sans-serif;
 }
 h2 {
   margin-top: -15px;
@@ -55,7 +54,6 @@ p {
 a {
   text-decoration: underline;
   color: rgb(255,75,75);
-  font-family: 'Molengo', sans-serif;
 }
 a#resume {
   font-size: 20px;
