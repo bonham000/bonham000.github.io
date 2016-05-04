@@ -6,6 +6,7 @@ window.onload = function() {
   var url = '';
   var gps = '';
   
+ // Code for geolocation API commented out — 
  // var startPos;
  // var geoSuccess = function(position) {
    // startPos = position;
@@ -39,15 +40,15 @@ window.onload = function() {
         $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/sun_zpsjvbqiums.png');
       }
       else if (weatherType === "Clouds") {
-        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/clouds_zpsmve23uf0.jpg')", "z-index", "-5");
-        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/cloud_icon_zps0adarmb0.png');       
+        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/clouds_zpsmve23uf0.jpg')", "z-index", "-5");
+        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/cloud_icon_zps0adarmb0.png');       
       }
       else if (weatherType === "Rain") {
         $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/rain_zps7c59zbez.jpg')", "z-index", "-5");
-        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/rain_icon_zps1vhr8j8o.png');
+        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/rain_icon_zps1vhr8j8o.png');
       }
       else {
-        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/default.jpg_zpsxucpf3u4.png')", "z-index", "-5");
+        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/default.jpg_zpsxucpf3u4.png')", "z-index", "-5");
       }
       
       $('#kelvin').click(function() {
@@ -69,7 +70,6 @@ window.onload = function() {
   // navigator.geolocation.getCurrentPosition(geoSuccess);
 
 };
-
 
   $('button').click(function() {
     var zip = document.getElementsByName("zip")[0].value;
@@ -103,19 +103,19 @@ window.onload = function() {
 
       }
       else if (weatherType === "Clouds") {
-        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/clouds_zpsmve23uf0.jpg')", "z-index", "-2" );
+        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/clouds_zpsmve23uf0.jpg')", "z-index", "-2" );
         $("#icon").css("display", "none");
-        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/cloud_icon_zps0adarmb0.png');
+        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/cloud_icon_zps0adarmb0.png');
         $("#icon").fadeIn(2000);
       }
       else if (weatherType === "Rain") {
         $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/rain_zps7c59zbez.jpg')", "z-index", "-2" );
         $("#icon").css("display", "none");
-        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/rain_icon_zps1vhr8j8o.png');
+        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/rain_icon_zps1vhr8j8o.png');
         $("#icon").fadeIn(2000);
       }
       else {
-        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/default.jpg_zpsxucpf3u4.png')", "z-index", "-2");
+        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/default.jpg_zpsxucpf3u4.png')", "z-index", "-2");
       }
 
       $('#kelvin').click(function() {
@@ -195,19 +195,19 @@ window.onload = function() {
 
       }
       else if (weatherType === "Clouds") {
-        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/clouds_zpsmve23uf0.jpg')", "z-index", "-2" );
+        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/clouds_zpsmve23uf0.jpg')", "z-index", "-2" );
         $("#icon").css("display", "none");
-        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/cloud_icon_zps0adarmb0.png');
+        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/cloud_icon_zps0adarmb0.png');
         $("#icon").fadeIn(2000);
       }
       else if (weatherType === "Rain") {
         $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/rain_zps7c59zbez.jpg')", "z-index", "-2" );
         $("#icon").css("display", "none");
-        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/rain_icon_zps1vhr8j8o.png');
+        $("#icon").attr('src', 'http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/rain_icon_zps1vhr8j8o.png');
         $("#icon").fadeIn(2000);
       }
       else {
-        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20API/default.jpg_zpsxucpf3u4.png')", "z-index", "-2");
+        $("html").css("background-image", "url('http://i1361.photobucket.com/albums/r662/bonham000/Current%20Weather%20App/default.jpg_zpsxucpf3u4.png')", "z-index", "-2");
       }
 
       $('#kelvin').click(function() {
@@ -225,8 +225,6 @@ window.onload = function() {
 
   });
 });
-
-
 
 function reload() {
   location.reload();
