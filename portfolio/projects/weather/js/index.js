@@ -155,6 +155,7 @@ window.onload = function() {
     $("#capetown").click(function() {
       citySelect = "cape town"; });
     $("#rio").click(citySelect = "rio de janeiro");
+      citySelect = "rio de janeiro"; });
     $("#mexico").click(function() {
       citySelect = "mexico city"; });
     $("#sanfrancisco").click(function() {
