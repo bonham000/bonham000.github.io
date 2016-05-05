@@ -1,5 +1,5 @@
 html { 
-  background: url(http://i1361.photobucket.com/albums/r662/bonham000/Wikipedia%20Viewer/rect21_zpsqrfwvchd.png) no-repeat center center fixed; 
+  background: url(http://i1361.photobucket.com/albums/r662/bonham000/Wikipedia%20Viewer/mint_zps4wm2qdd2.jpg) no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -118,13 +118,13 @@ input, button {
 .scroll {
   text-align: center; 
   font-weight: bold;
-  color: #444;
+  color: white;
   text-decoration: none;
   position: fixed;
   padding: 0;
   bottom: 0px;
   margin-bottom: -10px;
-  right: 35px;
+  right: 30px;
   font-size: 55px;
   display: none;
 }
