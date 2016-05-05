@@ -115,7 +115,6 @@ input, button {
   margin-top: 25px;
 }
 
-
 .scroll {
   text-align: center; 
   font-weight: bold;
@@ -128,7 +127,6 @@ input, button {
   right: 35px;
   font-size: 55px;
   display: none;
-
 }
 .scroll:hover{
   text-decoration:none;
@@ -144,7 +142,6 @@ input, button {
   cursor: pointer;
   color: white;
 }
-
 
 @media screen and (max-width: 1000px) {
   #input, #submit, #random {

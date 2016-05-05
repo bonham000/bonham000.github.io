@@ -1,9 +1,11 @@
 
-$(document).ready(function () {
 
-    $("div.content").click(function () {
-        window.open($(this).find("a:first").attr("href"));
-        return false;
+// Function to target a href within generated div elements and follow link on div click event:
+
+$(document).ready(function(){
+    
+    $(document).delegate("div.content", "click", function() {
+       window.location = $(this).find("a").attr("href");
     });
 
 });
@@ -47,9 +49,11 @@ $("#submit").click(function() {
             document.getElementById(data.query.search[i].title).appendChild(newSnippet);
 
             var link = document.createElement('p');
-            var target = "<a target=\"_blank\" href='https://en.wikipedia.org/wiki/" + data.query.search[i].title + "'><link</a>";
+            var target = "<a href='https://en.wikipedia.org/wiki/" + data.query.search[i].title + "'></a>";
             link.innerHTML = target;
             document.getElementById(data.query.search[i].title).appendChild(link);
+
+            console.log(link);
 
             $('.content').hide();
             
