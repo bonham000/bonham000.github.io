@@ -56,10 +56,10 @@ $("#enter").click(function() {
 
   // Code for content animation on main page: 
   $("#sub_title").animate({"margin-top":"0"}, 2000);
-  $("#work").animate({"margin-top":"60"}, 1750);
-  $("#paragraph").animate({"margin-top":"60"}, 1500);
+  $("#work").animate({"margin-top":"30"}, 1750);
+  $("#paragraph").animate({"margin-top":"30"}, 1500);
   $("#cv").animate({"margin-top":"-10"}, 1000);
-  $("#contact").animate({"margin-top":"50"}, 750);
+  $("#contact").animate({"margin-top":"40"}, 750);
 
 });
 
