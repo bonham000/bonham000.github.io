@@ -36,10 +36,10 @@ $("#search").click(function(){
 			newData.className = "data";
 			newData.innerHTML = (				
 				("<span class='date'>Date: <span class='italics'>"  + data.dataset.data[0][0] + "</span></span><br>") +
-				("<span class='numbers'>Open: "  + data.dataset.data[0][1] + "<br>") +
-				("High: "  + data.dataset.data[0][2] + "<br>") +
-				("Low: "   + data.dataset.data[0][3] + "<br>") +
-				("Close: " + data.dataset.data[0][4] + "<br>") +
+				("<span class='numbers'>Open: $"  + data.dataset.data[0][1] + "<br>") +
+				("High: $"  + data.dataset.data[0][2] + "<br>") +
+				("Low: $"   + data.dataset.data[0][3] + "<br>") +
+				("Close: $" + data.dataset.data[0][4] + "<br>") +
 				("Volume: " + data.dataset.data[0][5] + "<br></span>") +
 				("<a class='finviz' target='_blank' href='http://finviz.com/quote.ashx?t=" + data.dataset.dataset_code + "&ty=c&ta=1&p=d'>Detailed Company Information</a><br>"));
 
@@ -113,10 +113,10 @@ $("#random").click(function() {
 					newData.className = "data";
 					newData.innerHTML = (				
 						("<span class='date'>Date: <span class='italics'>"  + data.dataset.data[0][0] + "</span></span><br>") +
-						("<span class='numbers'>Open: "  + data.dataset.data[0][1] + "<br>") +
-						("High: "  + data.dataset.data[0][2] + "<br>") +
-						("Low: "   + data.dataset.data[0][3] + "<br>") +
-						("Close: " + data.dataset.data[0][4] + "<br>") +
+						("<span class='numbers'>Open: $"  + data.dataset.data[0][1] + "<br>") +
+						("High: $"  + data.dataset.data[0][2] + "<br>") +
+						("Low: $"   + data.dataset.data[0][3] + "<br>") +
+						("Close: $" + data.dataset.data[0][4] + "<br>") +
 						("Volume: " + data.dataset.data[0][5] + "<br></span>") +
 						("<a class='finviz' target='_blank' href='http://finviz.com/quote.ashx?t=" + data.dataset.dataset_code + "&ty=c&ta=1&p=d'>Detailed Company Information</a><br>"));
 
