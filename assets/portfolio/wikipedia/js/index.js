@@ -66,7 +66,7 @@ $("#submit").click(function() {
         
         var author = document.createElement('p');
         author.id = "author";
-        author.innerHTML = "This page created by <a target=\"_blank\" href=\"http://bonham000.github.io/\">Sean Smith</a> as a project for <a target=\"_blank\" href=\"https://www.freecodecamp.com/\">Free Code Camp</a>'s Front End Web Development Certification";
+        author.innerHTML = "This page created by <a target=\"_blank\" href=\"http://sean-smith.me\">Sean Smith</a> as a project for <a target=\"_blank\" href=\"https://www.freecodecamp.com/\">Free Code Camp</a>'s Front End Web Development Certification";
         document.body.appendChild(author);
         
         $('#author').hide();
