@@ -1,171 +1,293 @@
-/* Page Styling /////////////////////////////////////////// */
 body {
-  background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
-  background-attachment: fixed;
-  font-family: 'Raleway', sans-serif;
+	padding: 0;
+	background: rgb(255, 227, 157);
+	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
+	font-family: Avenir;
 }
-#clock_div {
-  position: absolute;
-  right: 10%;
-  top: 40%;
+.main {
+	text-align: center;
+	font-family: Avenir;
+	color: rgb(45,45,45);
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
 }
-#clock {
-  color: rgb(45,45,45);
-  font-size: 20px;
-  font-family: 'Roboto', sans-serif;
+#wrapper {
+	width: 650px;
+	height: 275px;
+	margin-bottom: 150px;
 }
-.content {
-  position: relative;
-  margin-top: 7.5%;
-  text-align: center;
+.name {
+	margin-top: auto;
+	font-size: 90px;
 }
-div {
-  text-align: center;
-  color: white;
+.nameAbout {
+	margin-top: -60px;
+	font-size: 25px;
+	max-width: 650px;
 }
-#title {
-  font-size: 50px;
+.scroll {
+	display: none;
+	font-size: 55px;
+	margin-top: 75px;
 }
-#sub_title {
-  position: relative;
-  margin: 0 auto;
-  max-width: 400px;
+a, a:visited {
+	color: rgb(45,45,45);
 }
-h1 {
-  color: rgb(255,75,75);
-}
-h2 {
-  margin-top: -15px;
-  color: rgb(10,10,10);
-}
-a#build:hover {
-  color: white;
-}
-#paragraph {
-  position: relative;
-  margin: 0 auto;
-  max-width: 400px;
-}
-p {
-  font-size: 20px;
-  color: rgb(10,10,10);
-  font-family: 'Raleway', sans-serif;
-}
-a {
-  text-decoration: underline;
-  color: rgb(255,75,75);
-}
-a#resume {
-  font-size: 20px;
-}
-#resume:hover {
-  color: white;
+a:hover {
+	color: rgb(255, 211, 78);
 }
 
-/* Contact Me Styling //////////////////////////////////// */
+/* Styling for portfolio flexbox */
 
-#contact {
-  margin-top: 50px;
+.container {
+  	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.imageBox {  
+	width: 500px;
+	height: 250px;
+	box-shadow: inset 1px 1px 40px 0 rgba(0,0,0,.45);
+	margin: 25px;
+	border-radius: 5px;
+	overflow: hidden;
+}
+.overlay {  
+	background: rgba(0,0,0,.8);
+	width: 100%;
+	height: 100%;
+	opacity:0;
+	-webkit-transition: opacity .45s ease;
+	-moz-transition: opacity .45s ease;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.overlay:hover {
+	cursor: pointer;
+}
+#text {
+	font-family: Avenir;
+	color: rgb(255, 211, 78);
+	font-size: 35px;
+	padding: 50px;
+	text-align: center;
+}
+
+/* Add project images for each flexbox div */
+
+#google {
+	background: url('/assets/images/google.png');
+	background-size: cover;
+}
+#facebook {
+	background: url('/assets/images/facebook.png');
+	background-size: cover;
+}
+#sejong {
+	background: url('/assets/images/sejong.png');
+	background-size: cover;
+}
+#newRiver {
+	background: url('/assets/images/new_river.png');
+	background-size: cover;
+}
+#asia {
+	background: url('/assets/images/asia.png');
+	background-size: cover;
+}
+#quotes {
+	background: url('/assets/images/quotes.png');
+	background-size: cover;
+}
+#weather {
+	background: url('/assets/images/weather.png');
+	background-size: cover;
+}
+#wikipedia {
+	background: url('/assets/images/wikipedia.png');
+	background-size: cover;
+}
+#stocks {
+	background: url('/assets/images/stocks.png');
+	background-size: cover;
+}
+#twitch {
+	background: url('/assets/images/twitch.png');
+	background-size: cover;
+}
+#calculator {
+	background: url('/assets/images/calculator.png');
+	background-size: cover;
+}
+#pomodoro {
+	background: url('/assets/images/pomodoro.png');
+	background-size: cover;
+}
+
+/* Add hover stlying for each project */
+
+#google:hover #overlayGoogle {
+	opacity:1;
+}
+#facebook:hover #overlayFacebook {
+	opacity:1;
+}
+#sejong:hover #overlaySejong {
+	opacity:1;
+}
+#newRiver:hover #overlayNewRiver {
+	opacity:1;
+}
+#asia:hover #overlayAsia {
+	opacity:1;
+}
+#quotes:hover #overlayQuotes {
+	opacity:1;
+}
+#weather:hover #overlayWeather {
+	opacity:1;
+}
+#wikipedia:hover #overlayWikipedia {
+	opacity:1;
+}
+#stocks:hover #overlayStocks {
+	opacity:1;
+}
+#twitch:hover #overlayTwitch {
+	opacity:1;
+}
+#calculator:hover #overlayCalculator {
+	opacity:1;
+}
+#pomodoro:hover #overlayPomodoro {
+	opacity:1;
+}
+
+/* Styling for Contact Me div */
+
+.contact {
+	padding: 0;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+.awesome {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	align-items: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	flex-wrap: wrap;
+
 }
 .fa {
-  padding: 15px;
+	padding: 20px;
+	color: rgb(45,45,45);
 }
-h3 a i {
-  color: white;
-}
-.fa-envelope-o:hover {
-  color: rgb(255,75,75);
-}
-.fa-github-alt:hover {
-  color: rgb(255,75,75);
-}
-.fa-codepen:hover {
-  color: rgb(255,75,75);
+.fa:hover {
+	color: rgb(255, 211, 78);
 }
 
-/* Positioning of All Elements at Page Load ////////////// */
+/* Styling for scroll to top element */
 
-#sub_title {
-  margin-top: -70px;
+.scrollTop {
+	position: fixed;
+	display: none;
+	bottom: -2.5px;
+	right: 2.5px;
 }
-#work {
-  margin-top: -50px;
-}
-#paragraph {
-  margin-top: -40px;
-}
-#cv {
-  margin-top: -30px;
-}
-#contact {
-  margin-top: -40px;
+#faTop {
+	font-size: 40px;
 }
 
-/* Image Layer Styling ///////////////////////////////// */
+/* Responsive styling */
 
-.image_layer {
-  height: 100%;
-  width: 100%;
+@media screen and (max-width: 1200px) {
+	.imageBox {
+		width: 400px;
+		height: 200px;
+	}
+	#text {
+		font-size: 30px;
+	}
+	.fa {
+		font-size: 100px;
+	}
+	#wrapper {
+		width: auto;
+		height: auto;
+	}
+	.scroll {
+		display: none !important;
+	}
+	.name, .nameAbout {
+		display: block !important;
+	}
 }
-img {
-  position: absolute;
+@media screen and (max-width: 1000px) {
+	.imageBox {
+		width: 350px;
+		height: 175px;
+	}
+	#text {
+		font-size: 20px;
+	}
+	.fa {
+		font-size: 80px;
+	}
+	#wrapper {
+		width: 500px;
+	}
+	.name {
+		font-size: 80px;
+	}
+	.nameAbout {
+		font-size: 20px;
+	}
 }
-#img_1 {
-  left: 0;
-  top: 0;
-  width: 100%;  
-  height: 100%;
-  z-index: 1;
+@media screen and (max-width: 750px) {
+	.name {
+		font-size: 60px;
+		padding-bottom: 15px;
+	}
+	.nameAbout {
+		padding: 20px;
+	}
+@media screen and (max-width: 500px) {
+	#text {
+		font-size: 20px;
+	}
+	.fa {
+		font-size: 75px;
+	}
+	.scrollTop {
+		display: none !important;
+	}
 }
-#img_2 {
-  left: -50px;
-  bottom: 0;
-  max-width: 800px;
-  z-index: 2;
-}
-#img_2:hover {
-  grow: 50px;
-}
-#img_3 {
-  right: 0;
-  top: 0;
-  max-height: 250px;
-  z-index: 3;
-}
-#img_4 {
-  right: 0;
-  bottom: 0;
-  max-height: 960px;
-  z-index: 4;
-}
-#enter {
-  position: relative;
-  margin: auto;
-  top: -215px;
-  width: 150px;
-  height: 150px;
-  color: rgb(255,75,75);
-  border-radius: 50%;
-  background: rgba(50,50,50,.5);
-  z-index: 5;
-  font-size: 26px;
-  font-weight: bold;
-  border: 15px solid rgba(65,65,65,.25);
-  font-family: Avenir;
-  transition-duration: .1s;
-}
-#enter:hover {
-  cursor: pointer;
-  background: rgba(50,150,255,.5);
-  color: rgb(10,255,135);
-  text-decoration: underline;
-  transition-duration: .05s;
-}
-#img:focus {
-  outline: none;
-}
-#enter:focus {
-  outline: none;
-}
-
-

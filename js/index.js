@@ -1,76 +1,108 @@
 
-// Toggle lock icon on button hover:
+// Resive top and bottom divs based on window height:
+$(document).ready(function() {
 
-$("#enter").hover(function() {
+  function setHeight() {
+    windowHeight = $(window).innerHeight();
+    $('.main').css('min-height', windowHeight);
+    $('.contact').css('min-height', windowHeight);
 
-  $("#lock").toggleClass("fa-lock fa-unlock-alt");
-
-})
-
-// Page refresh timer countdown:
-
-var c = 0;
-function Counter() {
-  document.getElementById("clock").innerHTML = (30) - (++c) ;
-}
-
-
-// Function for timed page refresh
-
-function TimedRefresh(t) {
-
-setTimeout("location.reload(true);", t);
-
-}
-
-// Animation Ccde:
-
-// Waiting for user to click Welcome Icon:
-$("#enter").click(function() {
+  };
+  setHeight();
   
-  // Code for timed page refresh:
-  $("#enter").click(TimedRefresh(30000));
-
-  // Welcome Icon slides up and out of the window:
-
-  $("#enter").animate({top: "-1000px"}, 750);
-  $("#enter").css({background: "rgb(16,211,255)", color: "white"});
-  $("#enter:hover").css({background: "rgb(16,211,255)", color: "white"});
-  // Time-delay to apply display:none in order to keep the page at the correct height:
-  setTimeout(function() {
-      $("#enter").css({display: "none"}); }, 1000);
-
-  // Primary blue background fades out;
-  $("#img_1").fadeOut(1500);
-  
-  // All other elements animate out of the window:
-  $("#img_2").animate({left: "-1000px"}, 1500);
-  $("#img_2").animate({top: "-150px"}, 10);
-  
-  $("#img_3").animate({right: "-150px", top: "-350px"}, 1500);
-  $("#img_3").animate({left: "-500px"}, 10);
-  
-  $("#img_4").animate({right: "-350px", bottom: "-1000px"}, 1500);
-  $("#img_4").animate({left: "-3000px"}, 10);
-  $("#img_4").animate({top: "-2500px"}, 10);
-
-  // Code for content animation on main page: 
-  $("#sub_title").animate({"margin-top":"0"}, 2000);
-  $("#work").animate({"margin-top":"30"}, 1750);
-  $("#paragraph").animate({"margin-top":"30"}, 1500);
-  $("#cv").animate({"margin-top":"-10"}, 1000);
-  $("#contact").animate({"margin-top":"40"}, 750);
+  $(window).resize(function() {
+    setHeight();
+  });
 
 });
 
+// Show/Hide page scroll links on mouseover of main text:
+$("#wrapper").mouseover(function() {
+	$(".name").hide();
+	$(".nameAbout").hide();
+	$(".scroll").show();
+})
 
+$("#wrapper").mouseout(function() {
+	$(".name").show();
+	$(".nameAbout").show();
+	$(".scroll").hide();
+})
 
+// Show/Hide scroll to top arrow based on page position:
+$(window).scroll(function() {
+	if ($(this).scrollTop()) {
+		$("#topPage").fadeIn();
+	}
+	else {
+		$('#topPage').fadeOut();
+	}
+})
 
+// Animate scrolling of page through internal links:
+$(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
 
+// Click functions link portfolio image divs to assets:
+$("#google").click(function() {
+	window.open('/assets/portfolio/google/index.html', '_blank') ;
+})
 
+$("#facebook").click(function() {
+	window.open('/assets/portfolio/facebook/index.html', '_blank') ;
+})
 
+$("#sejong").click(function() {
+	window.open('/assets/portfolio/sejong/index.html', '_blank') ;
+})
 
+$("#new_river").click(function() {
+	window.open('/assets/portfolio/new_river/index.html', '_blank') ;
+})
 
+$("#asia").click(function() {
+	window.open('/assets/portfolio/asia/index.html', '_blank') ;
+})
+
+$("#quotes").click(function() {
+	window.open('/assets/portfolio/quotes/index.html', '_blank') ;
+})
+
+$("#weather").click(function() {
+	window.open('/assets/portfolio/weather/index.html', '_blank') ;
+})
+
+$("#wikipedia").click(function() {
+	window.open('/assets/portfolio/wikipedia/index.html', '_blank') ;
+})
+
+$("#stocks").click(function() {
+	window.open('/assets/portfolio/stocks/index.html', '_blank') ;
+})
+
+$("#twitch").click(function() {
+	window.open('/assets/portfolio/twitch/index.html', '_blank') ;
+})
+
+$("#calculator").click(function() {
+	window.open('/assets/portfolio/calculator/index.html', '_blank') ;
+})
+
+$("#pomodoro").click(function() {
+	window.open('/assets/portfolio/pomodoro/index.html', '_blank') ;
+})
 
 
 

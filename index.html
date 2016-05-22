@@ -1,90 +1,128 @@
 <!DOCTYPE html>
-
-<html>
+<html >
   <head>
     <meta charset="UTF-8">
-    <title>Sean Smith | Home</title>
+    <title>demo</title>
 
-        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-    
-        <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,100,300' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
-
-
-        <!-- Main Stylesheet -->
-        <link rel="stylesheet" href="css/style.css">
-        <!-- Tablet Stylesheet -->
-        <link rel="stylesheet" media="(max-width: 50px)" href="css/style_tablet.css">
-        <!-- Mobile Stylesheet -->
-        <link rel="stylesheet" media="(max-width: 50px)" href="css/style_mobile.css">
-
-
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/style.css">
 
   </head>
 
   <body>
 
-    <!-- Main Structure of Page & Content -->
+  <a name="top" href="#"></a> <!-- Link anchor for scroll to top internal link -->
 
-<!-- Outer Layer Structure HTML; placed at top to load first -->
-
-<div class="image_layer">
-  <img id="img_1" src="http://i1361.photobucket.com/albums/r662/bonham000/Personal%20Site/img1_zpsbvgtuw5q.png">
-  <img id="img_2" src="http://i1361.photobucket.com/albums/r662/bonham000/Personal%20Site/img2_zpsvs4ea9ox.png">
-  <img id="img_3" src="http://i1361.photobucket.com/albums/r662/bonham000/Personal%20Site/img3_zpsod1uy0pn.png">
-  <img id="img_4" src="http://i1361.photobucket.com/albums/r662/bonham000/Personal%20Site/img4_zps8bqns0kk.png">
-</div>
-
-<!-- Outer Layer Structure HTML -->
-
-
-<div class="content">
-
-  <div id="clock_div"><h5 id="clock"></h5></div> <!-- Empty div for timer countdown -->
-
-  <h1 id="title">Sean Smith</h1>
-
-  <div id="sub_title">
-    <h2>I am a self-taught web developer seeking employment full-time</h2>
+  <div class="main"> <!-- Main title div -->
+    <div id="wrapper">
+    <h1 class="name">Sean Smith</h1>
+    <p class="nameAbout">I am a former researcher and business owner turned web developer. I am proficient in HTML, CSS, and Javascript and currently seeking employment. Please view my work and details below.</p>
+    <p class="scroll"><a href="#workDiv">Portfolio</a>   ||   <a href="#contactDiv">Contact</a></p>
+    </div>
   </div>
-  
-  <div id="work">
-    <h1><a id="build" href="portfolio/build.html">Portfolio</a></h1>
+
+  <!-- Portfolio div -->
+  <div class="portfolio">
+    <a name="workDiv" href="#"></a> <!-- Internal link for scrollilng -->
   </div>
+
+  <div class="container"> <!-- Flexbox for portfolio projects -->
+
+    <div class="imageBox" id="google">
+      <div class="overlay" id="overlayGoogle">
+        <span id="text">Google Homepage Mockup</span>
+      </div>  
+    </div>
     
-  <div id="paragraph">
-    <p>I have bachelor's degrees in Anthropology and Biochemistry and worked on a number of research projects in a past life</p>
-  </div>
+    <div class="imageBox" id="facebook">
+      <div class="overlay" id="overlayFacebook">
+        <span id="text">Facebook Homepage Mockup</span>
+      </div>  
+    </div>
     
-  <div id="cv">
-    <h4><a target="_blank" id="resume" href="portfolio/cv.pdf">view my full CV here</a></h4>
+    <div class="imageBox" id="sejong">
+      <div class="overlay" id="overlaySejong">
+        <span id="text">Tribute Page</span>
+      </div>  
+    </div>
+
+    <div class="imageBox" id="newRiver">
+      <div class="overlay" id="overlayNewRiver">
+        <span id="text">Webpage for the New River Gorge</span>
+      </div>  
+    </div>
+    
+    <div class="imageBox" id="asia">
+      <div class="overlay" id="overlayAsia">
+        <span id="text">Tourism Page for Major Cities in Asia</span>
+      </div>  
+    </div>
+    
+    <div class="imageBox" id="quotes">
+      <div class="overlay" id="overlayQuotes">
+        <span id="text">Random Quote Generator</span>
+      </div>  
+    </div>
+
+    <div class="imageBox" id="weather">
+      <div class="overlay" id="overlayWeather">
+        <span id="text">Weather API App</span>
+      </div>  
+    </div>
+    
+    <div class="imageBox" id="wikipedia">
+      <div class="overlay" id="overlayWikipedia">
+        <span id="text">Wikipedia Article Viewer</span>
+      </div>  
+    </div>
+    
+    <div class="imageBox" id="stocks">
+      <div class="overlay" id="overlayStocks">
+        <span id="text">Stocks API</span>
+      </div>  
+    </div>
+
+    <div class="imageBox" id="twitch">
+      <div class="overlay" id="overlayTwitch">
+        <span id="text">Twitch API Project</span>
+      </div>  
+    </div>
+    
+    <div class="imageBox" id="calculator">
+      <div class="overlay" id="overlayCalculator">
+        <span id="text">Javascript Calculator</span>
+      </div>  
+    </div>
+    
+    <div class="imageBox" id="pomodoro">
+      <div class="overlay" id="overlayPomodoro">
+        <span id="text">Pomodoro Clock</span>
+      </div>  
+    </div>      
+
   </div>
 
-  <div id="contact">
-    <h3>
-      <a href="mailto:sean.smith.2009@gmail.com"><i class="fa fa-envelope-o fa-3x" aria-hidden="true"></i></a>
-      <a target="_blank" href="https://github.com/bonham000"><i class="fa fa-github-alt fa-3x" aria-hidden="true"></i></a>
-      <a target="_blank" href="http://codepen.io/bonham000/"><i class="fa fa-codepen fa-3x" aria-hidden="true"></i></a>
-    </h3>
-  </div>
+  <div class="contact"> <!-- Contact me div -->
 
-</div>
+    <a name="contactDiv" href="#"></a> <!-- Internal link for scrolling -->
 
-<!-- Page Content Ends Here -->
-
-  <div class="button">
-  
-    <button onClick="Timer = setInterval(Counter, 1000)" id="enter">
-      <i class="fa fa-lock fa-4x" aria-hidden="true" id="lock"></i>
-    </button>
+    <h2 class="awesome">
+      <a target="_blank" href="https://twitter.com/bonham_000"><i class="fa fa-twitter fa-4x" aria-hidden="true"></i></a>
+      <a href="mailto:sean.smith.2009@gmail.com"><i class="fa fa-envelope-o fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://github.com/bonham000"><i class="fa fa-github-alt fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="http://codepen.io/bonham000/"><i class="fa fa-codepen fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="/assets/resume/cv.pdf"><i class="fa fa-file-text fa-4x" aria-hidden="true"></i></a>
+      <a target="_blank" href="https://www.linkedin.com/in/seanmatthewsmith"><i class="fa fa-linkedin fa-4x" aria-hidden="true"></i></a>
+    </h2>
 
   </div>
 
-<!-- Links to JS and jQuery and end of HTML -->
+  <!-- Scroll to top element -->
+  <div class="scrollTop" id="topPage">
+    <a href="#top"><i class="fa fa-arrow-up" id="faTop" aria-hidden="true"></i></a>
+  </div>
 
-    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
 
         <script src="js/index.js"></script>
     
