@@ -101,16 +101,16 @@ a:hover {
 	background: url('/assets/images/facebook.png');
 	background-size: cover;
 }
-#sejong {
-	background: url('/assets/images/sejong.png');
-	background-size: cover;
-}
 #newRiver {
 	background: url('/assets/images/new_river.png');
 	background-size: cover;
 }
 #asia {
 	background: url('/assets/images/asia.png');
+	background-size: cover;
+}
+#sejong {
+	background: url('/assets/images/sejong.png');
 	background-size: cover;
 }
 #quotes {
@@ -150,13 +150,13 @@ a:hover {
 #facebook:hover #overlayFacebook {
 	opacity:1;
 }
-#sejong:hover #overlaySejong {
-	opacity:1;
-}
 #newRiver:hover #overlayNewRiver {
 	opacity:1;
 }
 #asia:hover #overlayAsia {
+	opacity:1;
+}
+#sejong:hover #overlaySejong {
 	opacity:1;
 }
 #quotes:hover #overlayQuotes {

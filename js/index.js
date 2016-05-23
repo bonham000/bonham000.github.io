@@ -64,16 +64,16 @@ $("#facebook").click(function() {
 	window.open('/assets/portfolio/facebook/index.html', '_blank') ;
 })
 
-$("#sejong").click(function() {
-	window.open('/assets/portfolio/sejong/index.html', '_blank') ;
-})
-
 $("#new_river").click(function() {
 	window.open('/assets/portfolio/new_river/index.html', '_blank') ;
 })
 
 $("#asia").click(function() {
 	window.open('/assets/portfolio/asia/index.html', '_blank') ;
+})
+
+$("#sejong").click(function() {
+	window.open('/assets/portfolio/sejong/index.html', '_blank') ;
 })
 
 $("#quotes").click(function() {
