@@ -1,0 +1,9 @@
+body {
+  background: rgb(20,70,100);
+}
+.container {
+  width: 500px;
+  height: 500px;
+  background: gray;
+  margin: 0 auto;
+}
