@@ -1,5 +1,6 @@
 body {
 	background: linear-gradient(rgb(143, 235, 167), rgb(100, 219, 131), rgb(81, 185, 108), rgb(70, 159, 139), rgb(41, 140, 118), rgb(6, 100, 79));
+	background: linear-gradient(rgb(25, 130, 210), rgb(68, 97, 201));
 	background-repeat: no-repeat;
 	display: -ms-flexbox;
 	display: -webkit-flex;
@@ -11,6 +12,8 @@ body {
 	justify-content: center;
 	font-family: 'Lato', sans-serif;
 	min-width: 800px;
+	margin: 0;
+	padding: 0;
 }
 .pageLoad {
 	position: absolute;
@@ -38,6 +41,11 @@ body {
 .choose:hover {
 	color: rgb(255, 100, 85);
 }
+.startGame {
+	color: rgb(25, 130, 210);
+	font-size: 50px;
+	text-align: center;	
+}
 #winner {
 	color: rgb(16, 211, 101);
 	font-size: 150px;
@@ -47,6 +55,11 @@ body {
 	color: rgb(168, 4, 0);
 	font-size: 150px;
 	text-align: center;
+}
+#tie {
+	color: rgb(255, 201, 99);
+	font-size: 150px;
+	text-align: center;	
 }
 .gameEnd {
 	margin-top: 25px;
@@ -60,6 +73,11 @@ body {
 	margin-top: -75px;
 	margin-left: 7px;
 	min-width: 600px;
+	color: black;
+}
+
+.credits {
+	color: black;
 }
 .container {
 	width: 500px;
@@ -102,27 +120,34 @@ body {
 }
 .square:hover {
 	cursor: pointer;
-	background: rgb(60, 203, 216);
+	background: rgb(13, 215, 128);
 }
 button {
 	border: none;
 	border-radius: 10px;
 	background: rgb(255, 184, 78);
 	font-size: 14px;
+	text-align: center;
 }
 button:hover {
 	cursor: pointer;
-	background: rgb(60, 203, 216);
+	background: rgb(13, 215, 128);
 }
 button:focus {
 	outline: none;
 }
-.links a:visited {
+#titleLink {
 	color: black;
 }
-.links a:hover {
-	color: rgb(60, 203, 216);
+#titleLink:hover {
+	color: white;
 }
-a #titleLink:hover {
-	color: rgb(113, 78, 224);
+#linkBottom {
+	color: black;
+}
+#linkBottom:visited {
+	color: black;
+}
+#linkBottom:hover {
+	color: white;
 }

@@ -27,10 +27,12 @@ $("#reset").click(function() {
   reset();
 });
 
-// User/Machine Variable Declarations:
+// Variable Declarations:
 var user    = '';
 var machine = '';
 var turn = 0;
+var game   = [0,0,0,0,0,0,0,0,0];
+var choose = ["zero","one","two","three","four","five","six","seven","eight"];
 
 // Game Character Initialization:
 
@@ -43,6 +45,7 @@ $("#X").click(function() {
   $('.pageLoad').fadeOut(750, function() {
     $(this);
   });
+  $('.startGame').remove();
 });
 
 $("#O").click(function() {
@@ -54,27 +57,28 @@ $("#O").click(function() {
   $('.pageLoad').fadeOut(750, function() {
     $(this);
   });
+  $('.startGame').remove();
 });
 
-// game array declaration
-
-var game   = [0,0,0,0,0,0,0,0,0];
-var choose = ["zero","one","two","three","four","five","six","seven","eight"];
-
-// Win function:
+// Game End function:
 
 function win() {
   console.log("You win!");
-  $('.pageLoad').append("<div class='begin gameEnd'><span id='winner'>You won!</span><p id='replay'>Select X or O above to replay</p></div>");
+  $('.pageLoad').append("<div class='begin gameEnd'><span id='winner'>You won!</span><p id='replay'>Select X or O to replay</p></div>");
   $('.pageLoad').fadeIn(500);
 }
 
 function lose() {
   console.log("You lose!");
-  $('.pageLoad').append("<div class='begin gameEnd'><span id='loser'>You lost!</span><p id='replay'>Select X or O above to replay</p></div>");
+  $('.pageLoad').append("<div class='begin gameEnd'><span id='loser'>You lost!</span><p id='replay'>Select X or O to replay</p></div>");
   $('.pageLoad').fadeIn(500);
 }
 
+function tie() {
+  console.log("It's a tie!");
+  $('.pageLoad').append("<div class='begin gameEnd'><span id='tie'>It's a draw!</span><p id='replay'>Select X or O to replay</p></div>");
+  $('.pageLoad').fadeIn(500);
+}
 
 // review function reviews for any winning combinations
 
@@ -89,6 +93,11 @@ function check() {
   else if ( game[2] === user && game[5] === user && game[8] === user) { win(); }
   else if ( game[0] === user && game[4] === user && game[8] === user) { win(); }  
   else if ( game[6] === user && game[4] === user && game[2] === user) { win(); }
+
+  // check for a tie:
+  else if (game.every(function(val) { return (typeof val === "string") })) {
+    tie();
+  }
 
   // if no winner and game is not finished, computer plays:
   else {
@@ -106,6 +115,11 @@ function checkMachine() {
   else if ( game[2] === machine && game[5] === machine && game[8] === machine) { lose(); }
   else if ( game[0] === machine && game[4] === machine && game[8] === machine) { lose(); }  
   else if ( game[6] === machine && game[4] === machine && game[2] === machine) { lose(); }
+
+  else if (game.every(function(val) { return (typeof val === "string") })) {
+    tie();
+  }
+
   else {
     turn = 0;
     return;
@@ -141,6 +155,7 @@ function computerPlay() {
 
 setTimeout(computerPlay, 500);
 
+// Check that the user can't play before the computer:
 
 function checkTurn() {
 
