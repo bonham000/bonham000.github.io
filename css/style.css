@@ -141,6 +141,10 @@ a:hover {
 	background: url('/assets/images/pomodoro.png');
 	background-size: cover;
 }
+#ticTacToe {
+	background: url('/assets/images/ticTacToe.png');
+	background-size: cover;
+}
 
 /* Add hover stlying for each project */
 
@@ -178,6 +182,9 @@ a:hover {
 	opacity:1;
 }
 #pomodoro:hover #overlayPomodoro {
+	opacity:1;
+}
+#ticTacToe:hover #overlayTicTacToe {
 	opacity:1;
 }
 

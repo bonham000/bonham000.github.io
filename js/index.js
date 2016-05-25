@@ -104,6 +104,10 @@ $("#pomodoro").click(function() {
 	window.open('/assets/portfolio/pomodoro/index.html', '_blank') ;
 })
 
+$("#ticTacToe").click(function() {
+	window.open('/assets/portfolio/tic_tac_toe/index.html', '_blank') ;
+})
+
 
 
 
