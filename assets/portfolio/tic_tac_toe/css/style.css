@@ -21,22 +21,39 @@ body {
 	background: rgba(15,15,15,.95);
 	z-index: 5;
 }
-#begin {
-	color: white;
+.begin {
+	color: rgb(150,150,150);
 	font-size: 50px;
 	margin-top: 100px;
 	text-align: center;
 }
 .spacer {
-	margin: 50px;
+	margin: 0 50px 0 50px;
 }
 .choose {
 	font-size: 150px;
-	color: white;
+	color: rgb(150,150,150);
 	text-decoration: none;
 }
 .choose:hover {
 	color: rgb(255, 100, 85);
+}
+#winner {
+	color: rgb(16, 211, 101);
+	font-size: 150px;
+	text-align: center;
+}
+#loser {
+	color: rgb(168, 4, 0);
+	font-size: 150px;
+	text-align: center;
+}
+.gameEnd {
+	margin-top: 25px;
+}
+#replay {
+	font-size: 20px;
+	color: rgb(150,150,150);
 }
 .title {
 	position: absolute;

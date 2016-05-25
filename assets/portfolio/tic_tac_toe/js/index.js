@@ -14,12 +14,17 @@ $(document).ready(function() {
 
 });
 
+function reset() {
+	$('.square').empty();
+  $('.gameEnd').empty();
+  game   = [0,0,0,0,0,0,0,0,0];
+  choose = ["zero","one","two","three","four","five","six","seven","eight"];
+};
+
 // Game reset button:
 $("#reset").click(function() {
-	$('.square').empty();
-  game   = [0,0,0,0,0,0,0,0,0];
-  choose = ["zero","one","two","three","four","five","six","seven","eight","nine"];
-})
+  reset();
+});
 
 // User/Machine Variable Declarations:
 var user    = '';
@@ -31,9 +36,10 @@ $("#X").click(function() {
 
   user = 'X';
   machine = 'O';
+  reset();
 
   $('.pageLoad').fadeOut(750, function() {
-    $(this).remove();
+    $(this);
   });
 });
 
@@ -41,9 +47,10 @@ $("#O").click(function() {
 
   user = 'O';
   machine = 'X';
+  reset();
 
   $('.pageLoad').fadeOut(750, function() {
-    $(this).remove();
+    $(this);
   });
 });
 
@@ -52,41 +59,82 @@ $("#O").click(function() {
 var game   = [0,0,0,0,0,0,0,0,0];
 var choose = ["zero","one","two","three","four","five","six","seven","eight"];
 
+// Win function:
+
+function win() {
+  console.log("You win!");
+  $('.pageLoad').append("<div class='begin gameEnd'><span id='winner'>You won!</span><p id='replay'>Select X or O above to replay</p></div>");
+  $('.pageLoad').fadeIn(500);
+}
+
+function lose() {
+  console.log("You lose!");
+  $('.pageLoad').append("<div class='begin gameEnd'><span id='loser'>You lost!</span><p id='replay'>Select X or O above to replay</p></div>");
+  $('.pageLoad').fadeIn(500);
+}
+
+
 // review function reviews for any winning combinations
 
+function check() {
+
+  // check for a winner:
+  if      ( game[0] === user && game[1] === user && game[2] === user) { win(); }
+  else if ( game[3] === user && game[4] === user && game[5] === user) { win(); }
+  else if ( game[6] === user && game[7] === user && game[8] === user) { win(); }  
+  else if ( game[0] === user && game[3] === user && game[6] === user) { win(); }
+  else if ( game[1] === user && game[4] === user && game[7] === user) { win(); }  
+  else if ( game[2] === user && game[5] === user && game[8] === user) { win(); }
+  else if ( game[0] === user && game[4] === user && game[8] === user) { win(); }  
+  else if ( game[6] === user && game[4] === user && game[2] === user) { win(); }
+
+  // if no winner and game is not finished, computer plays:
+  else {
+      computerPlay();
+  }
+}
+  
+function checkMachine() {
+
+  if      ( game[0] === machine && game[1] === machine && game[2] === machine) { lose(); }
+  else if ( game[3] === machine && game[4] === machine && game[5] === machine) { lose(); }
+  else if ( game[6] === machine && game[7] === machine && game[8] === machine) { lose(); }  
+  else if ( game[0] === machine && game[3] === machine && game[6] === machine) { lose(); }
+  else if ( game[1] === machine && game[4] === machine && game[7] === machine) { lose(); }  
+  else if ( game[2] === machine && game[5] === machine && game[8] === machine) { lose(); }
+  else if ( game[0] === machine && game[4] === machine && game[8] === machine) { lose(); }  
+  else if ( game[6] === machine && game[4] === machine && game[2] === machine) { lose(); }
+  else return;
+
+}
 
 
 // click functions for each box; each function initiates a computer click event
 
+
 function computerPlay() {
 
-  for (var i = 0; i < game.length; i++) {
-    if (typeof game[i] === "number") {
+  setTimeout(function() {
 
     var index = -1;
     var elemId = undefined;
 
     while (typeof elemId !== "string") {
-      index = Math.floor(Math.random() * choose.length);
-      elemId = choose[index];
+        index = Math.floor(Math.random() * choose.length);
+        elemId = choose[index];
     }
 
     $("#" + elemId).html(machine);
+    console.log("Current elemId is: " + elemId);
 
     game[index] = machine;
     delete choose[index];
 
-    console.log("Machine plays: " + index + elemId);
-    }
+    checkMachine();
 
-  }
+  }, 500);
 
-  else {
-    console.log("It seems the game has ended.");
-  }
 }
-
-
 
 
 // Add X on click:
@@ -96,9 +144,7 @@ $("#zero").click(function() {
   game[0] = user;
   delete choose[0];
 
-  console.log(game, choose);
-
-  computerPlay();
+  check();
 
 });
 
@@ -108,9 +154,7 @@ $("#one").click(function() {
   game[1] = user;
   delete choose[1];
 
-  console.log(game, choose);
-
-  computerPlay();
+  check();
 
 });
 
@@ -120,9 +164,7 @@ $("#two").click(function() {
   game[2] = user;
   delete choose[2];
 
-  console.log(game, choose);
-
-  computerPlay();
+  check();
 
 });
 
@@ -133,9 +175,7 @@ $("#three").click(function() {
   game[3] = user;
   delete choose[3];
 
-  console.log(game, choose);
-
-  computerPlay();
+  check();
 
 });
 
@@ -144,7 +184,8 @@ $("#four").click(function() {
   $("#four").html(user);
   game[4] = user;
   delete choose[4];
-  computerPlay();
+
+  check();
 
 });
 
@@ -153,7 +194,8 @@ $("#five").click(function() {
   $("#five").html(user);
   game[5] = user;
   delete choose[5];
-  computerPlay();
+
+  check();
 
 });
 
@@ -163,7 +205,8 @@ $("#six").click(function() {
   $("#six").html(user);
   game[6] = user;
   delete choose[6];
-  computerPlay();
+  
+  check();
 
 });
 
@@ -172,7 +215,8 @@ $("#seven").click(function() {
   $("#seven").html(user);
   game[7] = seven;
   delete choose[7];
-  computerPlay();
+  
+  check();
 
 });
 
@@ -182,7 +226,7 @@ $("#eight").click(function() {
   game[8] = user;
   delete choose[8];
 
-  computerPlay();
+  check();
 
 });
 
