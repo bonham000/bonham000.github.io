@@ -13,3 +13,16 @@ $(document).ready(function() {
   });
 
 });
+
+// Add X on click:
+$("#one").click(function() {
+
+	$("#one").html("X");
+	console.log("clicked!");
+
+})
+
+// Game reset button:
+$("#reset").click(function() {
+	$('.square').empty();
+})
