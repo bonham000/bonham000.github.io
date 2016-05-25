@@ -19,6 +19,7 @@ function reset() {
   $('.gameEnd').empty();
   game   = [0,0,0,0,0,0,0,0,0];
   choose = ["zero","one","two","three","four","five","six","seven","eight"];
+  turn = 0;
 };
 
 // Game reset button:
@@ -29,6 +30,7 @@ $("#reset").click(function() {
 // User/Machine Variable Declarations:
 var user    = '';
 var machine = '';
+var turn = 0;
 
 // Game Character Initialization:
 
@@ -104,17 +106,18 @@ function checkMachine() {
   else if ( game[2] === machine && game[5] === machine && game[8] === machine) { lose(); }
   else if ( game[0] === machine && game[4] === machine && game[8] === machine) { lose(); }  
   else if ( game[6] === machine && game[4] === machine && game[2] === machine) { lose(); }
-  else return;
+  else {
+    turn = 0;
+    return;
+  }
 
 }
 
-
 // click functions for each box; each function initiates a computer click event
-
 
 function computerPlay() {
 
-  setTimeout(function() {
+    setTimeout(function() {
 
     var index = -1;
     var elemId = undefined;
@@ -134,99 +137,213 @@ function computerPlay() {
 
   }, 500);
 
-}
+};
 
+setTimeout(computerPlay, 500);
+
+
+function checkTurn() {
+
+  if (turn === 1) {
+    alert("Wait your turn!");
+    return false;
+  }
+  else {
+    return true;
+  }
+
+}
 
 // Add X on click:
 $("#zero").click(function() {
 
-  $("#zero").html(user);
-  game[0] = user;
-  delete choose[0];
+  if (typeof game[0] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#zero").html(user);
+      game[0] = user;
+      delete choose[0];
+
+      turn = 1;
+
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 $("#one").click(function() {
 
-  $("#one").html(user);
-  game[1] = user;
-  delete choose[1];
+  if (typeof game[1] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#one").html(user);
+      game[1] = user;
+      delete choose[1];
+
+      turn = 1;
+
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 $("#two").click(function() {
 
-  $("#two").html(user);
-  game[2] = user;
-  delete choose[2];
+  if (typeof game[2] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#two").html(user);
+      game[2] = user;
+      delete choose[2];
+
+      turn = 1;
+
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 
 $("#three").click(function() {
 
-  $("#three").html(user);
-  game[3] = user;
-  delete choose[3];
+  if (typeof game[3] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#three").html(user);
+      game[3] = user;
+      delete choose[3];
+
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 $("#four").click(function() {
 
-  $("#four").html(user);
-  game[4] = user;
-  delete choose[4];
+  if (typeof game[4] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#four").html(user);
+      game[4] = user;
+      delete choose[4];
+
+      turn = 1;
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 $("#five").click(function() {
 
-  $("#five").html(user);
-  game[5] = user;
-  delete choose[5];
+  if (typeof game[5] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#five").html(user);
+      game[5] = user;
+      delete choose[5];
+
+      turn = 1;
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 
 $("#six").click(function() {
 
-  $("#six").html(user);
-  game[6] = user;
-  delete choose[6];
-  
-  check();
+  if (typeof game[6] !== "string") {
+
+      if ( checkTurn() ) {
+
+      $("#six").html(user);
+      game[6] = user;
+      delete choose[6];
+
+      turn = 1;    
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 $("#seven").click(function() {
 
-  $("#seven").html(user);
-  game[7] = seven;
-  delete choose[7];
-  
-  check();
+  if (typeof game[7] !== "string") {
+
+      if ( checkTurn() ) {
+
+      $("#seven").html(user);
+      game[7] = user;
+      delete choose[7];
+
+      turn = 1;    
+      check();
+
+      }
+
+  }
+
+  else { return; }
 
 });
 
 $("#eight").click(function() {
 
-  $("#eight").html(user);
-  game[8] = user;
-  delete choose[8];
+  if (typeof game[8] !== "string") {
 
-  check();
+      if ( checkTurn() ) {
+
+      $("#eight").html(user);
+      game[8] = user;
+      delete choose[8];
+
+      turn = 1;
+      check();
+
+      }
+  }
+
+  else { return; }
 
 });
 
