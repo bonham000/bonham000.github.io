@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Simon® Game</title>
+    
+        <link href='https://fonts.googleapis.com/css?family=Comfortaa' rel='stylesheet' type='text/css'>
+
+        <link href='https://fonts.googleapis.com/css?family=Exo+2' rel='stylesheet' type='text/css'>
+
+        <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+    
+<div class="wrapper">
+  
+  <div class="controller">
+  
+    <p class="title">Simon<sup>®</sup></p>
+
+    <div class="counter"><h3 id="gameCounter">00</h3></div>
+
+  <button class="start">Start Game</button>
+
+  <div>
+
+    <label class="switch" id="switchLeft">
+      <input type="checkbox">
+      <div class="slider sliderLeft round"></div>
+    </label>
+
+    <label class="switch" id="switchRight">
+      <input type="checkbox">
+      <div class="slider sliderRight round"></div>
+    </label>
+        
+  </div>
+
+  <div class="labels">
+    <p><span class="onOff">On/Off</span><span class="strict">Strict Mode</span></p>
+  </div>
+
+
+<!-- Simon Game Title, Counter, Start Button, Strict Mode Button, On/Off Button -->
+
+  </div>
+
+  <div class="row">  
+    <div class="container" id="green"></div>
+    <div class="container" id="red"></div>
+  </div>
+
+  <div class="row">
+    <div class="container" id="yellow"></div>
+    <div class="container" id="blue"></div>
+  </div>
+
+</div>
+
+
+    <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+        <script src="js/index.js"></script>
+
+ 
+  </body>
+</html>
