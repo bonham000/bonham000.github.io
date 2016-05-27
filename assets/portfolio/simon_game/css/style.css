@@ -1,5 +1,7 @@
 body {
   background: rgb(114, 144, 255);
+  margin: 0;
+  padding: 0;
 }
 .controller {
   position: absolute;
@@ -50,6 +52,9 @@ sup {
 .start:hover {
   cursor: pointer;
   background: rgb(35, 195, 126);
+}
+button:focus {
+  outline: none;
 }
 
 .switch {
@@ -135,12 +140,7 @@ input:checked + .slider:before {
   margin-left: 30px;
 }
 
-
-
-
-
-
-.wrapper {
+.simon {
   margin-top: 75px;
 }
 .row {
@@ -153,7 +153,7 @@ input:checked + .slider:before {
   width: 250px;
   height: 250px;
 }
-#green {
+.green {
     border-top: 25px solid rgb(40,40,40);
     border-left: 25px solid rgb(40,40,40);
     border-right: 12.5px solid rgb(40,40,40);
@@ -161,7 +161,7 @@ input:checked + .slider:before {
     border-top-left-radius: 100%;
     background: rgb(0,168,69);
 }
-#red {
+.red {
     border-top: 25px solid rgb(40,40,40);
     border-left: 12.5px solid rgb(40,40,40);
     border-right: 25px solid rgb(40,40,40);
@@ -169,7 +169,7 @@ input:checked + .slider:before {
     border-top-right-radius: 100%;
     background: rgb(161,11,15);
 }
-#blue {
+.blue {
     border-top: 12.5px solid rgb(40,40,40);
     border-left: 12.5px solid rgb(40,40,40);
     border-right: 25px solid rgb(40,40,40);
@@ -177,7 +177,7 @@ input:checked + .slider:before {
     border-bottom-right-radius: 100%;
     background: rgb(1,72,145);
 }
-#yellow {
+.yellow {
     border-top: 12.5px solid rgb(40,40,40);
     border-left: 25px solid rgb(40,40,40);
     border-right: 12.5px solid rgb(40,40,40);
@@ -185,4 +185,90 @@ input:checked + .slider:before {
     border-bottom-left-radius: 100%;
     background: rgb(205,168,0);
 }
+
+#green:hover, #red:hover, #blue:hover, #yellow:hover {
+  cursor: pointer;
+}
+
+.clickedGreen {
+  background: rgb(53, 239, 85);
+}
+.clickedRed {
+  background: rgb(253, 35, 51);
+}
+.clickedYellow {
+  background: rgb(255, 230, 64);
+}
+.clickedBlue {
+  background: rgb(28, 138, 244);
+}
+
+
+
+
+#instructions {
+  position: fixed;
+  bottom: -7px;
+  left: 10px;
+  font-family: Avenir;
+  font-size: 15px;
+  text-decoration: underline;
+}
+#instructions:hover {
+  cursor: pointer;
+  color: white;
+}
+
+#credits {
+  position: fixed;
+  bottom: -5px;
+  right: 10px;
+  font-family: Avenir;
+  font-size: 15px;
+}
+a, a:visited {
+  color: black;
+}
+a:hover {
+  color: white;
+}
+
+#box {
+  display: none;
+}
+
+.instructions {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 5;
+  background: rgba(5,5,5,.92);
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+}
+.rules {
+  color: rgb(235,235,235);
+  font-family: Avenir;
+  font-size: 55px;
+}
+.rulesList {
+  font-size: 30px;
+}
+#close {
+  position: absolute;
+  color: rgb(235,235,235);
+  font-size: 35px;
+  z-index: 10;
+  top: -45px;
+  right: 10px;
+}
+#close:hover {
+  color: rgb(255, 113, 52);
+  cursor: pointer;
+}
+
+
 
