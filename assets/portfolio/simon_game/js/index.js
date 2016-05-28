@@ -214,6 +214,7 @@ function machine() {
 
 $("#startGame").click(function() {
 
+	console.log("clicked");
 	document.getElementById("gameCounter").innerHTML = 1;	
 	machine();
 
