@@ -16,28 +16,48 @@ $(document).ready(function() {
 
 });
 
-// Show/Hide page scroll links on mouseover of main text:
-$("#wrapper").mouseover(function() {
+window.onload = function() {
+
 	$(".name").hide();
 	$(".nameAbout").hide();
-	$(".scroll").show();
-})
 
-$("#wrapper").mouseout(function() {
-	$(".name").show();
-	$(".nameAbout").show();
-	$(".scroll").hide();
-})
+	setTimeout(function() {
 
-// Show/Hide scroll to top arrow based on page position:
-$(window).scroll(function() {
-	if ($(this).scrollTop()) {
-		$("#topPage").fadeIn();
-	}
-	else {
-		$('#topPage').fadeOut();
-	}
-})
+		$(".name").fadeIn(500);
+		$(".nameAbout").fadeIn(500);
+
+	}, 500);
+
+	setTimeout(function() {
+
+		// Show/Hide page scroll links on mouseover of main text:
+		$("#wrapper").mouseover(function() {
+			$(".name").hide();
+			$(".nameAbout").hide();
+			$(".scroll").show();
+		});
+
+		$("#wrapper").mouseout(function() {
+			$(".name").show();
+			$(".nameAbout").show();
+			$(".scroll").hide();
+		});
+
+		// Show/Hide scroll to top arrow based on page position:
+		$(window).scroll(function() {
+			if ($(this).scrollTop()) {
+				$("#topPage").fadeIn();
+			}
+			else {
+				$('#topPage').fadeOut();
+			}
+		});
+
+	}, 1250);
+
+}
+
+
 
 // Animate scrolling of page through internal links:
 $(function() {
