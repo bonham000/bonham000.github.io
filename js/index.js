@@ -108,6 +108,10 @@ $("#ticTacToe").click(function() {
 	window.open('/assets/portfolio/tic_tac_toe/index.html', '_blank') ;
 })
 
+$("#simon").click(function() {
+	window.open('/assets/portfolio/simon_game/index.html', '_blank') ;
+})
+
 
 
 

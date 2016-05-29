@@ -145,6 +145,10 @@ a:hover {
 	background: url('/assets/images/ticTacToe.png');
 	background-size: cover;
 }
+#simon {
+	background: url('/assets/images/simon.png');
+	background-size: cover;
+}
 
 /* Add hover stlying for each project */
 
@@ -185,6 +189,9 @@ a:hover {
 	opacity:1;
 }
 #ticTacToe:hover #overlayTicTacToe {
+	opacity:1;
+}
+#simon:hover #overlaySimon {
 	opacity:1;
 }
 

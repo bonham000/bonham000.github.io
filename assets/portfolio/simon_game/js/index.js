@@ -211,7 +211,7 @@ function simon() {
 function userPlay() {
 
 	// Game ends function:
-	if ( user[userCount] === game[userCount] && game.length === 4 && user.length === game.length ) {
+	if ( user[userCount] === game[userCount] && game.length === 5 && user.length === game.length ) {
 		console.log("game over, you win!");
 
 		$(".green").addClass("greenWinner");
