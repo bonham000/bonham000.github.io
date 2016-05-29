@@ -18,16 +18,6 @@ $(document).ready(function() {
 
 window.onload = function() {
 
-	$(".name").hide();
-	$(".nameAbout").hide();
-
-	setTimeout(function() {
-
-		$(".name").fadeIn(500);
-		$(".nameAbout").fadeIn(500);
-
-	}, 500);
-
 	setTimeout(function() {
 
 		// Show/Hide page scroll links on mouseover of main text:
@@ -43,21 +33,19 @@ window.onload = function() {
 			$(".scroll").hide();
 		});
 
-		// Show/Hide scroll to top arrow based on page position:
-		$(window).scroll(function() {
-			if ($(this).scrollTop()) {
-				$("#topPage").fadeIn();
-			}
-			else {
-				$('#topPage').fadeOut();
-			}
-		});
+	}, 750);
 
-	}, 1250);
+};
 
-}
-
-
+// Show/Hide scroll to top arrow based on page position:
+$(window).scroll(function() {
+	if ($(this).scrollTop()) {
+		$("#topPage").fadeIn();
+	}
+	else {
+		$('#topPage').fadeOut();
+	}
+});
 
 // Animate scrolling of page through internal links:
 $(function() {
@@ -78,59 +66,59 @@ $(function() {
 // Click functions link portfolio image divs to assets:
 $("#google").click(function() {
 	window.open('/assets/portfolio/google/index.html', '_blank') ;
-})
+});
 
 $("#facebook").click(function() {
 	window.open('/assets/portfolio/facebook/index.html', '_blank') ;
-})
+});
 
 $("#new_river").click(function() {
 	window.open('/assets/portfolio/new_river/index.html', '_blank') ;
-})
+});
 
 $("#asia").click(function() {
 	window.open('/assets/portfolio/asia/index.html', '_blank') ;
-})
+});
 
 $("#sejong").click(function() {
 	window.open('/assets/portfolio/sejong/index.html', '_blank') ;
-})
+});
 
 $("#quotes").click(function() {
 	window.open('/assets/portfolio/quotes/index.html', '_blank') ;
-})
+});
 
 $("#weather").click(function() {
 	window.open('/assets/portfolio/weather/index.html', '_blank') ;
-})
+});
 
 $("#wikipedia").click(function() {
 	window.open('/assets/portfolio/wikipedia/index.html', '_blank') ;
-})
+});
 
 $("#stocks").click(function() {
 	window.open('/assets/portfolio/stocks/index.html', '_blank') ;
-})
+});
 
 $("#twitch").click(function() {
 	window.open('/assets/portfolio/twitch/index.html', '_blank') ;
-})
+});
 
 $("#calculator").click(function() {
 	window.open('/assets/portfolio/calculator/index.html', '_blank') ;
-})
+});
 
 $("#pomodoro").click(function() {
 	window.open('/assets/portfolio/pomodoro/index.html', '_blank') ;
-})
+});
 
 $("#ticTacToe").click(function() {
 	window.open('/assets/portfolio/tic_tac_toe/index.html', '_blank') ;
-})
+});
 
 $("#simon").click(function() {
 	window.open('/assets/portfolio/simon_game/index.html', '_blank') ;
-})
+});
 
 
 
