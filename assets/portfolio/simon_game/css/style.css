@@ -18,7 +18,7 @@ body {
   text-align: center;
 }
 .title {
-  font-size: 50px;
+  font-size: 45px;
   font-family: 'Comfortaa', cursive;
   margin-top: 22.5px;
   margin-bottom: 0px;
@@ -48,6 +48,9 @@ sup {
   margin-top: 2.5px;
   margin-bottom: 7.5px;
   padding: 7.5px;
+}
+#startGame {
+    color: rgb(200,200,200);
 }
 .start:hover {
   cursor: pointer;
@@ -203,12 +206,36 @@ input:checked + .slider:before {
   background: rgb(28, 138, 244);
 }
 
+.greenWinner {
+  background: rgb(255, 212, 37);
+}
+.redWinner {
+  background: rgb(255, 212, 37);
+}
+.yellowWinner {
+  background: rgb(255, 212, 37);
+}
+.blueWinner {
+  background: rgb(255, 212, 37);
+}
 
+.greenLoser {
+  background: rgb(131, 0, 21);
+}
+.redLoser {
+  background: rgb(131, 0, 21);
+}
+.yellowLoser {
+  background: rgb(131, 0, 21);
+}
+.blueLoser {
+  background: rgb(131, 0, 21);
+}
 
 
 #instructions {
   position: fixed;
-  bottom: -7px;
+  bottom: -5px;
   left: 10px;
   font-family: Avenir;
   font-size: 15px;
@@ -243,7 +270,7 @@ a:hover {
   height: 100%;
   top: 0;
   z-index: 5;
-  background: rgba(5,5,5,.85);
+  background: rgba(5,5,5,.875);
   display: flex;
   flex-wrap: no-wrap;
   justify-content: center;
