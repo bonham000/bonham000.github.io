@@ -39,13 +39,6 @@ body {
 	font-size: 55px;
 	margin-top: -185px;
 }
-.scrollHover {
-  opacity: 1;
-  transition: opacity .2s ease-out;
-  -moz-transition: opacity .2s ease-out;
-  -webkit-transition: opacity .2s ease-out;
-  -o-transition: opacity .2s ease-out;	
-}
 a, a:visited {
 	color: rgb(45,45,45);
 }
