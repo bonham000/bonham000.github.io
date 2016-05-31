@@ -18,22 +18,18 @@ $(document).ready(function() {
 
 window.onload = function() {
 
-	setTimeout(function() {
+	// Show/Hide page scroll links on mouseover of main text:
+	$("#wrapper").mouseover(function() {
+		$(".name").css("color", "rgba(15,15,15,.35");
+		$(".nameAbout").css("color", "rgba(15,15,15,.15");
+		$(".scroll").css("opacity", "1");
+	});
 
-		// Show/Hide page scroll links on mouseover of main text:
-		$("#wrapper").mouseover(function() {
-			$(".name").css("color", "rgba(15,15,15,.35");
-			$(".nameAbout").css("color", "rgba(15,15,15,.15");
-			$(".scroll").css("opacity", "1");
-		});
-
-		$("#wrapper").mouseout(function() {
-			$(".name").css("color", "rgb(45,45,45)");
-			$(".nameAbout").css("color", "rgb(45,45,45");
-			$(".scroll").css("opacity", "0");
-		});
-
-	}, 250);
+	$("#wrapper").mouseout(function() {
+		$(".name").css("color", "rgb(45,45,45)");
+		$(".nameAbout").css("color", "rgb(45,45,45");
+		$(".scroll").css("opacity", "0");
+	});
 
 };
 
