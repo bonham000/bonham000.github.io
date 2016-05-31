@@ -33,7 +33,7 @@ window.onload = function() {
 			$(".scroll").css("opacity", "0");
 		});
 
-	}, 750);
+	}, 250);
 
 };
 
