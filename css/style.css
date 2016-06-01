@@ -152,6 +152,10 @@ a:hover {
 	background: url('/assets/images/simon.png');
 	background-size: cover;
 }
+#unix {
+	background: url('/assets/images/unix.png');
+	background-size: cover;
+}
 
 /* Add hover stlying for each project */
 
@@ -197,7 +201,9 @@ a:hover {
 #simon:hover #overlaySimon {
 	opacity:1;
 }
-
+#unix:hover #overlayUnix {
+	opacity:1;
+}
 /* Styling for Contact Me div */
 
 .contact {

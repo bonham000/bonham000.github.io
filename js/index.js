@@ -116,6 +116,10 @@ $("#simon").click(function() {
 	window.open('/assets/portfolio/simon_game/index.html', '_blank') ;
 });
 
+$("#unix").click(function() {
+	window.open('https://unix-time-stamp.herokuapp.com/', '_blank') ;
+});
+
 
 
 
