@@ -120,6 +120,10 @@ $("#unix").click(function() {
 	window.open('https://unix-time-stamp.herokuapp.com/', '_blank') ;
 });
 
+$("#microUrl").click(function() {
+	window.open('https://micro-url-service.herokuapp.com/', '_blank') ;
+});
+
 
 
 
