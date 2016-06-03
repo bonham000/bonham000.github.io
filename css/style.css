@@ -156,6 +156,10 @@ a:hover {
 	background: url('/assets/images/unix.png');
 	background-size: cover;
 }
+#requestHeader {
+	background: url('/assets/images/request_header.png');
+	background-size: cover;
+}
 #microUrl {
 	background: url('/assets/images/micro_url.png');
 	background-size: cover;
@@ -206,6 +210,9 @@ a:hover {
 	opacity:1;
 }
 #unix:hover #overlayUnix {
+	opacity:1;
+}
+#requestHeader:hover #overlayRequestHeader {
 	opacity:1;
 }
 #microUrl:hover #overlayMicroUrl {
