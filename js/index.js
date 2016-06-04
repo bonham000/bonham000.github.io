@@ -128,6 +128,9 @@ $("#microUrl").click(function() {
 	window.open('https://micro-url-service.herokuapp.com/', '_blank') ;
 });
 
+$("#imageSearch").click(function() {
+	window.open('https://custom-image-search.herokuapp.com/', '_blank') ;
+});
 
 
 

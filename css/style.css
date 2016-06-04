@@ -164,6 +164,10 @@ a:hover {
 	background: url('/assets/images/micro_url.png');
 	background-size: cover;
 }
+#imageSearch {
+	background: url('/assets/images/image_search.png');
+	background-size: cover;
+}
 
 /* Add hover stlying for each project */
 
@@ -216,6 +220,9 @@ a:hover {
 	opacity:1;
 }
 #microUrl:hover #overlayMicroUrl {
+	opacity:1;
+}
+#imageSearch:hover #overlayImageSearch {
 	opacity:1;
 }
 /* Styling for Contact Me div */
