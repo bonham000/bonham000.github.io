@@ -132,6 +132,10 @@ $("#imageSearch").click(function() {
 	window.open('https://custom-image-search.herokuapp.com/', '_blank') ;
 });
 
+$("#fileMeta").click(function() {
+	window.open('https://upload-metadata-microservice.herokuapp.com/', '_blank') ;
+});
+
 
 
 

@@ -168,6 +168,10 @@ a:hover {
 	background: url('/assets/images/image_search.png');
 	background-size: cover;
 }
+#fileMeta {
+	background: url('/assets/images/file_metadata.png');
+	background-size: cover;
+}
 
 /* Add hover stlying for each project */
 
@@ -223,6 +227,9 @@ a:hover {
 	opacity:1;
 }
 #imageSearch:hover #overlayImageSearch {
+	opacity:1;
+}
+#fileMeta:hover #overlayFileMeta {
 	opacity:1;
 }
 /* Styling for Contact Me div */
