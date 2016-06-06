@@ -1,0 +1,26 @@
+      var Component = React.createClass({
+
+        getInitialState: function() {
+          return {value: 'Welcome to a Markdown to HTML converter built with React.js\n===\nHere\'s how to write a subheading\n---\n### And another...\nYou can style text to be **bold**, *italic*, `monospace`, or ~~strikethrough~~\n\nOr easily create a list of items:\n\n* Free Code Camp\n* Reactjs\n* Markdown\n\n*[Or add links like so](https://freecodecamp.com)*\nExperiment on your own and enjoy!\n==='};
+        },
+        
+        handleChange: function(event) {
+          var text = event.target.value;
+          this.setState({value: marked(text)});
+        },
+        
+        render: function () {
+
+          return <div>
+              <h1 className="title">This is a React.js Markdown Previewer</h1>
+              <p className="credits">A Free Code Camp Project by <a target="_blank" href="http://sean-smith.me">Sean Smith</a></p>
+              <p className="result"><code>HTML Result:</code></p>
+              <div className="box" dangerouslySetInnerHTML={{__html: marked(this.state.value)}}/>
+              <p className="source"><code>Markdown Source:</code></p>
+              <textarea class="userTextarea" type="text" onChange={this.handleChange} ref="textarea" defaultValue={this.state.value}></textarea>
+            </div>;
+        }
+        
+        });
+
+ReactDOM.render(<Component />, document.getElementById("area"));

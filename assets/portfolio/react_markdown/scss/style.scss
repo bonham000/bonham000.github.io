@@ -1,0 +1,62 @@
+$font: 'Cherry Cream Soda', cursive;
+$dark: rgb(45,45,45);
+
+body {
+	background: rgb(159, 139, 220);
+	padding: 25px;
+	text-align: center;
+}
+.title {
+	font-family: $font;
+	font-size: 50px;
+	margin-top: 0;
+	color: $dark;
+}
+.credits {
+	font-family: $font;
+	font-size: 22px;
+	color: $dark;
+	margin-top: -25px;
+	margin-bottom: 25px;
+}
+.result {
+	font-family: $font;
+	font-size: 25px;
+	margin-bottom: -10px;
+	color: $dark;
+}
+.box {
+	width: 80%;
+	margin: 15px auto;
+	border: 1px solid white;
+	background: rgb(90, 206, 129);
+	text-align: left;
+	border-radius: 3px;
+	border: 1px solid rgb(30,30,30);
+	padding: 15px;
+
+}
+.source {
+	font-family: $font;
+	font-size: 25px;
+	margin-bottom: 5px;
+	color: $dark;
+}
+textarea {
+	width: 80%;
+	min-height: 400px;
+	background: rgb(255, 133, 111);
+	border-radius: 3px;
+	border: 1px solid rgb(30,30,30);
+	padding: 15px;
+	font-size: 18px;
+}
+
+.credits a, .credits a:visited {
+	color: $dark;
+	text-decoration: none;
+}
+.credits a:hover {
+	color: rgb(230,230,230);
+	text-decoration: underline;
+}

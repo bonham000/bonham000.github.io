@@ -1,0 +1,65 @@
+body {
+  background: #9f8bdc;
+  padding: 25px;
+  text-align: center;
+}
+
+.title {
+  font-family: "Cherry Cream Soda", cursive;
+  font-size: 50px;
+  margin-top: 0;
+  color: #2d2d2d;
+}
+
+.credits {
+  font-family: "Cherry Cream Soda", cursive;
+  font-size: 22px;
+  color: #2d2d2d;
+  margin-top: -25px;
+  margin-bottom: 25px;
+}
+
+.result {
+  font-family: "Cherry Cream Soda", cursive;
+  font-size: 25px;
+  margin-bottom: -10px;
+  color: #2d2d2d;
+}
+
+.box {
+  width: 80%;
+  margin: 15px auto;
+  border: 1px solid white;
+  background: #5ace81;
+  text-align: left;
+  border-radius: 3px;
+  border: 1px solid #1e1e1e;
+  padding: 15px;
+}
+
+.source {
+  font-family: "Cherry Cream Soda", cursive;
+  font-size: 25px;
+  margin-bottom: 5px;
+  color: #2d2d2d;
+}
+
+textarea {
+  width: 80%;
+  min-height: 400px;
+  background: #ff856f;
+  border-radius: 3px;
+  border: 1px solid #1e1e1e;
+  padding: 15px;
+  font-size: 18px;
+}
+
+.credits a, .credits a:visited {
+  color: #2d2d2d;
+  text-decoration: none;
+}
+
+.credits a:hover {
+  color: #e6e6e6;
+  text-decoration: underline;
+}

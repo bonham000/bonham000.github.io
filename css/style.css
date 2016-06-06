@@ -152,6 +152,10 @@ a:hover {
 	background: url('/assets/images/simon.png');
 	background-size: cover;
 }
+#markdown {
+	background: url('/assets/images/markdown.png');
+	background-size: cover;
+}
 #unix {
 	background: url('/assets/images/unix.png');
 	background-size: cover;
@@ -215,6 +219,9 @@ a:hover {
 	opacity:1;
 }
 #simon:hover #overlaySimon {
+	opacity:1;
+}
+#markdown:hover #overlayMarkdown {
 	opacity:1;
 }
 #unix:hover #overlayUnix {
