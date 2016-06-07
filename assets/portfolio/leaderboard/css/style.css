@@ -1,0 +1,162 @@
+body {
+  background: #071b1b;
+  color: gainsboro;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: "Domine", serif;
+  color: #ff9632;
+  padding-left: 20px;
+}
+
+th {
+  font-family: "Jura", sans-serif;
+}
+
+table {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 25px;
+}
+
+td {
+  font-family: "Jura", sans-serif;
+}
+
+.mainHeader {
+  font-size: 30px;
+  color: #69d0f7;
+}
+
+.controlHeader {
+  height: 75px;
+}
+
+table th {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+img {
+  height: 65px;
+  width: 65px;
+  border: 1px solid #e6e6e6;
+  border-radius: 50%;
+}
+
+td {
+  border-bottom: 1px solid rgba(230, 230, 230, 0.5);
+}
+
+.entry {
+  transition: background-color 0.5s ease;
+  color: white;
+  height: 55px;
+}
+
+.entry:hover {
+  background-color: #527ad5;
+  color: #ff8c2c;
+}
+.entry:hover a {
+  color: #ff8c2c;
+  text-decoration: underline;
+}
+
+a, a:visited {
+  color: gainsboro;
+  text-decoration: none;
+}
+
+.imgCol {
+  padding-right: 15px;
+  padding-left: 7px;
+  border-right: 1px solid rgba(230, 230, 230, 0.5);
+}
+
+.userCol {
+  padding-left: 15px;
+}
+
+.alltimeCol {
+  border-left: 1px solid rgba(230, 230, 230, 0.5);
+  padding-left: 15px;
+}
+
+.recentCol {
+  border-left: 1px solid rgba(230, 230, 230, 0.5);
+  border-right: 1px solid rgba(230, 230, 230, 0.5);
+  padding-left: 15px;
+}
+
+.username {
+  width: 300px;
+}
+
+.points {
+  width: 150px;
+}
+
+.fa-arrow-up, .fa-arrow-down {
+  transition: background-color 0.5s ease;
+}
+
+.fa-arrow-up:hover {
+  cursor: pointer;
+  color: #ff6b5f;
+}
+
+.fa-arrow-down:hover {
+  cursor: pointer;
+  color: #64f98b;
+}
+
+.credits {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 18px;
+  color: #ff9632;
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+
+.credits a, .credits a:visited {
+  color: #ff9632;
+}
+
+.credits a:hover {
+  color: #69d0f7;
+  text-decoration: underline;
+}
+
+.react {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 40px;
+  color: #69d0f7;
+  margin-top: -10px;
+  padding-bottom: 0px;
+}
+
+.react a, .react a:visited {
+  color: #69d0f7;
+}
+
+.react a:hover {
+  color: #ff9632;
+  text-decoration: underline;
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: #69d0f7;
+  display: none;
+}
+
+.scrollup:hover {
+  color: #ff9632;
+}

@@ -156,6 +156,10 @@ a:hover {
 	background: url('/assets/images/markdown.png');
 	background-size: cover;
 }
+#leaderboard {
+	background: url('/assets/images/leaderboard.png');
+	background-size: cover;
+}
 #unix {
 	background: url('/assets/images/unix.png');
 	background-size: cover;
@@ -222,6 +226,9 @@ a:hover {
 	opacity:1;
 }
 #markdown:hover #overlayMarkdown {
+	opacity:1;
+}
+#leaderboard:hover #overlayLeaderboard {
 	opacity:1;
 }
 #unix:hover #overlayUnix {

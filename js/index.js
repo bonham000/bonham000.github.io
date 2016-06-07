@@ -120,6 +120,10 @@ $("#markdown").click(function() {
 	window.open('/assets/portfolio/react_markdown/index.html', '_blank') ;
 });
 
+$("#leaderboard").click(function() {
+	window.open('/assets/portfolio/leaderboard/index.html', '_blank') ;
+});
+
 $("#unix").click(function() {
 	window.open('https://unix-time-stamp.herokuapp.com/', '_blank') ;
 });

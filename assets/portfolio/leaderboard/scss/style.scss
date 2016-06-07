@@ -1,0 +1,143 @@
+$dark: rgb(7, 27, 27);
+$light: rgb(220,220,220);
+$font: 'Domine', serif;
+$secondary: 'Jura', sans-serif;
+$grey: rgba(230,230,230,.5);
+
+body {
+  background: $dark;
+  color: $light;
+}
+.title {
+  text-align: center;
+  font-size: 40px;
+  font-family: $font;
+  color: rgb(255, 150, 50);
+  padding-left: 20px;
+}
+th {
+  font-family: $secondary;
+}
+table {
+  margin: 0 auto;
+  text-align: left;
+  font-size: 25px;
+}
+td {
+  font-family: $secondary;
+}
+.mainHeader {
+  font-size: 30px;
+  color: rgb(105, 208, 247);
+}
+.controlHeader {
+  height: 75px;
+}
+table th {
+  padding-left: 5px;
+  padding-right: 5px;
+}
+img {
+  height: 65px;
+  width: 65px;
+  border: 1px solid rgb(230,230,230);
+  border-radius: 50%;
+}
+td {
+  border-bottom: 1px solid $grey;
+}
+.entry {
+  transition: background-color 0.5s ease;
+  color: white;
+  height: 55px;
+}
+.entry:hover {
+  background-color: rgb(82, 122, 213);
+  color: rgb(255, 140, 44);
+  
+  a {
+    color: rgb(255, 140, 44);
+    text-decoration: underline;
+  }
+}
+a, a:visited {
+  color: $light;
+  text-decoration: none;
+}
+
+.imgCol {
+  padding-right: 15px;
+  padding-left: 7px;
+  border-right: 1px solid $grey;
+}
+.userCol {
+  padding-left: 15px;
+}
+.alltimeCol {
+  border-left: 1px solid $grey;
+  padding-left: 15px;
+}
+.recentCol {
+  border-left: 1px solid $grey;
+  border-right: 1px solid $grey;
+  padding-left: 15px;
+}
+.username {
+  width: 300px;
+}
+.points {
+  width: 150px;
+}
+.fa-arrow-up, .fa-arrow-down {
+  transition: background-color 0.5s ease;
+}
+.fa-arrow-up:hover {
+  cursor: pointer;
+  color: rgb(255, 107, 95);
+}
+.fa-arrow-down:hover {
+  cursor: pointer;
+  color: rgb(100, 249, 139);
+}
+
+.credits {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 18px;
+  color: rgb(255, 150, 50);
+  padding-top: 20px;
+  padding-bottom: 0;
+}
+.credits a, .credits a:visited {
+  color: rgb(255, 150, 50);
+}
+.credits a:hover {
+  color: rgb(105, 208, 247);
+  text-decoration: underline;
+}
+.react {
+  font-family: Avenir;
+  text-align: center;
+  font-size: 40px;
+  color: rgb(105, 208, 247);
+  margin-top: -10px;
+  padding-bottom: 0px;  
+}
+.react a, .react a:visited {
+  color: rgb(105, 208, 247);
+}
+.react a:hover {
+  color: rgb(255, 150, 50);
+  text-decoration: underline;
+}
+
+.scrollup {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  color: rgb(105, 208, 247);
+  display: none;
+}
+.scrollup:hover {
+  color: rgb(255, 150, 50);
+}
