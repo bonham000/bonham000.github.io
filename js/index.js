@@ -128,6 +128,10 @@ $("#unix").click(function() {
 	window.open('https://unix-time-stamp.herokuapp.com/', '_blank') ;
 });
 
+$("#barChart").click(function() {
+	window.open('/assets/portfolio/bar_chart/index.html', '_blank') ;
+});
+
 $("#requestHeader").click(function() {
 	window.open('https://request-header-parser-service.herokuapp.com/', '_blank') ;
 });
