@@ -132,6 +132,10 @@ $("#barChart").click(function() {
 	window.open('/assets/portfolio/bar_chart/index.html', '_blank') ;
 });
 
+$("#scatterplot").click(function() {
+	window.open('/assets/portfolio/scatterplot/index.html', '_blank') ;
+});
+
 $("#requestHeader").click(function() {
 	window.open('https://request-header-parser-service.herokuapp.com/', '_blank') ;
 });

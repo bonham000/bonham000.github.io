@@ -164,6 +164,10 @@ a:hover {
 	background: url('/assets/images/bar_chart.png');
 	background-size: cover;
 }
+#scatterplot {
+	background: url('/assets/images/scatterplot.png');
+	background-size: cover;
+}
 #unix {
 	background: url('/assets/images/unix.png');
 	background-size: cover;
@@ -239,6 +243,9 @@ a:hover {
 	opacity:1;
 }
 #barChart:hover #overlayBarChart {
+	opacity:1;
+}
+#scatterplot:hover #overlayScatterPlot {
 	opacity:1;
 }
 #requestHeader:hover #overlayRequestHeader {
