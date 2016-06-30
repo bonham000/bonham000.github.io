@@ -168,6 +168,14 @@ a:hover {
 	background: url('/assets/images/scatterplot.png');
 	background-size: cover;
 }
+#forceLayout {
+	background: url('/assets/images/force_layout.png');
+	background-size: cover;
+}
+#globalMap {
+	background: url('/assets/images/global_map.png');
+	background-size: cover;
+}
 #unix {
 	background: url('/assets/images/unix.png');
 	background-size: cover;
@@ -246,6 +254,12 @@ a:hover {
 	opacity:1;
 }
 #scatterplot:hover #overlayScatterPlot {
+	opacity:1;
+}
+#forceLayout:hover #overlayForceLayout {
+	opacity:1;
+}
+#globalMap:hover #overlayGlobalMap {
 	opacity:1;
 }
 #requestHeader:hover #overlayRequestHeader {

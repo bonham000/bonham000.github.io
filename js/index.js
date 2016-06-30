@@ -136,6 +136,14 @@ $("#scatterplot").click(function() {
 	window.open('/assets/portfolio/scatterplot/index.html', '_blank') ;
 });
 
+$("#forceLayout").click(function() {
+	window.open('/assets/portfolio/force_layout/index.html', '_blank') ;
+});
+
+$("#globalMap").click(function() {
+	window.open('/assets/portfolio/global_map/index.html', '_blank') ;
+});
+
 $("#requestHeader").click(function() {
 	window.open('https://request-header-parser-service.herokuapp.com/', '_blank') ;
 });
