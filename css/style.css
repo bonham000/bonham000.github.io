@@ -168,6 +168,10 @@ a:hover {
 	background: url('/assets/images/scatterplot.png');
 	background-size: cover;
 }
+#heatMap {
+	background: url('/assets/images/heat_map.png');
+	background-size: cover;
+}
 #forceLayout {
 	background: url('/assets/images/force_layout.png');
 	background-size: cover;
@@ -254,6 +258,9 @@ a:hover {
 	opacity:1;
 }
 #scatterplot:hover #overlayScatterPlot {
+	opacity:1;
+}
+#heatMap:hover #overlayHeatMap {
 	opacity:1;
 }
 #forceLayout:hover #overlayForceLayout {

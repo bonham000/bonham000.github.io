@@ -1,0 +1,33 @@
+body {
+  background: linear-gradient(rgb(30,30,30), rgb(25,25,25));
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+#chart {
+  width: 1200px;
+  margin: 55px auto;
+}
+
+svg {
+  background: none;
+}
+
+.axis path {
+    fill: none;
+}
+
+.axis line {
+  stroke: #FCFCFC;
+}
+
+div.tooltip {	
+    position: absolute;
+    text-align: left;
+    padding: 12px;
+    font-size: 16px;
+    font-family: Avenir;
+    background: rgba(250, 250, 250, 0.75);
+    border-radius: 3px;
+    pointer-events: none;
+}

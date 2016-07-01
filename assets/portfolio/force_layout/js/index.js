@@ -1,46 +1,63 @@
 "use strict";
 
-// Define chart size
+var windowWidth;
+window.onresize = function () {
+  windowWidth = window.document.body.clientWidth;
+};
+
+var timer = setTimeout(function () {
+  windowWidth = window.document.body.clientWidth;
+}, 150);
+
+//Define chart size
 var width = 1000;
-var height = 600;
+var height = 700;
 
 // Define force layout variables
-var force = d3.layout.force().charge(-65).linkDistance(20).size([width, height]);
+var force = d3.layout.force().charge(-75).linkDistance(30).size([width, height]);
 
 // Create SVG
-var svg = d3.select("#chart").append("svg").attr("width", width - 25).attr("height", height - 25);
+var svg = d3.select("#chart").append("svg").attr("width", width).attr("height", height);
+
+var div = d3.select("body").append("div").attr("class", "tooltip").style("opacity", 0);
 
 // Retrieve data
 d3.json("https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json", function (error, responseData) {
-    if (error) console.log("Error in retrieving data");
+  if (error) console.log("Error in retrieving data");
 
-    // Assign the nodes and links with D3 for the force layout graph:
-    force.nodes(responseData.nodes).links(responseData.links).start();
+  // Assign the nodes and links with D3 for the force layout graph:
+  force.nodes(responseData.nodes).links(responseData.links).start();
 
-    // Append lines for each link
-    var link = svg.selectAll(".link").data(responseData.links).enter().append("line").attr("class", "link").style("fill", "rgb(25,25,25)").style("stroke-width", 1);
+  // Append lines for each link
+  var link = svg.selectAll(".link").data(responseData.links).enter().append("line").attr("class", "link").style("fill", "rgb(25,25,25)").style("stroke-width", 1);
 
-    // Append span elements for each node, with a class assigned to each country code for the CSS sprites
-    var node = d3.selectAll("body").selectAll('span').data(responseData.nodes).enter().append('span').style('position', 'absolute').style('transform', 'scale(1.25, 1.25)').style('height', '11px').style('width', '16px').attr('class', function (d) {
-        return 'flag flag-' + d.code;
-    }).call(force.drag);
+  var flags = d3.selectAll(".node").data(responseData.nodes).enter().append('span').style('position', 'absolute').style('transform', 'scale(1.5,1.5)').style('height', '11px').style('width', '16px').attr('class', function (d) {
+    return 'flag flag-' + d.code;
+  }).call(force.drag);
 
-    // Return coordiantes for the links and nodes
-    force.on("tick", function () {
-        link.attr("x1", function (d) {
-            return d.source.x;
-        }).attr("y1", function (d) {
-            return d.source.y;
-        }).attr("x2", function (d) {
-            return d.target.x;
-        }).attr("y2", function (d) {
-            return d.target.y;
-        });
+  d3.selectAll("span").on("mouseover", function (d) {
+    div.transition().duration(150).style("opacity", .9);
+    div.html(d.country).style("left", d3.event.pageX + 10 + "px").style("top", d3.event.pageY + 10 + "px");
+  }).on("mouseout", function (d) {
+    div.transition().duration(250).style("opacity", 0);
+  });
 
-        node.style('top', function (d) {
-            return 65 + d.y + 'px';
-        }).style('left', function (d) {
-            return d.x + 'px';
-        });
+  // Return coordiantes for the links and nodes
+  force.on("tick", function () {
+    link.attr("x1", function (d) {
+      return d.source.x;
+    }).attr("y1", function (d) {
+      return d.source.y;
+    }).attr("x2", function (d) {
+      return d.target.x;
+    }).attr("y2", function (d) {
+      return d.target.y;
     });
+
+    flags.style('top', function (d) {
+      return 95 + d.y + 'px';
+    }).style('left', function (d) {
+      return (windowWidth - width) / 2 + d.x + 'px';
+    });
+  });
 });

@@ -1,7 +1,8 @@
+$tan: #FBF2C0;
+
 body {
   background: #43281C;
 }
-
 svg {
   background: #F96F5D;
   margin-left: auto;
@@ -9,80 +10,66 @@ svg {
   margin-top: 15px;
   display: block;
 }
-
 .circles:hover {
-  fill: #FBF2C0 !important;
+  fill: $tan !important;
   cursor: pointer;
 }
-
 .tooltip {
-  background: rgba(30, 30, 30, 0.9);
+  background: rgba(30,30,30,0.9);
   font-size: 14px;
-  color: #FBF2C0;
+  color: $tan;
   padding: 10px;
   padding-left: 20px;
   font-family: Avenir;
 }
-
 .title {
   font-family: Avenir;
   font-size: 30px;
 }
-
 .subtitle {
   font-family: Avenir;
   font-size: 20px;
 }
-
 .axis {
-  fill: none;
-  stroke: black;
+    fill: none;
+    stroke: black;
 }
-
 .tick {
   fill: black;
   stroke: none;
   font-family: Avenir;
 }
-
 .tick line {
   fill: none;
   stroke: black;
 }
-
 .label {
   fill: black;
   stroke: none;
   font-family: Avenir;
 }
-
 .textLabels {
   font-size: 12px;
   font-family: Avenir;
 }
-
 .textLabels:hover {
-  fill: #FBF2C0;
+  fill: $tan;
   cursor: pointer;
 }
-
 .name {
   font-size: 16px;
   text-decoration: underline;
 }
-
 .links, .codeCamp {
   font-family: Avenir;
   font-size: 14px;
   text-decoration: underline;
 }
-
 .dash, .details {
   font-family: Avenir;
   font-size: 14px;
 }
-
 .links:hover, .codeCamp:hover {
   cursor: pointer;
-  fill: #FBF2C0;
+  fill: $tan;
 }

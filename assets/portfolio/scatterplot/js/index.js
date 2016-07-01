@@ -1,12 +1,3 @@
-
-$(document).ready(function() {
-  
-  setTimeout(function() {
-    $('.image').fadeOut(750);
-  }, 1100);
-  
-});
-
 getData();
 
 function getData() {

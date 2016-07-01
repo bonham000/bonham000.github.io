@@ -136,6 +136,10 @@ $("#scatterplot").click(function() {
 	window.open('/assets/portfolio/scatterplot/index.html', '_blank') ;
 });
 
+$("#heatMap").click(function() {
+	window.open('/assets/portfolio/heat_map/index.html', '_blank') ;
+});
+
 $("#forceLayout").click(function() {
 	window.open('/assets/portfolio/force_layout/index.html', '_blank') ;
 });

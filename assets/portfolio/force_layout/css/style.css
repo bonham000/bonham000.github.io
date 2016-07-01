@@ -1,23 +1,40 @@
 body {
   background: #FFFFF2;
+  background: linear-gradient(#FFEAD0, #FFE6E1) fixed no-repeat;
+  min-width: 1000px;
 }
 
 #title {
-  position: absolute;
-  top: 5px;
-  left: 35px;
-  font-size: 22px;
-  font-family: Avenir;
-  z-index: 1;
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Montserrat', serif;
+  color: #113537;
+  margin: 0;
+  padding: 0;
+  height: 0;
 }
 
 #chart {
-  margin-top: 65px;
+  width: 1000px;
+  margin: 65px auto;
 }
 
 .link {
-  stroke: #1e1e1e;
-  stroke-width: 1.5px;
+  stroke: #141414;
+}
+
+div.tooltip {
+  position: absolute;
+  text-align: center;
+  padding: 12px;
+  font-family: Montserrat;
+  font-size: 18px;
+  background: #113537;
+  color: #F76F8E;
+  border: none;
+  border-radius: 5px;
+  pointer-events: none;
+  z-index: 3;
 }
 
 .flag {
