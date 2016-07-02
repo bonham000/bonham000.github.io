@@ -69,7 +69,7 @@ $("#facebook").click(function() {
 });
 
 $("#new_river").click(function() {
-	window.open('/assets/portfolio/new_river/index.html', '_blank') ;
+	window.open('/assets/portfolio/new-river/index.html', '_blank') ;
 });
 
 $("#asia").click(function() {
@@ -109,15 +109,15 @@ $("#pomodoro").click(function() {
 });
 
 $("#ticTacToe").click(function() {
-	window.open('/assets/portfolio/tic_tac_toe/index.html', '_blank') ;
+	window.open('/assets/portfolio/tic-tac-toe/index.html', '_blank') ;
 });
 
 $("#simon").click(function() {
-	window.open('/assets/portfolio/simon_game/index.html', '_blank') ;
+	window.open('/assets/portfolio/simon-game/index.html', '_blank') ;
 });
 
 $("#markdown").click(function() {
-	window.open('/assets/portfolio/react_markdown/index.html', '_blank') ;
+	window.open('/assets/portfolio/react-markdown/index.html', '_blank') ;
 });
 
 $("#leaderboard").click(function() {
@@ -129,7 +129,7 @@ $("#unix").click(function() {
 });
 
 $("#barChart").click(function() {
-	window.open('/assets/portfolio/bar_chart/index.html', '_blank') ;
+	window.open('/assets/portfolio/bar-chart/index.html', '_blank') ;
 });
 
 $("#scatterplot").click(function() {
@@ -137,15 +137,15 @@ $("#scatterplot").click(function() {
 });
 
 $("#heatMap").click(function() {
-	window.open('/assets/portfolio/heat_map/index.html', '_blank') ;
+	window.open('/assets/portfolio/heat-map/index.html', '_blank') ;
 });
 
 $("#forceLayout").click(function() {
-	window.open('/assets/portfolio/force_layout/index.html', '_blank') ;
+	window.open('/assets/portfolio/force-layout/index.html', '_blank') ;
 });
 
 $("#globalMap").click(function() {
-	window.open('/assets/portfolio/global_map/index.html', '_blank') ;
+	window.open('/assets/portfolio/global-map/index.html', '_blank') ;
 });
 
 $("#requestHeader").click(function() {

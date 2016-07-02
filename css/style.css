@@ -105,7 +105,7 @@ a:hover {
 	background-size: cover;
 }
 #newRiver {
-	background: url('/assets/images/new_river.png');
+	background: url('/assets/images/new-river.png');
 	background-size: cover;
 }
 #asia {
@@ -161,7 +161,7 @@ a:hover {
 	background-size: cover;
 }
 #barChart {
-	background: url('/assets/images/bar_chart.png');
+	background: url('/assets/images/bar-chart.png');
 	background-size: cover;
 }
 #scatterplot {
@@ -169,15 +169,15 @@ a:hover {
 	background-size: cover;
 }
 #heatMap {
-	background: url('/assets/images/heat_map.png');
+	background: url('/assets/images/heat-map.png');
 	background-size: cover;
 }
 #forceLayout {
-	background: url('/assets/images/force_layout.png');
+	background: url('/assets/images/force-layout.png');
 	background-size: cover;
 }
 #globalMap {
-	background: url('/assets/images/global_map.png');
+	background: url('/assets/images/global-map.png');
 	background-size: cover;
 }
 #unix {
@@ -185,19 +185,19 @@ a:hover {
 	background-size: cover;
 }
 #requestHeader {
-	background: url('/assets/images/request_header.png');
+	background: url('/assets/images/request-header.png');
 	background-size: cover;
 }
 #microUrl {
-	background: url('/assets/images/micro_url.png');
+	background: url('/assets/images/micro-url.png');
 	background-size: cover;
 }
 #imageSearch {
-	background: url('/assets/images/image_search.png');
+	background: url('/assets/images/image-search.png');
 	background-size: cover;
 }
 #fileMeta {
-	background: url('/assets/images/file_metadata.png');
+	background: url('/assets/images/file-metadata.png');
 	background-size: cover;
 }
 
