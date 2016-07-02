@@ -17,8 +17,8 @@ var mint = "#05B89A",
     sun = "#FF6307",
     heart = "#FF4739",
     red = "#FF1907",
-    hot = "F31F87",
-    colors = ["#05B89A", "#0B90B6", "#FFCE65", "#FFC039", "#FFC707", "#FF9339", "#FF6307", "#FF4739", "#FF1907", "F31F87"],
+    hot = "960018",
+    colors = ["#05B89A", "#0B90B6", "#FFCE65", "#FFC039", "#FFC707", "#FF9339", "#FF6307", "#FF4739", "#FF1907", "960018"],
     legendScale = ["0 - 3", "3 - 5.5", "5.5 - 6", "6 - 6.5", "6.5 - 7", "7 - 8.5", "8.5 - 9", "9 - 9.5", "9.5 - 10", "10+"];
 
 // Function to scale temperature to color:
