@@ -81,15 +81,15 @@ $("#sejong").click(function() {
 });
 
 $("#quotes").click(function() {
-	window.open('/assets/portfolio/quotes/index.html', '_blank') ;
+	window.open('/assets/portfolio/quotes-2/index.html', '_blank') ;
 });
 
 $("#weather").click(function() {
-	window.open('/assets/portfolio/weather/index.html', '_blank') ;
+	window.open('/assets/portfolio/weather-2/index.html', '_blank') ;
 });
 
 $("#wikipedia").click(function() {
-	window.open('/assets/portfolio/wikipedia/index.html', '_blank') ;
+	window.open('/assets/portfolio/wikipedia-2/index.html', '_blank') ;
 });
 
 $("#stocks").click(function() {
@@ -97,23 +97,23 @@ $("#stocks").click(function() {
 });
 
 $("#twitch").click(function() {
-	window.open('/assets/portfolio/twitch/index.html', '_blank') ;
+	window.open('/assets/portfolio/twitch-2/index.html', '_blank') ;
 });
 
 $("#calculator").click(function() {
-	window.open('/assets/portfolio/calculator/index.html', '_blank') ;
+	window.open('/assets/portfolio/calculator-2/index.html', '_blank') ;
 });
 
 $("#pomodoro").click(function() {
-	window.open('/assets/portfolio/pomodoro/index.html', '_blank') ;
+	window.open('/assets/portfolio/pomodoro-2/index.html', '_blank') ;
 });
 
 $("#ticTacToe").click(function() {
-	window.open('/assets/portfolio/tic-tac-toe/index.html', '_blank') ;
+	window.open('/assets/portfolio/tic-tac-toe-2/index.html', '_blank') ;
 });
 
 $("#simon").click(function() {
-	window.open('/assets/portfolio/simon-game/index.html', '_blank') ;
+	window.open('/assets/portfolio/simon-2/index.html', '_blank') ;
 });
 
 $("#markdown").click(function() {

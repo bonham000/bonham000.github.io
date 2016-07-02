@@ -117,15 +117,15 @@ a:hover {
 	background-size: cover;
 }
 #quotes {
-	background: url('/assets/images/quotes.png');
+	background: url('/assets/images/quotes-2.png');
 	background-size: cover;
 }
 #weather {
-	background: url('/assets/images/weather.png');
+	background: url('/assets/images/weather-2.png');
 	background-size: cover;
 }
 #wikipedia {
-	background: url('/assets/images/wikipedia.png');
+	background: url('/assets/images/wikipedia-2.png');
 	background-size: cover;
 }
 #stocks {
@@ -133,23 +133,23 @@ a:hover {
 	background-size: cover;
 }
 #twitch {
-	background: url('/assets/images/twitch.png');
+	background: url('/assets/images/twitch-2.png');
 	background-size: cover;
 }
 #calculator {
-	background: url('/assets/images/calculator.png');
+	background: url('/assets/images/calculator-2.png');
 	background-size: cover;
 }
 #pomodoro {
-	background: url('/assets/images/pomodoro.png');
+	background: url('/assets/images/pomodoro-2.png');
 	background-size: cover;
 }
 #ticTacToe {
-	background: url('/assets/images/ticTacToe.png');
+	background: url('/assets/images/tic-tac-toe-2.png');
 	background-size: cover;
 }
 #simon {
-	background: url('/assets/images/simon.png');
+	background: url('/assets/images/simon-2.png');
 	background-size: cover;
 }
 #markdown {
