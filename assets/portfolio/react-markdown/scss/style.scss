@@ -1,62 +1,76 @@
-$font: 'Cherry Cream Soda', cursive;
-$dark: rgb(45,45,45);
+$dark: #191919;
+$back: #1B2021;
+$title: #FF532F;
+$subtitle: #FFE066;
+$light: #dae9f4;
+$hover: #f94e3f;
+$link: #2892D7;
+$blue: #32C6FF;
+$border: #141414;
+$font: 'Indie Flower', cursive;
+$muli: 'Muli', sans-serif;
 
 body {
-	background: rgb(159, 139, 220);
-	padding: 25px;
-	text-align: center;
+background-color: $back;
+background-image: url("http://i1361.photobucket.com/albums/r662/bonham000/Codepen%20Images/dotnoise-light-grey_zpskfycsh5a.png");
+  min-width: 1000px;
 }
 .title {
-	font-family: $font;
-	font-size: 50px;
-	margin-top: 0;
-	color: $dark;
+  font-family: $font;
+  text-align: center;
+  font-size: 65px;
+  color: $title;
+  margin-top: 10px;
+  margin-bottom: 0px;
 }
-.credits {
-	font-family: $font;
-	font-size: 22px;
-	color: $dark;
-	margin-top: -25px;
-	margin-bottom: 25px;
+.subtitle {
+  font-family: $font;
+  text-align: center;
+  font-size: 26px;
+  color: $subtitle;
+  margin-top: -15px;
+  margin-bottom: 15px;
+  a, a:visited {
+    text-decoration: none;
+    color: $subtitle;
+  }
+  a:hover {
+    text-decoration: underline;
+    color: $blue;
+  }
 }
-.result {
-	font-family: $font;
-	font-size: 25px;
-	margin-bottom: -10px;
-	color: $dark;
+a, a:visited {
+  color: $link;
 }
-.box {
-	width: 80%;
-	margin: 15px auto;
-	border: 1px solid white;
-	background: rgb(90, 206, 129);
-	text-align: left;
-	border-radius: 3px;
-	border: 1px solid rgb(30,30,30);
-	padding: 15px;
-
+a:hover {
+  text-decoration: underline;
+  color: $hover;
 }
-.source {
-	font-family: $font;
-	font-size: 25px;
-	margin-bottom: 5px;
-	color: $dark;
-}
-textarea {
-	width: 80%;
-	min-height: 400px;
-	background: rgb(255, 133, 111);
-	border-radius: 3px;
-	border: 1px solid rgb(30,30,30);
-	padding: 15px;
-	font-size: 18px;
-}
-
-.credits a, .credits a:visited {
-	color: $dark;
-	text-decoration: none;
-}
-.credits a:hover {
-	color: rgb(230,230,230);
-	text-decoration: underline;
+.flexContainer {
+  display: flex;
+  flex-direction: row;
+  .textInput {
+    font-size: 15px;
+    font-family: $muli;
+    color: $dark;
+    background: #FFF1D0;
+    width: 40vw;
+    max-width: 40vw;
+    min-height: 460px;
+    margin-top: 5px;
+    margin-left: 10px;
+    margin-rigth: 10px;
+    padding: 15px;
+    border: 1px solid $border;
+  }
+  .textOutput {
+    background: #272625;
+    color: $light;
+    font-size: 15px;
+    font-family: $muli;
+    width: 60vw;
+    margin: 5px;
+    padding: 0 15px 0 15px;
+    border: 1px solid $border;
+  }
 }
