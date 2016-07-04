@@ -160,6 +160,10 @@ a:hover {
 	background: url('/assets/images/leaderboard.png');
 	background-size: cover;
 }
+#recipeBox {
+	background: url('/assets/images/recipe-box.png');
+	background-size: cover;
+}
 #barChart {
 	background: url('/assets/images/bar-chart.png');
 	background-size: cover;
@@ -249,6 +253,9 @@ a:hover {
 	opacity:1;
 }
 #leaderboard:hover #overlayLeaderboard {
+	opacity:1;
+}
+#recipeBox:hover #overlayRecipeBox {
 	opacity:1;
 }
 #unix:hover #overlayUnix {
