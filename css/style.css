@@ -164,6 +164,10 @@ a:hover {
 	background: url('/assets/images/recipe-box.png');
 	background-size: cover;
 }
+#conway {
+	background: url('/assets/images/conway.png');
+	background-size: cover;
+}
 #barChart {
 	background: url('/assets/images/bar-chart.png');
 	background-size: cover;
@@ -256,6 +260,9 @@ a:hover {
 	opacity:1;
 }
 #recipeBox:hover #overlayRecipeBox {
+	opacity:1;
+}
+#conway:hover #overlayConway {
 	opacity:1;
 }
 #unix:hover #overlayUnix {
