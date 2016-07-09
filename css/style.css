@@ -168,6 +168,10 @@ a:hover {
 	background: url('/assets/images/conway.png');
 	background-size: cover;
 }
+#dungeon {
+	background: url('/assets/images/dungeon.png');
+	background-size: cover;
+}
 #barChart {
 	background: url('/assets/images/bar-chart.png');
 	background-size: cover;
@@ -263,6 +267,9 @@ a:hover {
 	opacity:1;
 }
 #conway:hover #overlayConway {
+	opacity:1;
+}
+#dungeon:hover #overlayDungeon {
 	opacity:1;
 }
 #unix:hover #overlayUnix {

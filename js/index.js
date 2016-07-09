@@ -132,6 +132,10 @@ $("#conway").click(function() {
 	window.open('/assets/portfolio/conway/index.html', '_blank') ;
 });
 
+$("#dungeon").click(function() {
+	window.open('/assets/portfolio/dungeon/index.html', '_blank') ;
+});
+
 $("#unix").click(function() {
 	window.open('https://unix-time-stamp.herokuapp.com/', '_blank') ;
 });
