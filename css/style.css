@@ -1,12 +1,9 @@
 body {
 	padding: 0;
-	background: rgb(255, 227, 157);
 	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
-	font-family: Avenir;
 }
 .main {
 	text-align: center;
-	font-family: Avenir;
 	color: rgb(45,45,45);
 	display: -webkit-flex;
 	display: flex;
@@ -25,19 +22,20 @@ body {
 }
 .name {
 	margin-top: auto;
+	font-family: 'Josefin Sans', sans-serif;
 	font-size: 90px;
 }
 .nameAbout {
-	margin-top: -60px;
-	font-size: 25px;
+	margin-top: -50px;
+	font-family: 'EB Garamond', serif;
+	font-size: 32px;
 	max-width: 650px;
 }
-.scroll {
-	/*display: none;*/
-	opacity: 0;
-	z-index: 5;
-	font-size: 55px;
-	margin-top: -185px;
+.thanks {
+	margin-top: -10px;
+	font-family: 'EB Garamond', serif;
+	font-size: 40px;
+	max-width: 650px;
 }
 a, a:visited {
 	color: rgb(45,45,45);
@@ -47,7 +45,6 @@ a:hover {
 }
 
 /* Styling for portfolio flexbox */
-
 .container {
   	display: -webkit-flex;
 	display: flex;
@@ -87,7 +84,7 @@ a:hover {
 	cursor: pointer;
 }
 #text {
-	font-family: Avenir;
+	font-family: 'EB Garamond', serif;
 	color: rgb(255, 211, 78);
 	font-size: 35px;
 	padding: 50px;
@@ -95,7 +92,6 @@ a:hover {
 }
 
 /* Add project images for each flexbox div */
-
 #google {
 	background: url('/assets/images/google.png');
 	background-size: cover;
@@ -214,7 +210,6 @@ a:hover {
 }
 
 /* Add hover stlying for each project */
-
 #google:hover #overlayGoogle {
 	opacity:1;
 }
@@ -302,8 +297,8 @@ a:hover {
 #fileMeta:hover #overlayFileMeta {
 	opacity:1;
 }
-/* Styling for Contact Me div */
 
+/* Styling for Contact Me div */
 .contact {
 	padding: 0;
 	display: -webkit-flex;
@@ -337,7 +332,6 @@ a:hover {
 }
 
 /* Styling for scroll to top element */
-
 .scrollTop {
 	position: fixed;
 	display: none;
@@ -371,6 +365,12 @@ a:hover {
 	.name, .nameAbout {
 		display: block !important;
 	}
+	.nameAbout {
+		font-size: 28px;
+	}
+	.thanks {
+		font-size: 30px;
+	}
 }
 @media screen and (max-width: 1000px) {
 	.imageBox {
@@ -390,7 +390,10 @@ a:hover {
 		font-size: 80px;
 	}
 	.nameAbout {
-		font-size: 20px;
+		font-size: 25px;
+	}
+	.thanks {
+		font-size: 28px;
 	}
 }
 @media screen and (max-width: 750px) {
