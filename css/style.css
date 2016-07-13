@@ -22,18 +22,18 @@ body {
 }
 .name {
 	margin-top: auto;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: Avenir;
 	font-size: 90px;
 }
 .nameAbout {
 	margin-top: -50px;
-	font-family: 'EB Garamond', serif;
+	font-family: Avenir;
 	font-size: 32px;
 	max-width: 650px;
 }
 .thanks {
 	margin-top: -10px;
-	font-family: 'EB Garamond', serif;
+	font-family: Avenir;
 	font-size: 40px;
 	max-width: 650px;
 }
