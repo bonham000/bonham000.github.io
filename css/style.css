@@ -23,6 +23,7 @@ body {
 .name {
 	margin-top: auto;
 	font-family: Avenir;
+	font-family: 'Raleway', sans-serif;
 	font-size: 90px;
 }
 .nameAbout {
@@ -83,10 +84,10 @@ a:hover {
 .overlay:hover {
 	cursor: pointer;
 }
-#text {
+.text {
 	font-family: 'EB Garamond', serif;
 	color: rgb(255, 211, 78);
-	font-size: 35px;
+	font-size: 40px;
 	padding: 50px;
 	text-align: center;
 }
@@ -146,6 +147,10 @@ a:hover {
 }
 #simon {
 	background: url('/assets/images/simon-2.png');
+	background-size: cover;
+}
+#reactProjects {
+	background: url('/assets/images/reactProjects.png');
 	background-size: cover;
 }
 #markdown {
@@ -250,6 +255,9 @@ a:hover {
 	opacity:1;
 }
 #simon:hover #overlaySimon {
+	opacity:1;
+}
+#reactProjects:hover #overlayReactProjects {
 	opacity:1;
 }
 #markdown:hover #overlayMarkdown {
@@ -397,12 +405,23 @@ a:hover {
 	}
 }
 @media screen and (max-width: 750px) {
+	.main {
+		display: relative;
+		margin-top: 50px;
+	}
 	.name {
 		font-size: 60px;
 		padding-bottom: 15px;
 	}
 	.nameAbout {
 		padding: 20px;
+	}
+	.thanks {
+		margin-top: -25px;
+	}
+	.contact {
+		display: relative;
+		padding-bottom: 125px;
 	}
 @media screen and (max-width: 500px) {
 	.imageBox {
