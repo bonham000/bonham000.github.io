@@ -380,12 +380,14 @@ a:hover {
 	}
 	.name, .nameAbout {
 		display: block !important;
+		font-family: Avenir;
 	}
 	.nameAbout {
 		font-size: 28px;
 	}
 	.thanks {
 		font-size: 30px;
+		font-family: Avenir;
 	}
 }
 @media screen and (max-width: 1000px) {
