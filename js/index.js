@@ -115,6 +115,10 @@ $("#recipeBox").click(function() {
 	window.open('/assets/portfolio/recipe-box/index.html', '_blank') ;
 });
 
+$("#notesApp").click(function() {
+	window.open('/assets/portfolio/notes-app/index.html', '_blank') ;
+});
+
 $("#conway").click(function() {
 	window.open('/assets/portfolio/conway/index.html', '_blank') ;
 });

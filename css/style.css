@@ -17,24 +17,25 @@ body {
 }
 #wrapper {
 	width: 650px;
-	height: 275px;
-	margin-bottom: 150px;
+	height: 400px;
+	padding-bottom: 250px;
 }
 .name {
-	margin-top: auto;
 	font-family: Avenir;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Cagliostro', sans-serif;
 	font-size: 90px;
 }
 .nameAbout {
 	margin-top: -50px;
 	font-family: Avenir;
+	font-family: 'Cagliostro', sans-serif;
 	font-size: 32px;
 	max-width: 650px;
 }
 .thanks {
 	margin-top: -10px;
 	font-family: Avenir;
+	font-family: 'Cagliostro', sans-serif;
 	font-size: 40px;
 	max-width: 650px;
 }
@@ -165,6 +166,10 @@ a:hover {
 	background: url('/assets/images/recipe-box.png');
 	background-size: cover;
 }
+#notesApp {
+	background: url('/assets/images/notes-app.png');
+	background-size: cover;
+}
 #conway {
 	background: url('/assets/images/conway.png');
 	background-size: cover;
@@ -264,6 +269,9 @@ a:hover {
 	opacity:1;
 }
 #leaderboard:hover #overlayLeaderboard {
+	opacity:1;
+}
+#notesApp:hover #overlayNotesApp {
 	opacity:1;
 }
 #recipeBox:hover #overlayRecipeBox {
