@@ -461,6 +461,7 @@ body {
   }
   .metaData .analysis .analysisText {
     font-size: 18px;
+    width: 90vw;
   }
   .metaData .codeComparison #chartContainer {
     width: 350px;
@@ -472,6 +473,7 @@ body {
   }
   .metaData .timeComparison .analysisText {
     font-size: 18px;
+    width: 90vw;
   }
   .metaData .timeComparison table {
     margin: auto;
