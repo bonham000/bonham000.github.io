@@ -276,7 +276,7 @@ body {
 
 // Responsive Styling ---------------------------------------------------------------------------
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
 	.pageDescription {
 		.title {
 			font-size: 40px;
@@ -299,6 +299,11 @@ body {
 			}
 		}
 	}
+  .projectLinks {
+    .advProjectsWrapper {
+      margin-top: 45px;
+    }
+  }
 	.metaData {
 		.analysis {
 			h1 {
@@ -374,7 +379,7 @@ body {
 			}
 		}
 		.advProjectsWrapper {
-			margin: 5px;
+			margin: 45px 5px 5px 5px;
 			padding-bottom: 15px;
 			width: 450px;
 			.comparisonTitle {
