@@ -78,9 +78,6 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	opacity:0;
-	-webkit-transition: opacity .6s ease;
-	-moz-transition: opacity .6s ease;
 	display: -webkit-flex;
 	display: flex;
 	-webkit-align-items: center;
@@ -234,105 +231,272 @@ a:hover {
 	background-size: cover;
 }
 
+/* Add base opacity for each project */
+#overlayGoogle {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayFacebook {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayNewRiver {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayAsia {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaySejong {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayQuotes {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayWeather {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayWikipedia {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayStocks {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayTwitch {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayCalculator {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayPomodoro {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayTicTacToe {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaySimon {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayFccFrontEnd {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayReactProjects {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaySpaceStation {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayMarkdown {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayLeaderboard {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayNotesApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayRecipeBox {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayConway {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayDungeon {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayUnix {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayBarChart {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayScatterPlot {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayHeatMap {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayForceLayout {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayGlobalMap {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayRequestHeader {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayMicroUrl {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayImageSearch {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayFileMeta {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+
 /* Add hover stlying for each project */
 #google:hover #overlayGoogle {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #facebook:hover #overlayFacebook {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #newRiver:hover #overlayNewRiver {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #asia:hover #overlayAsia {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #sejong:hover #overlaySejong {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #quotes:hover #overlayQuotes {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #weather:hover #overlayWeather {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #wikipedia:hover #overlayWikipedia {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #stocks:hover #overlayStocks {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #twitch:hover #overlayTwitch {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #calculator:hover #overlayCalculator {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #pomodoro:hover #overlayPomodoro {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #ticTacToe:hover #overlayTicTacToe {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #simon:hover #overlaySimon {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #fccFrontEnd:hover #overlayFccFrontEnd {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #reactProjects:hover #overlayReactProjects {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #spaceStation:hover #overlaySpaceStation {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #markdown:hover #overlayMarkdown {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #leaderboard:hover #overlayLeaderboard {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #notesApp:hover #overlayNotesApp {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #recipeBox:hover #overlayRecipeBox {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #conway:hover #overlayConway {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #dungeon:hover #overlayDungeon {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #unix:hover #overlayUnix {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #barChart:hover #overlayBarChart {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #scatterplot:hover #overlayScatterPlot {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #heatMap:hover #overlayHeatMap {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #forceLayout:hover #overlayForceLayout {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #globalMap:hover #overlayGlobalMap {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #requestHeader:hover #overlayRequestHeader {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #microUrl:hover #overlayMicroUrl {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #imageSearch:hover #overlayImageSearch {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 #fileMeta:hover #overlayFileMeta {
 	opacity:1;
+	transition: opacity 1500ms ease;
 }
 
 /* Styling for Contact Me div */
