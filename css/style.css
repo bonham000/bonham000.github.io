@@ -1,6 +1,7 @@
 body {
 	padding: 0;
 	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
+	font-family: Avenir, sans-serif;
 }
 .main {
 	text-align: center;
@@ -17,25 +18,25 @@ body {
 }
 #wrapper {
 	width: 650px;
-	height: 400px;
-	padding-bottom: 250px;
+	padding-bottom: 45px;
+}
+.avatar {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 1px solid rgba(25,25,25,0.5);
 }
 .name {
-	font-family: Avenir;
-	font-family: 'Cagliostro', sans-serif;
 	font-size: 90px;
+	margin: -5px 0 0 0;
 }
 .nameAbout {
-	margin-top: -50px;
-	font-family: Avenir;
-	font-family: 'Cagliostro', sans-serif;
+	margin-top: -5px;
 	font-size: 32px;
 	max-width: 650px;
 }
 .thanks {
-	margin-top: -10px;
-	font-family: Avenir;
-	font-family: 'Cagliostro', sans-serif;
+	margin-top: -20px;
 	font-size: 40px;
 	max-width: 650px;
 }
@@ -356,9 +357,11 @@ a:hover {
 .fa {
 	padding: 20px;
 	color: rgb(45,45,45);
+	transition: color 350ms ease;
 }
 .fa:hover {
 	color: rgb(255, 211, 78);
+	transition: color 350ms ease;
 }
 
 /* Styling for scroll to top element */
@@ -418,6 +421,10 @@ a:hover {
 	#wrapper {
 		width: 500px;
 	}
+	.avatar {
+		width: 175px;
+		height: 175px;
+	}
 	.name {
 		font-size: 80px;
 	}
@@ -433,6 +440,13 @@ a:hover {
 		display: relative;
 		margin-top: 50px;
 	}
+	#wrapper {
+		padding-bottom: 150px;
+	}
+	.avatar {
+		width: 150px;
+		height: 150px;
+	}
 	.name {
 		font-size: 60px;
 		padding-bottom: 15px;
@@ -445,6 +459,8 @@ a:hover {
 	}
 	.contact {
 		display: relative;
+		width: 450px;
+		margin: auto;
 		padding-bottom: 125px;
 	}
 @media screen and (max-width: 500px) {
@@ -455,11 +471,31 @@ a:hover {
 	#text {
 		font-size: 20px;
 	}
+	#wrapper {
+		padding-bottom: 125px;
+	}
+	.name {
+		font-size: 60px;
+		margin-top: 15px;
+		margin-bottom: -35px;
+	}
+	.nameAbout {
+		font-size: 24px;
+	}
+	.thanks {
+		font-size: 26px;
+	}
+	.contact {
+		width: 400px;
+	}
 	.fa {
 		font-size: 75px;
 	}
 	.scrollTop {
 		display: none !important;
+	}
+	.fa:hover {
+		color: rgb(45,45,45);
 	}
 	/* Remove hover stlying for each project on mobile: */
 	#google:hover #overlayGoogle {
