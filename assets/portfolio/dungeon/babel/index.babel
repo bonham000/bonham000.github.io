@@ -662,7 +662,14 @@ class App extends React.Component {
 		var currentMap = this.state.map.slice();
 		var offset = this.state.offset;
 		var userLocation = this.state.userLocation;
-		var arrow = event.keyCode;
+    var arrow;
+    
+    if (event === 37) { arrow = 37 }
+    else if (event === 38) { arrow = 38 }
+    else if (event === 39) { arrow = 39 }
+    else if (event === 40) { arrow = 40 }
+
+    else { arrow = event.keyCode; event.preventDefault(); }
 
 		// Functions to handle movement; there are four functions which are basically identical:
 
@@ -670,7 +677,7 @@ class App extends React.Component {
 		if (arrow === 37) {
 
 			// Prevent arrow key from scrolling the page:
-			event.preventDefault();
+			
 
 			// If player dies, prevent further movement:
 			if (this.state.playing) {
@@ -737,7 +744,6 @@ class App extends React.Component {
 		}
 		// Move Up:
 		else if (arrow === 38) {
-			event.preventDefault();
 
 			if (this.state.playing) {
 
@@ -821,7 +827,6 @@ class App extends React.Component {
 		}
 		// Move Right
 		else if (arrow === 39) {
-			event.preventDefault();
 
 			if (this.state.playing) {
 
@@ -895,7 +900,6 @@ class App extends React.Component {
 		}
 		// Move Down:
 		else if (arrow === 40) {
-			event.preventDefault();
 
 			if (this.state.playing) {
 
@@ -1008,7 +1012,8 @@ class App extends React.Component {
 						experience = {this.state.experience}
 						certifications = {this.state.certifications} />
 					<Game
-						gameMap = {this.state.renderMap} />
+						gameMap = {this.state.renderMap} 
+            clickMove = {this.handleKeyPress} />
 					<Gameover
 						status = {this.state.playing}
 						replay = {this.state.replay}
@@ -1059,6 +1064,7 @@ class About extends React.Component {
 								</div>
 								<p className = "challengeNames">Front End — Data Viz&nbsp;&nbsp;—&nbsp;&nbsp;Back End</p>
 								<p>Collect tech skill items to level up your coding skills. Be careful, don't attempt the challenges without leveling up your skills. If you think you are ready, click the Free Code Camp Logo to begin.</p>
+                <p>(If you are on mobile, you can move by pressing the squares adjacent to your player icon. It's not perfect but it does work.)</p>
 								<img className = "fccLogo" src = "http://i1361.photobucket.com/albums/r662/bonham000/Roguelike/fcc_puck_zps7ddvum7q.png" alt = "Enter Icon" onClick = {this.props.startGame} />
 							</div>
 						</div>
@@ -1202,6 +1208,14 @@ class Game extends React.Component {
 	render() {
 		var gridStyle, gridColor;
 		var mapData = this.props.gameMap;
+    
+    var userIndexValue;
+    
+    for (var i = 0; i < mapData.length; i++) {
+      if (mapData[i].user === 1) {
+        userIndexValue = i - 1;
+      }
+    }
 
 		var renderMap = mapData.map( (grid, i) => {
 
@@ -1252,14 +1266,55 @@ class Game extends React.Component {
 			// Add user to user grid:
 			if (grid.user === 1) { gridColor = { background: "url('http://i1361.photobucket.com/albums/r662/bonham000/Roguelike/fcc_puck_zps7ddvum7q.png')", backgroundSize: '51px 51px' } }
 			
-			// Return grid item:
-			return (
-				<div
-					key = {i}
-					className="gridItem"
-					style = {Object.assign({}, gridStyle, gridColor)}>
-				</div>
-			);
+      if (i < userIndexValue - 15) {
+        return (
+          <div
+            key = {i}
+            onClick = {this.props.clickMove.bind(this, 38)}
+            className = "gridItem"
+            style = {Object.assign({}, gridStyle, gridColor)}>
+          </div>
+			  );
+      }
+      else if (i < userIndexValue && i > userIndexValue - 10) {
+        return (
+          <div
+            key = {i}
+            onClick = {this.props.clickMove.bind(this, 37)}
+            className = "gridItem"
+            style = {Object.assign({}, gridStyle, gridColor)}>
+          </div>
+			  );
+      }
+      else if (i > userIndexValue && i < userIndexValue + 10) {
+        return (
+          <div
+            key = {i}
+            onClick = {this.props.clickMove.bind(this, 39)}
+            className = "gridItem"
+            style = {Object.assign({}, gridStyle, gridColor)}>
+          </div>
+			  );
+      }
+      else if (i > userIndexValue + 15) {
+        return (
+          <div
+            key = {i}
+            onClick = {this.props.clickMove.bind(this, 40)}
+            className = "gridItem"
+            style = {Object.assign({}, gridStyle, gridColor)}>
+          </div>
+			  );
+      }
+      else {
+        return (
+          <div
+            key = {i}
+            className = "gridItem"
+            style = {Object.assign({}, gridStyle, gridColor)}>
+          </div>
+			  );
+      }      
 
 		});
 		return (

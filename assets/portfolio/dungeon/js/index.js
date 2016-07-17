@@ -703,7 +703,19 @@ var App = function (_React$Component) {
 		var currentMap = this.state.map.slice();
 		var offset = this.state.offset;
 		var userLocation = this.state.userLocation;
-		var arrow = event.keyCode;
+		var arrow;
+
+		if (event === 37) {
+			arrow = 37;
+		} else if (event === 38) {
+			arrow = 38;
+		} else if (event === 39) {
+			arrow = 39;
+		} else if (event === 40) {
+			arrow = 40;
+		} else {
+			arrow = event.keyCode;event.preventDefault();
+		}
 
 		// Functions to handle movement; there are four functions which are basically identical:
 
@@ -711,7 +723,6 @@ var App = function (_React$Component) {
 		if (arrow === 37) {
 
 			// Prevent arrow key from scrolling the page:
-			event.preventDefault();
 
 			// If player dies, prevent further movement:
 			if (this.state.playing) {
@@ -777,7 +788,6 @@ var App = function (_React$Component) {
 		}
 		// Move Up:
 		else if (arrow === 38) {
-				event.preventDefault();
 
 				if (this.state.playing) {
 
@@ -851,7 +861,6 @@ var App = function (_React$Component) {
 			}
 			// Move Right
 			else if (arrow === 39) {
-					event.preventDefault();
 
 					if (this.state.playing) {
 
@@ -917,7 +926,6 @@ var App = function (_React$Component) {
 				}
 				// Move Down:
 				else if (arrow === 40) {
-						event.preventDefault();
 
 						if (this.state.playing) {
 
@@ -1025,7 +1033,8 @@ var App = function (_React$Component) {
 					experience: this.state.experience,
 					certifications: this.state.certifications }),
 				React.createElement(Game, {
-					gameMap: this.state.renderMap }),
+					gameMap: this.state.renderMap,
+					clickMove: this.handleKeyPress }),
 				React.createElement(Gameover, {
 					status: this.state.playing,
 					replay: this.state.replay,
@@ -1130,6 +1139,11 @@ var About = function (_React$Component3) {
 							'p',
 							null,
 							'Collect tech skill items to level up your coding skills. Be careful, don\'t attempt the challenges without leveling up your skills. If you think you are ready, click the Free Code Camp Logo to begin.'
+						),
+						React.createElement(
+							'p',
+							null,
+							'(If you are on mobile, you can move by pressing the squares adjacent to your player icon. It\'s not perfect but it does work.)'
 						),
 						React.createElement('img', { className: 'fccLogo', src: 'http://i1361.photobucket.com/albums/r662/bonham000/Roguelike/fcc_puck_zps7ddvum7q.png', alt: 'Enter Icon', onClick: this.props.startGame })
 					)
@@ -1376,8 +1390,18 @@ var Game = function (_React$Component6) {
 	}
 
 	Game.prototype.render = function render() {
+		var _this7 = this;
+
 		var gridStyle, gridColor;
 		var mapData = this.props.gameMap;
+
+		var userIndexValue;
+
+		for (var i = 0; i < mapData.length; i++) {
+			if (mapData[i].user === 1) {
+				userIndexValue = i - 1;
+			}
+		}
 
 		var renderMap = mapData.map(function (grid, i) {
 
@@ -1465,11 +1489,36 @@ var Game = function (_React$Component6) {
 				gridColor = { background: "url('http://i1361.photobucket.com/albums/r662/bonham000/Roguelike/fcc_puck_zps7ddvum7q.png')", backgroundSize: '51px 51px' };
 			}
 
-			// Return grid item:
-			return React.createElement('div', {
-				key: i,
-				className: 'gridItem',
-				style: Object.assign({}, gridStyle, gridColor) });
+			if (i < userIndexValue - 15) {
+				return React.createElement('div', {
+					key: i,
+					onClick: _this7.props.clickMove.bind(_this7, 38),
+					className: 'gridItem',
+					style: Object.assign({}, gridStyle, gridColor) });
+			} else if (i < userIndexValue && i > userIndexValue - 10) {
+				return React.createElement('div', {
+					key: i,
+					onClick: _this7.props.clickMove.bind(_this7, 37),
+					className: 'gridItem',
+					style: Object.assign({}, gridStyle, gridColor) });
+			} else if (i > userIndexValue && i < userIndexValue + 10) {
+				return React.createElement('div', {
+					key: i,
+					onClick: _this7.props.clickMove.bind(_this7, 39),
+					className: 'gridItem',
+					style: Object.assign({}, gridStyle, gridColor) });
+			} else if (i > userIndexValue + 15) {
+				return React.createElement('div', {
+					key: i,
+					onClick: _this7.props.clickMove.bind(_this7, 40),
+					className: 'gridItem',
+					style: Object.assign({}, gridStyle, gridColor) });
+			} else {
+				return React.createElement('div', {
+					key: i,
+					className: 'gridItem',
+					style: Object.assign({}, gridStyle, gridColor) });
+			}
 		});
 		return React.createElement(
 			'div',
