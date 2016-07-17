@@ -150,6 +150,10 @@ a:hover {
 	background: url('/assets/images/simon-2.png');
 	background-size: cover;
 }
+#fccFrontEnd {
+	background: url('/assets/images/front-end-projects.png');
+	background-size: cover;
+}
 #reactProjects {
 	background: url('/assets/images/reactProjects.png');
 	background-size: cover;
@@ -260,6 +264,9 @@ a:hover {
 	opacity:1;
 }
 #simon:hover #overlaySimon {
+	opacity:1;
+}
+#fccFrontEnd:hover #overlayFccFrontEnd {
 	opacity:1;
 }
 #reactProjects:hover #overlayReactProjects {

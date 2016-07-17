@@ -99,6 +99,10 @@ $("#simon").click(function() {
 	window.open('/assets/portfolio/simon-2/index.html', '_blank') ;
 });
 
+$("#fccFrontEnd").click(function() {
+	window.open('/assets/portfolio/front-end-projects/index.html', '_blank') ;
+});
+
 $("#reactProjects").click(function() {
 	window.open('/assets/portfolio/25-react-projects/index.html', '_blank') ;
 });

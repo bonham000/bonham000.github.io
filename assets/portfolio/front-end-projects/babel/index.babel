@@ -1,0 +1,255 @@
+
+// Some global style definitions:
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
+class App extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			data: true
+		}
+		this.handleClick = this.handleClick.bind(this);
+	}
+	handleClick() {
+		console.log('this');
+			setTimeout(function() {
+				this.setState({
+					data: false
+				});
+			}, 150);
+	}
+	componentDidMount() {
+		Highcharts.chart('chartContainer', {
+        chart: {
+            type: 'column',
+            width: null,
+            height: null,
+            backgroundColor: 'rgba(241,255,231,1)'
+        },
+        title: {
+            text: 'Amount of Code / Project'
+        },
+        subtitle: {
+            text: 'Measured in Total Number of Characters'
+        },
+        xAxis: {
+            categories: [
+                'Quote Generator',
+                'Current Weather',
+                'Wikipedia Viewer',
+                'Twitch TV',
+                'JavaScript Calculator',
+                'Pomodoro Clock',
+                'Tic-Tac-Toe Game',
+                'Simon Game'
+            ],
+            crosshair: true
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'Characters'
+            }
+        },
+        tooltip: {
+            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+                '<td style="padding:0"><b>{point.y:.0f}</b></td></tr>',
+            footerFormat: '</table>',
+            shared: true,
+            useHTML: true
+        },
+        plotOptions: {
+            column: {
+                pointPadding: 0.2,
+                borderWidth: 0
+            }
+        },
+        exporting: {
+        	enabled: false
+        },
+        series: [{
+            name: '1st Attempt',
+            data: [3679, 13347, 6788, 5987, 8497, 8709, 9984, 13769],
+            color: '#FF6B6B'
+
+        }, {
+            name: '2nd Attempt',
+            data: [3703, 7937, 6506, 6192, 6206, 7739, 16573, 14892],
+            color: '#4ECDC4'
+        }]
+    });
+	}
+	render() {
+		return (
+			<div className="main">
+				<PageDescription handleClick = {this.handleClick} />
+				<ProjectLinks />
+				<MetaData />
+				<Credits />
+			</div>
+		);
+	}
+};
+
+class PageDescription extends React.Component {
+	render() {
+		return (
+			<div className = "pageDescription">
+				<h1 onClick = {this.props.handleClick} className = "title">The Front End at Free Code Camp</h1>
+				<p className = "subTitle">I built the Front End Curriculum Projects at Free Code Camp once using jQuery and a second time using React and Sass. Compare the projects side-by-side below:</p>
+				<div className = "tech">
+					<i className = "devicon-html5-plain colored"></i>
+					<i className = "devicon-css3-plain colored"></i>
+					<i className = "devicon-javascript-plain colored"></i>
+					<p>+</p>
+					<i className = "devicon-jquery-plain colored"></i>
+					<p> or </p>
+					<i className = "devicon-sass-original colored"></i>
+					<i className = "devicon-react-original colored"></i>
+					<p> = </p>
+				</div>
+			</div>
+		);
+	}
+};
+
+class ProjectLinks extends React.Component {
+	render() {
+		return (
+			<div className = "projectLinks">
+				<div className = "intProjectsWrapper">
+					<h1>Intermediate Projects:</h1>
+					<div className = "intProjects">
+						<p className = "comparisonTitle">1st:</p>
+						<p className = "comparisonTitle">2nd:</p>
+						<a target = "_blank" href = "../quotes/index.html"><img src="../../images/quotes.png" alt=""/></a>
+						<a target = "_blank" href = "../quotes-2/index.html"><img src="../../images/quotes-2.png" alt=""/></a>
+						<a target = "_blank" href = "../weather/index.html"><img src="../../images/weather.png" alt=""/></a>
+						<a target = "_blank" href = "../weather-2/index.html"><img src="../../images/weather-2.png" alt=""/></a>				
+						<a target = "_blank" href = "../wikipedia/index.html"><img src="../../images/wikipedia.png" alt=""/></a>
+						<a target = "_blank" href = "../wikipedia-2/index.html"><img src="../../images/wikipedia-2.png" alt=""/></a>					
+						<a target = "_blank" href = "../twitch/index.html"><img src="../../images/twitch.png" alt=""/></a>
+						<a target = "_blank" href = "../twitch-2/index.html"><img src="../../images/twitch-2.png" alt=""/></a>					
+					</div>
+				</div>
+				<div className = "advProjectsWrapper">
+					<h1>Advanced Projects:</h1>
+					<div className="advProjects">
+						<p className = "comparisonTitle">1st:</p>
+						<p className = "comparisonTitle">2nd:</p>
+						<a target = "_blank" href = "../calculator/index.html"><img src="../../images/calculator.png" alt=""/></a>
+						<a target = "_blank" href = "../calculator-2/index.html"><img src="../../images/calculator-2.png" alt=""/></a>
+						<a target = "_blank" href = "../pomodoro/index.html"><img src="../../images/pomodoro.png" alt=""/></a>
+						<a target = "_blank" href = "../pomodoro-2/index.html"><img src="../../images/pomodoro-2.png" alt=""/></a>
+						<a target = "_blank" href = "../tic-tac-toe/index.html"><img src="../../images/tic-tac-toe.png" alt=""/></a>
+						<a target = "_blank" href = "../tic-tac-toe-2/index.html"><img src="../../images/tic-tac-toe-2.png" alt=""/></a>
+						<a target = "_blank" href = "../simon/index.html"><img src="../../images/simon.png" alt=""/></a>
+						<a target = "_blank" href = "../simon-2/index.html"><img src="../../images/simon-2.png" alt=""/></a>
+					</div>
+				</div>
+			</div>
+		);
+	}
+};
+
+class MetaData extends React.Component {
+	render() {
+		return (
+			<div className = "metaData">
+				<div className = "analysis">
+					<h1>Why did I build the projets twice?</h1>
+					
+					<p className = "analysisText">For those unfamiliar with <a target = "_blank" href = "http://freecodecamp.com">Free Code Camp</a>, this open source educational community offers 4 certifications associated with JavaScript web development.
+					In order, they are Front End, Data Visualization, Back End, and Full Stack. You must complete the first 3 to access the 4th, and in general each is more difficult than the last.</p>
+					
+					<p className = "analysisText">After I finished the Front End Curriculum, I proceeded confidently into the React challenges for the second certification.
+					I was immediately... completely lost! React was way above my head. After a lot of frustration I took a step back to study the problem. Eventually, I decided I needed to start building from the basics. I started by working through some tutorials
+					and then created several simple pages with React, only then continuing on to complete the Free Code Camp React challenges. After this I moved on to rebuild all the Front End Projects with React and Sass. My full experience in learning React is recorded <a target = "_blank" href="../25-react-projects/index.html">here</a>.</p>
+					
+					<h1 className = "learnTitle">What did I learn?</h1>
+					
+					<p className = "analysisText">This process became a great learning experience in two ways. First, I gained a very solid understanding of React's basic principles through repetitively applying them. I gained a better sense
+					of how composability works in React by breaking each of my projects into several different components. I also learned how state can be stored in React, moved between components via props, and modified.</p>
+
+					<p className = "analysisText">Second, by working through these projects for a second time, I was able to compare and contrast my first and second attempts at solving these challenges. Having completed
+					the challenges before, I was able to study my previous solutions and decide if or how I might improve them. Then, as I actually coded each project for the second time, I was able to notice clearly my improvement in terms of 
+					being able to think through the problems I was trying to solve with much more clarity and translate my ideas into code much more quickly.</p>
+					
+					<p className = "analysisText">I also took a look at how much code it actually took to complete the projects, using simply total number of characters as a measure. I expected my second attempts to be more succinct,
+					however on average they are very similar to my first attempts (the total for all the projects differed only by about 1,000 characters). Here are the numbers:</p>
+
+				</div>
+			<div className="codeComparison">
+				<div id = "chartContainer">
+				</div>
+			</div>
+			<div className="timeComparison">
+					<h1>How long did it take?</h1>
+					<p className = "analysisText">In addition to looking at the amount of code involved, I also analyzed the time it took me to code the projects the second time using <a target = "_blank" href = "https://www.toggl.com">Toggl</a>. This yielded interesting results as well and although I didn't record the time it took for
+					me to complete the projects on my first attempt I can attest that it was much longer than on my second attempt. Here are the times:</p>
+					<table>
+					<tbody>
+						<tr className = "rowTitle">
+							<th>Project (w/ React & Sass)</th>
+							<th>Time</th>
+						</tr>
+						<tr className = "rowOff dataRow">
+							<td>Random Quote Generator</td>
+							<td className = "timeCol">1:33:27</td>
+						</tr>
+						<tr className = "rowOn dataRow">
+							<td>Current Weather API</td>
+							<td className = "timeCol">2:24:28</td>
+						</tr>
+						<tr className = "rowOff dataRow">
+							<td>Wikipedia Viewer</td>
+							<td className = "timeCol">3:22:58</td>
+						</tr>
+						<tr className = "rowOn dataRow">
+							<td>Twitch TV API</td>
+							<td className = "timeCol">4:18:52</td>
+						</tr>
+						<tr className = "rowOff dataRow">
+							<td>JavaScript Calculator</td>
+							<td className = "timeCol">1:46:18</td>
+						</tr>
+						<tr className = "rowOn dataRow">
+							<td>Pomodoro Clock</td>
+							<td className = "timeCol">2:41:33</td>
+						</tr>
+						<tr className = "rowOff dataRow">
+							<td>Tic-Tac-Toe Game</td>
+							<td className = "timeCol">5:59:29</td>
+						</tr>
+						<tr className = "rowOn dataRow">
+							<td>Simon Game</td>
+							<td className = "timeCol">5:17:48</td>
+						</tr>
+						<tr className = "rowOff">
+							<td><strong>Total Time</strong></td>
+							<td className = "timeCol"><strong>27:24:53</strong></td>
+						</tr>
+					</tbody>
+					</table>
+			</div>
+		</div>
+		);
+	}
+};
+
+class Credits extends React.Component {
+	render() {
+		return (
+			<div className = "credits">
+				<div className = "creditsWrapper">
+					<h1><a target = "_blank" href="https://github.com/bonham000/React-Front-End-Projects">View all the code on Github</a></h1>
+					<h1><a target = "_blank" href = "https://twitter.com/bonham_000">Follow me on Twitter</a></h1>
+				</div>
+			</div>
+		);
+	}
+};
+
+
+ReactDOM.render(<App />, document.getElementById('main'));
