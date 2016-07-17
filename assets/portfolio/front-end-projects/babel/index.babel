@@ -158,7 +158,7 @@ class MetaData extends React.Component {
 		return (
 			<div className = "metaData">
 				<div className = "analysis">
-					<h1>Why did I build the projets twice?</h1>
+					<h1>Why did I build the projects twice?</h1>
 					
 					<p className = "analysisText">For those unfamiliar with <a target = "_blank" href = "http://freecodecamp.com">Free Code Camp</a>, this open source educational community offers 4 certifications associated with JavaScript web development.
 					In order, they are Front End, Data Visualization, Back End, and Full Stack. You must complete the first 3 to access the 4th, and in general each is more difficult than the last.</p>

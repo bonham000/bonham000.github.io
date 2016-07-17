@@ -324,7 +324,7 @@ var MetaData = function (_React$Component4) {
 				React.createElement(
 					'h1',
 					null,
-					'Why did I build the projets twice?'
+					'Why did I build the projects twice?'
 				),
 				React.createElement(
 					'p',

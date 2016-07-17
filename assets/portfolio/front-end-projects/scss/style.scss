@@ -35,6 +35,8 @@ body {
 		color: $pastelRed;
 		font-family: 'Mitr', sans-serif;
 		margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
 	}
 	.subTitle {
 		width: 60vw;
@@ -515,7 +517,7 @@ body {
 				padding-right: 15px;
 			}
 			.analysisText {
-				font-size: 22px;
+				font-size: 18px;
 			}
 		}
 		.codeComparison {
@@ -530,7 +532,7 @@ body {
 				padding-right: 15px;
 			}
 			.analysisText {
-				font-size: 22px;
+				font-size: 18px;
 			}
 			table {
 				margin: auto;
