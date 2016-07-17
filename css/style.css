@@ -486,7 +486,8 @@ a:hover {
 		font-size: 26px;
 	}
 	.contact {
-		width: 400px;
+		width: 350px;
+		margin: auto;
 	}
 	.fa {
 		font-size: 75px;
