@@ -158,6 +158,10 @@ a:hover {
 	background: url('/assets/images/reactProjects.png');
 	background-size: cover;
 }
+#spaceStation {
+	background: url('/assets/images/space-station.png');
+	background-size: cover;
+}
 #markdown {
 	background: url('/assets/images/markdown.png');
 	background-size: cover;
@@ -270,6 +274,9 @@ a:hover {
 	opacity:1;
 }
 #reactProjects:hover #overlayReactProjects {
+	opacity:1;
+}
+#spaceStation:hover #overlaySpaceStation {
 	opacity:1;
 }
 #markdown:hover #overlayMarkdown {
