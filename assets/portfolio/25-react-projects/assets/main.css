@@ -107,6 +107,7 @@ td {
 	width: 675px;
 	margin: auto;
 	margin-left: 5px;
+	padding-bottom: 35px;
 }
 .lowerTitle {
 	margin-bottom: 25px;
@@ -130,12 +131,8 @@ td {
 	margin-bottom: 15px;
 	border-bottom: 1px solid #FFFFF2;
 }
-.resources {
-
-}
 .title {
 	margin-bottom: 0px;
-/*	margin-right: 15px;*/
 	color: rgb(114, 223, 250);
 	font-size: 30px;
 	font-family: 'Quattrocento Sans', sans-serif;

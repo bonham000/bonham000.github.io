@@ -144,7 +144,7 @@ $("#unix").click(function() {
 });
 
 $("#reactBarChart").click(function() {
-	window.open('/assets/portfolio/25-react-projects/projects/project_5/index.html', '_blank') ;
+	window.open('/assets/portfolio/25-react-projects/projects/Project_5/index.html', '_blank') ;
 });
 
 $("#barChart").click(function() {
