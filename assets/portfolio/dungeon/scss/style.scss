@@ -83,7 +83,6 @@ body {
 			text-decoration: underline;
 		}
 		.content {
-			
 			p {
 				font-family: $Cormorant;
 				font-size: 25px;
@@ -106,6 +105,11 @@ body {
 				color: #FF4A40;
 				margin-top: 1px;
 			}
+      .mobileMovement {
+        font-size: 18px;
+        margin-top: -15px;
+        margin-bottom: 20px;
+      }
 			.fccLogo {
 				width: 125px;
 				height: 125px;

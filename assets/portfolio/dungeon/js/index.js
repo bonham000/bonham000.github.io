@@ -1138,12 +1138,12 @@ var About = function (_React$Component3) {
 						React.createElement(
 							'p',
 							null,
-							'Collect tech skill items to level up your coding skills. Be careful, don\'t attempt the challenges without leveling up your skills. If you think you are ready, click the Free Code Camp Logo to begin.'
+							'Collect tech skill items to level up your coding skills. Be careful, don\'t attempt the challenges without leveling up your skills. You can move with the arrow keys. If you think you are ready, click the Free Code Camp Logo to begin.'
 						),
 						React.createElement(
 							'p',
-							null,
-							'(If you are on mobile, you can move by pressing the squares adjacent to your player icon. It\'s not perfect but it does work.)'
+							{ className: 'mobileMovement' },
+							'(If you are on mobile, you can move by pressing on the left, top, right, and bottom areas of the game environment to move in those directions.)'
 						),
 						React.createElement('img', { className: 'fccLogo', src: 'http://i1361.photobucket.com/albums/r662/bonham000/Roguelike/fcc_puck_zps7ddvum7q.png', alt: 'Enter Icon', onClick: this.props.startGame })
 					)
@@ -1395,14 +1395,6 @@ var Game = function (_React$Component6) {
 		var gridStyle, gridColor;
 		var mapData = this.props.gameMap;
 
-		var userIndexValue;
-
-		for (var i = 0; i < mapData.length; i++) {
-			if (mapData[i].user === 1) {
-				userIndexValue = i - 1;
-			}
-		}
-
 		var renderMap = mapData.map(function (grid, i) {
 
 			gridStyle = { width: grid.cellSize, height: grid.cellSize }; // Set cell sizes based on the pre-set dimensions
@@ -1489,25 +1481,25 @@ var Game = function (_React$Component6) {
 				gridColor = { background: "url('http://i1361.photobucket.com/albums/r662/bonham000/Roguelike/fcc_puck_zps7ddvum7q.png')", backgroundSize: '51px 51px' };
 			}
 
-			if (i < userIndexValue - 15) {
+			if (i >= 6 && i <= 14 || i >= 26 && i <= 34 || i >= 46 && i <= 54 || i >= 66 && i <= 74 || i >= 86 && i <= 94 || i >= 106 && i <= 114) {
 				return React.createElement('div', {
 					key: i,
 					onClick: _this7.props.clickMove.bind(_this7, 38),
 					className: 'gridItem',
 					style: Object.assign({}, gridStyle, gridColor) });
-			} else if (i < userIndexValue && i > userIndexValue - 10) {
+			} else if (i >= 40 && i <= 45 || i >= 60 && i <= 65 || i >= 80 && i <= 85 || i >= 100 && i <= 105 || i >= 120 && i <= 125 || i >= 140 && i <= 145 || i >= 160 && i <= 165 || i >= 180 && i <= 185) {
 				return React.createElement('div', {
 					key: i,
 					onClick: _this7.props.clickMove.bind(_this7, 37),
 					className: 'gridItem',
 					style: Object.assign({}, gridStyle, gridColor) });
-			} else if (i > userIndexValue && i < userIndexValue + 10) {
+			} else if (i >= 55 && i <= 59 || i >= 75 && i <= 79 || i >= 95 && i <= 99 || i >= 115 && i <= 119 || i >= 135 && i <= 139 || i >= 155 && i <= 159 || i >= 175 && i <= 179 || i >= 195 && i <= 199) {
 				return React.createElement('div', {
 					key: i,
 					onClick: _this7.props.clickMove.bind(_this7, 39),
 					className: 'gridItem',
 					style: Object.assign({}, gridStyle, gridColor) });
-			} else if (i > userIndexValue + 15) {
+			} else if (i >= 146 && i <= 154 || i >= 166 && i <= 174 || i >= 186 && i <= 194 || i >= 206 && i <= 214 || i >= 226 && i <= 234) {
 				return React.createElement('div', {
 					key: i,
 					onClick: _this7.props.clickMove.bind(_this7, 40),

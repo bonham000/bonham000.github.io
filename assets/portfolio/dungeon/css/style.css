@@ -91,6 +91,11 @@ body {
   color: #FF4A40;
   margin-top: 1px;
 }
+.about .aboutContainer .content .mobileMovement {
+  font-size: 18px;
+  margin-top: -15px;
+  margin-bottom: 20px;
+}
 .about .aboutContainer .content .fccLogo {
   width: 125px;
   height: 125px;
