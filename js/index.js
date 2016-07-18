@@ -51,7 +51,7 @@ $("#facebook").click(function() {
 	window.open('/assets/portfolio/facebook/index.html', '_blank') ;
 });
 
-$("#new_river").click(function() {
+$("#newRiver").click(function() {
 	window.open('/assets/portfolio/new-river/index.html', '_blank') ;
 });
 
@@ -115,6 +115,10 @@ $("#spaceStation").click(function() {
 	window.open('/assets/portfolio/25-react-projects/projects/Project_10/index.html', '_blank') ;
 });
 
+$("#toDoApp").click(function() {
+	window.open('/assets/portfolio/25-react-projects/projects/Project_4/index.html', '_blank') ;
+});
+
 $("#leaderboard").click(function() {
 	window.open('/assets/portfolio/leaderboard/index.html', '_blank') ;
 });
@@ -137,6 +141,10 @@ $("#dungeon").click(function() {
 
 $("#unix").click(function() {
 	window.open('https://unix-time-stamp.herokuapp.com/', '_blank') ;
+});
+
+$("#reactBarChart").click(function() {
+	window.open('/assets/portfolio/25-react-projects/projects/project_5/index.html', '_blank') ;
 });
 
 $("#barChart").click(function() {

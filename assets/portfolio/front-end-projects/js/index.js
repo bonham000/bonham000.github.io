@@ -195,42 +195,42 @@ var ProjectLinks = function (_React$Component3) {
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../quotes/index.html' },
-						React.createElement('img', { src: '../../images/quotes.png', alt: '' })
+						React.createElement('img', { src: 'images/quotes.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../quotes-2/index.html' },
-						React.createElement('img', { src: '../../images/quotes-2.png', alt: '' })
+						React.createElement('img', { src: 'images/quotes-2.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../weather/index.html' },
-						React.createElement('img', { src: '../../images/weather.png', alt: '' })
+						React.createElement('img', { src: 'images/weather.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../weather-2/index.html' },
-						React.createElement('img', { src: '../../images/weather-2.png', alt: '' })
+						React.createElement('img', { src: 'images/weather-2.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../wikipedia/index.html' },
-						React.createElement('img', { src: '../../images/wikipedia.png', alt: '' })
+						React.createElement('img', { src: 'images/wikipedia.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../wikipedia-2/index.html' },
-						React.createElement('img', { src: '../../images/wikipedia-2.png', alt: '' })
+						React.createElement('img', { src: 'images/wikipedia-2.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../twitch/index.html' },
-						React.createElement('img', { src: '../../images/twitch.png', alt: '' })
+						React.createElement('img', { src: 'images/twitch.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../twitch-2/index.html' },
-						React.createElement('img', { src: '../../images/twitch-2.png', alt: '' })
+						React.createElement('img', { src: 'images/twitch-2.png', alt: '' })
 					)
 				)
 			),
@@ -258,42 +258,42 @@ var ProjectLinks = function (_React$Component3) {
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../calculator/index.html' },
-						React.createElement('img', { src: '../../images/calculator.png', alt: '' })
+						React.createElement('img', { src: 'images/calculator.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../calculator-2/index.html' },
-						React.createElement('img', { src: '../../images/calculator-2.png', alt: '' })
+						React.createElement('img', { src: 'images/calculator-2.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../pomodoro/index.html' },
-						React.createElement('img', { src: '../../images/pomodoro.png', alt: '' })
+						React.createElement('img', { src: 'images/pomodoro.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../pomodoro-2/index.html' },
-						React.createElement('img', { src: '../../images/pomodoro-2.png', alt: '' })
+						React.createElement('img', { src: 'images/pomodoro-2.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../tic-tac-toe/index.html' },
-						React.createElement('img', { src: '../../images/tic-tac-toe.png', alt: '' })
+						React.createElement('img', { src: 'images/tic-tac-toe.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../tic-tac-toe-2/index.html' },
-						React.createElement('img', { src: '../../images/tic-tac-toe-2.png', alt: '' })
+						React.createElement('img', { src: 'images/tic-tac-toe-2.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../simon/index.html' },
-						React.createElement('img', { src: '../../images/simon.png', alt: '' })
+						React.createElement('img', { src: 'images/simon.png', alt: '' })
 					),
 					React.createElement(
 						'a',
 						{ target: '_blank', href: '../simon-2/index.html' },
-						React.createElement('img', { src: '../../images/simon-2.png', alt: '' })
+						React.createElement('img', { src: 'images/simon-2.png', alt: '' })
 					)
 				)
 			)

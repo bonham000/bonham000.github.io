@@ -166,6 +166,10 @@ a:hover {
 	background: url('/assets/images/space-station.png');
 	background-size: cover;
 }
+#toDoApp {
+	background: url('/assets/images/react-to-do-app.png');
+	background-size: cover;
+}
 #markdown {
 	background: url('/assets/images/markdown.png');
 	background-size: cover;
@@ -188,6 +192,10 @@ a:hover {
 }
 #dungeon {
 	background: url('/assets/images/dungeon.png');
+	background-size: cover;
+}
+#reactBarChart {
+	background: url('/assets/images/react-bar-chart.png');
 	background-size: cover;
 }
 #barChart {
@@ -300,6 +308,10 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayToDoApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlayMarkdown {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -325,6 +337,10 @@ a:hover {
 	transition: opacity 1250ms ease;
 }
 #overlayUnix {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayReactBarChart {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
@@ -434,6 +450,10 @@ a:hover {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#toDoApp:hover #overlayToDoApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 #markdown:hover #overlayMarkdown {
 	opacity:1;
 	transition: opacity 1500ms ease;
@@ -459,6 +479,10 @@ a:hover {
 	transition: opacity 1500ms ease;
 }
 #unix:hover #overlayUnix {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#reactBarChart:hover #overlayReactBarChart {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }

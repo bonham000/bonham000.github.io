@@ -123,14 +123,14 @@ class ProjectLinks extends React.Component {
 					<div className = "intProjects">
 						<p className = "comparisonTitle">1st:</p>
 						<p className = "comparisonTitle">2nd:</p>
-						<a target = "_blank" href = "../quotes/index.html"><img src="../../images/quotes.png" alt=""/></a>
-						<a target = "_blank" href = "../quotes-2/index.html"><img src="../../images/quotes-2.png" alt=""/></a>
-						<a target = "_blank" href = "../weather/index.html"><img src="../../images/weather.png" alt=""/></a>
-						<a target = "_blank" href = "../weather-2/index.html"><img src="../../images/weather-2.png" alt=""/></a>				
-						<a target = "_blank" href = "../wikipedia/index.html"><img src="../../images/wikipedia.png" alt=""/></a>
-						<a target = "_blank" href = "../wikipedia-2/index.html"><img src="../../images/wikipedia-2.png" alt=""/></a>					
-						<a target = "_blank" href = "../twitch/index.html"><img src="../../images/twitch.png" alt=""/></a>
-						<a target = "_blank" href = "../twitch-2/index.html"><img src="../../images/twitch-2.png" alt=""/></a>					
+						<a target = "_blank" href = "../quotes/index.html"><img src="images/quotes.png" alt=""/></a>
+						<a target = "_blank" href = "../quotes-2/index.html"><img src="images/quotes-2.png" alt=""/></a>
+						<a target = "_blank" href = "../weather/index.html"><img src="images/weather.png" alt=""/></a>
+						<a target = "_blank" href = "../weather-2/index.html"><img src="images/weather-2.png" alt=""/></a>				
+						<a target = "_blank" href = "../wikipedia/index.html"><img src="images/wikipedia.png" alt=""/></a>
+						<a target = "_blank" href = "../wikipedia-2/index.html"><img src="images/wikipedia-2.png" alt=""/></a>					
+						<a target = "_blank" href = "../twitch/index.html"><img src="images/twitch.png" alt=""/></a>
+						<a target = "_blank" href = "../twitch-2/index.html"><img src="images/twitch-2.png" alt=""/></a>					
 					</div>
 				</div>
 				<div className = "advProjectsWrapper">
@@ -138,14 +138,14 @@ class ProjectLinks extends React.Component {
 					<div className="advProjects">
 						<p className = "comparisonTitle">1st:</p>
 						<p className = "comparisonTitle">2nd:</p>
-						<a target = "_blank" href = "../calculator/index.html"><img src="../../images/calculator.png" alt=""/></a>
-						<a target = "_blank" href = "../calculator-2/index.html"><img src="../../images/calculator-2.png" alt=""/></a>
-						<a target = "_blank" href = "../pomodoro/index.html"><img src="../../images/pomodoro.png" alt=""/></a>
-						<a target = "_blank" href = "../pomodoro-2/index.html"><img src="../../images/pomodoro-2.png" alt=""/></a>
-						<a target = "_blank" href = "../tic-tac-toe/index.html"><img src="../../images/tic-tac-toe.png" alt=""/></a>
-						<a target = "_blank" href = "../tic-tac-toe-2/index.html"><img src="../../images/tic-tac-toe-2.png" alt=""/></a>
-						<a target = "_blank" href = "../simon/index.html"><img src="../../images/simon.png" alt=""/></a>
-						<a target = "_blank" href = "../simon-2/index.html"><img src="../../images/simon-2.png" alt=""/></a>
+						<a target = "_blank" href = "../calculator/index.html"><img src="images/calculator.png" alt=""/></a>
+						<a target = "_blank" href = "../calculator-2/index.html"><img src="images/calculator-2.png" alt=""/></a>
+						<a target = "_blank" href = "../pomodoro/index.html"><img src="images/pomodoro.png" alt=""/></a>
+						<a target = "_blank" href = "../pomodoro-2/index.html"><img src="images/pomodoro-2.png" alt=""/></a>
+						<a target = "_blank" href = "../tic-tac-toe/index.html"><img src="images/tic-tac-toe.png" alt=""/></a>
+						<a target = "_blank" href = "../tic-tac-toe-2/index.html"><img src="images/tic-tac-toe-2.png" alt=""/></a>
+						<a target = "_blank" href = "../simon/index.html"><img src="images/simon.png" alt=""/></a>
+						<a target = "_blank" href = "../simon-2/index.html"><img src="images/simon-2.png" alt=""/></a>
 					</div>
 				</div>
 			</div>
