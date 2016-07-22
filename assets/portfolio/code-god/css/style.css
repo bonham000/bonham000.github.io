@@ -6,6 +6,7 @@ body {
 }
 
 #codeContainer {
+  overflow-y: scroll;
   margin-top: 0px;
   height: 85vh;
 }

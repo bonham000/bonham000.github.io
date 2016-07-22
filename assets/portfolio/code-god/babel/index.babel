@@ -1059,7 +1059,7 @@ class App extends React.Component {
 		this.blink();
 	}
 	componentDidUpdate() {
-		Prism.highlightAll();
+    Prism.highlightAll();
 		document.getElementById("codeContainer").scrollTop = document.getElementById("codeContainer").scrollHeight;
 	}
 	render() {
@@ -1091,3 +1091,5 @@ class CodeComponent extends React.Component {
 		);
 	}
 };
+
+ReactDOM.render(<App />, document.getElementById('main'));
