@@ -111,6 +111,10 @@ $("#markdown").click(function() {
 	window.open('/assets/portfolio/react-markdown/index.html', '_blank') ;
 });
 
+$("#codeGod").click(function() {
+	window.open('/assets/portfolio/code-god/index.html', '_blank') ;
+});
+
 $("#spaceStation").click(function() {
 	window.open('/assets/portfolio/25-react-projects/projects/Project_10/index.html', '_blank') ;
 });

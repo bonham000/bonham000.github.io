@@ -162,6 +162,10 @@ a:hover {
 	background: url('/assets/images/reactProjects.png');
 	background-size: cover;
 }
+#codeGod {
+	background: url('/assets/images/code-god.png');
+	background-size: cover;
+}
 #spaceStation {
 	background: url('/assets/images/space-station.png');
 	background-size: cover;
@@ -304,6 +308,10 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayCodeGod {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlaySpaceStation {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -443,6 +451,10 @@ a:hover {
 	transition: opacity 1500ms ease;
 }
 #reactProjects:hover #overlayReactProjects {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#codeGod:hover #overlayCodeGod {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
