@@ -59,6 +59,10 @@ $("#asia").click(function() {
 	window.open('/assets/portfolio/asia/index.html', '_blank') ;
 });
 
+$("#zen").click(function() {
+	window.open('/assets/portfolio/css-zen-garden/index.html', '_blank') ;
+});
+
 $("#sejong").click(function() {
 	window.open('/assets/portfolio/sejong/index.html', '_blank') ;
 });

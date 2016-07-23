@@ -6,192 +6,213 @@
 /* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
 
 /* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+@import url('https://fonts.googleapis.com/css?family=Harmattan|Poiret+One|Rakkas');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css');
 
 body {
-	background: #DEE5E5;
-}
-
-/* basic elements */
-/*html {
+	background: #38E4AE;
 	margin: 0;
 	padding: 0;
-	}
-body { 
-	font: 75% georgia, sans-serif;
-	line-height: 1.88889;
-	color: #555753; 
-	background: #fff url(http://csszengarden.com/001/blossoms.jpg) no-repeat bottom right; 
-	margin: 0; 
-	padding: 0;
-	}
-p { 
-	margin-top: 0; 
-	text-align: justify;
-	}
-h3 { 
-	font: italic normal 1.4em georgia, sans-serif;
-	letter-spacing: 1px; 
-	margin-bottom: 0; 
-	color: #7D775C;
-	}
-a:link { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #B7A5DF;
-	}
-a:visited { 
-	font-weight: bold; 
-	text-decoration: none; 
-	color: #D4CDDC;
-	}
-a:hover, a:focus, a:active { 
-	text-decoration: underline; 
-	color: #9685BA;
-	}
-abbr {
-	border-bottom: none;
-	}
-
-
-/* specific divs */
-/*.page-wrapper { 
-	background: url(http://csszengarden.com/001/zen-bg.jpg) no-repeat top left; 
-	padding: 0 175px 0 110px;  
-	margin: 0; 
-	position: relative;
-	}
-
-.intro { 
-	min-width: 470px;
-	width: 100%;
-	}
-
-header h1 { 
-	background: transparent url(http://csszengarden.com/001/h1.gif) no-repeat top left;
-	margin-top: 10px;
-	display: block;
-	width: 219px;
-	height: 87px;
-	float: left;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header h2 { 
-	background: transparent url(http://csszengarden.com/001/h2.gif) no-repeat top left; 
-	margin-top: 58px; 
-	margin-bottom: 40px; 
-	width: 200px; 
-	height: 18px; 
-	float: right;
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-header {
-	padding-top: 20px;
-	height: 87px;
+}
+.intro, .main {
+	margin-left: 350px;
 }
 
-.summary {
-	clear: both; 
-	margin: 20px 20px 20px 10px; 
-	width: 160px; 
-	float: left;
-	}
-.summary p {
-	font: italic 1.1em/2.2 georgia; 
+a, a:visited {
+	color: red;
+	text-decoration: none;
+}
+a:hover {
+	color: #613DC1;
+	text-decoration: underline;
+}
+.intro h1 {
 	text-align: center;
-	}
-
-.preamble {
-	clear: right; 
-	padding: 0px 10px 0 10px;
-	}
-.supporting {	
-	padding-left: 10px; 
-	margin-bottom: 40px;
-	}
-
-footer { 
-	text-align: center; 
-	}
-footer a:link, footer a:visited { 
-	margin-right: 20px; 
-	}
-
-.sidebar {
-	margin-left: 600px; 
-	position: absolute; 
-	top: 0; 
-	right: 0;
-	}
-.sidebar .wrapper { 
-	font: 10px verdana, sans-serif; 
-	background: transparent url(http://csszengarden.com/001/paper-bg.jpg) top left repeat-y; 
-	padding: 10px; 
-	margin-top: 150px; 
-	width: 130px; 
-	}
-.sidebar h3.select { 
-	background: transparent url(http://csszengarden.com/001/h3.gif) no-repeat top left; 
-	margin: 10px 0 5px 0; 
-	width: 97px; 
-	height: 16px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.archives { 
-	background: transparent url(http://csszengarden.com/001/h5.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:57px; 
-	height: 14px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-.sidebar h3.resources { 
-	background: transparent url(http://csszengarden.com/001/h6.gif) no-repeat top left; 
-	margin: 25px 0 5px 0; 
-	width:63px; 
-	height: 10px; 
-
-	text-indent: 100%;
-	white-space: nowrap;
-	overflow: hidden;
-	}
-
-
-.sidebar ul {
+	background: #292F36;
+	color: #EAFFDA;
 	margin: 0;
-	padding: 0;
-	}
+	padding-top: 25px;
+	padding-bottom: 25px;
+	font-size: 125px;
+	font-family: 'Rakkas', cursive;
+}
+.intro h1:hover {
+	color: #FFFFD7;
+}
+.intro h2, .preamble h3, .main h3 {
+	text-align: center;
+	background: #E3655B;
+	color: #1B1B1E;
+	margin: 0;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	font-size: 55px;
+	font-family: 'Rakkas', cursive;
+}
+p {
+	font-family: 'Harmattan', sans-serif;
+	font-size: 35px;
+	padding-left: 50px;
+	padding-right: 50px;
+	line-height: 35px;
+	margin: 0;
+	padding-top: 25px;
+	padding-bottom: 25px;
+}
+footer {
+	font-family: 'Poiret One', cursive;
+	text-align: center;
+	padding-top: 35px;
+	padding-bottom: 35px;
+	font-size: 35px;
+	background: #292F36;
+}
+footer a, footer a:visited {
+	color: #EAFFDA;
+	text-decoration: none;
+	font-size: 0px;
+	width: 0;
+}
+footer a:hover {
+	color: #E3655B;
+	text-decoration: none;
+}
+.zen-validate-html::before {
+	visibility: visible;
+	font-family: FontAwesome;
+	content: "\f13b";
+	font-size: 75px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.zen-validate-css::before {
+	visibility: visible;
+	font-family: FontAwesome;
+	content: "\f13c";
+	font-size: 75px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.zen-license::before {
+	visibility: visible;
+	font-family: FontAwesome;
+	content: "\f25e";
+	font-size: 75px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.zen-accessibility::before {
+	visibility: visible;
+	font-family: FontAwesome;
+	content: "\f29a";
+	font-size: 75px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.zen-github::before {
+	visibility: visible;
+	font-family: FontAwesome;
+	content: "\f09b";
+	font-size: 75px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+	margin: 0;
+	background: #38E4AE;
+	-webkit-transition: background 1s ease;
+	transition: background 1s ease;
+}
+.summary:hover, .preamble:hover, .explanation:hover, .participation:hover, .benefits:hover, .requirements:hover {
+	background: #2DFFAF;
+	-webkit-transition: background 1s ease;
+	transition: background 1s ease;
+}
+.sidebar {
+	position: fixed;
+	width: 335px;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	padding-top: 35px;
+	padding-right: 15px;
+	background: #32292F;
+	-webkit-transition: background 1s ease;
+	transition: background 1s ease;
+}
+.sidebar:hover {
+	background: #321E32;
+	-webkit-transition: background 1s ease;
+	transition: background 1s ease;
+}
+.sidebar .wrapper {
+	color: black;
+}
+.sidebar h3 {
+	font-family: 'Rakkas', cursive;
+	color: #FFE66D;
+	font-size: 35px;
+	margin: 5px;
+	padding-left: 15px;
+}
 .sidebar li {
-	line-height: 1.3em; 
-	background: transparent url(http://csszengarden.com/001/cr1.gif) no-repeat top center; 
-	display: block; 
-	padding-top: 5px; 
-	margin-bottom: 5px;
-	list-style-type: none;
-	}
-.sidebar li a:link {
-	color: #988F5E;
-	}
-.sidebar li a:visited {
-	color: #B3AE94;
-	}
+	font-family: 'Poiret One', cursive;
+	font-size: 20px;
+	list-style: none;
+	margin-left: -15px;
+	color: #DEE5E5;
+}
+.sidebar a, .sidebar a:visited {
+	color: #FAC9B8;
+}
+.sidebar a:hover {
+	color: #E3655B;
+}
 
+@media screen and (max-width: 900px) {
+		.intro, .main {
+			margin-left: auto;
+		}
+		.intro h1 {
+			font-size: 55px;
+		}
+		.intro h2, .preamble h3, .main h3 {
+			font-size: 35px;
+		}				
+		p {
+			font-size: 28px;
+			line-height: 30px;
+			padding: 15px 20px 15px 20px;
+		}
+    .sidebar {
+    	position: static;
+    	width: auto;
+    	height: auto;
+    	margin: 0;
+    	padding: 25px 0 25px 0;
+    }
+    .design-selection, .design-archives, .zen-resources {
+    	width: 500px;
+    }
+    .wrapper {
+    	display: -webkit-box;
+    	display: -ms-flexbox;
+    	display: flex;
+    	-ms-flex-wrap: wrap;
+    	    flex-wrap: wrap;
+    	-webkit-box-pack: center;
+    	    -ms-flex-pack: center;
+    	        justify-content: center;
+    }
+		footer {
+			font-size: 30px;
+		}
+}
 
-.extra1 {
-	background: transparent url(http://csszengarden.com/001/cr2.gif) top left no-repeat; 
-	position: absolute; 
-	top: 40px; 
-	right: 0; 
-	width: 148px; 
-	height: 110px;
-	}*/
+@media screen and (max-width: 500px) {
+	.zen-validate-html::before, .zen-validate-css::before, .zen-license::before, .zen-accessibility::before, .zen-github::before { 
+		font-size: 50px;
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+}

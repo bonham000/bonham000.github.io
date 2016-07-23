@@ -114,6 +114,10 @@ a:hover {
 	background: url('/assets/images/asia.png');
 	background-size: cover;
 }
+#zen {
+	background: url('/assets/images/zen.png');
+	background-size: cover;
+}
 #sejong {
 	background: url('/assets/images/sejong.png');
 	background-size: cover;
@@ -260,6 +264,10 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayZen {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlaySejong {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -403,6 +411,10 @@ a:hover {
 	transition: opacity 1500ms ease;
 }
 #asia:hover #overlayAsia {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#zen:hover #overlayZen {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
