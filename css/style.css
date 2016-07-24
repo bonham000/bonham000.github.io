@@ -162,6 +162,10 @@ a:hover {
 	background: url('/assets/images/front-end-projects.png');
 	background-size: cover;
 }
+#algorithms {
+	background: url('/assets/images/algorithms.png');
+	background-size: cover;
+}
 #reactProjects {
 	background: url('/assets/images/reactProjects.png');
 	background-size: cover;
@@ -312,6 +316,10 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayAlgorithms {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlayReactProjects {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -459,6 +467,10 @@ a:hover {
 	transition: opacity 1500ms ease;
 }
 #fccFrontEnd:hover #overlayFccFrontEnd {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#algorithms:hover #overlayAlgorithms {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }

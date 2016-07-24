@@ -107,6 +107,10 @@ $("#fccFrontEnd").click(function() {
 	window.open('/assets/portfolio/front-end-projects/index.html', '_blank') ;
 });
 
+$("#algorithms").click(function() {
+	window.open('/assets/portfolio/algorithms/index.html', '_blank') ;
+});
+
 $("#reactProjects").click(function() {
 	window.open('/assets/portfolio/25-react-projects/index.html', '_blank') ;
 });
