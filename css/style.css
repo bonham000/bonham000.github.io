@@ -17,7 +17,8 @@ body {
 	flex-wrap: wrap;
 }
 #wrapper {
-	width: 650px;
+	width: 900px;
+	margin: auto;
 	padding-bottom: 45px;
 }
 .avatar {
@@ -39,12 +40,12 @@ body {
 .nameAbout {
 	margin-top: -5px;
 	font-size: 32px;
-	max-width: 650px;
+	max-width: 900px;
 }
 .thanks {
 	margin-top: -20px;
 	font-size: 40px;
-	max-width: 650px;
+	max-width: 900px;
 }
 a, a:visited {
 	color: rgb(45,45,45);
