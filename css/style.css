@@ -207,6 +207,10 @@ a:hover {
 	background: url('/assets/images/dungeon.png');
 	background-size: cover;
 }
+#dinoGame {
+	background: url('/assets/images/dino-game.png');
+	background-size: cover;
+}
 #reactBarChart {
 	background: url('/assets/images/react-bar-chart.png');
 	background-size: cover;
@@ -361,6 +365,10 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayDinoGame {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlayUnix {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -512,6 +520,10 @@ a:hover {
 	transition: opacity 1500ms ease;
 }
 #dungeon:hover #overlayDungeon {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#dinoGame:hover #overlayDinoGame {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
