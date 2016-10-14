@@ -661,8 +661,11 @@ a:hover {
 		font-size: 30px;
 		font-family: Avenir;
 	}
+	.scrollTop {
+		display: none !important;
+	}
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1030px) {
 	.imageBox {
 		width: 350px;
 		height: 175px;
@@ -688,70 +691,6 @@ a:hover {
 	}
 	.thanks {
 		font-size: 28px;
-	}
-}
-@media screen and (max-width: 750px) {
-	.main {
-		display: relative;
-		margin-top: 50px;
-	}
-	#wrapper {
-		padding-bottom: 150px;
-	}
-	.avatar {
-		width: 150px;
-		height: 150px;
-	}
-	.name {
-		font-size: 60px;
-		padding-bottom: 15px;
-	}
-	.nameAbout {
-		padding: 20px;
-	}
-	.thanks {
-		margin-top: -25px;
-	}
-	.contact {
-		display: relative;
-		width: 450px;
-		margin: auto;
-		padding-bottom: 125px;
-	}
-@media screen and (max-width: 500px) {
-	.imageBox {
-		width: 300px;
-		height: 150px;
-	}	
-	#text {
-		font-size: 20px;
-	}
-	#wrapper {
-		padding-bottom: 125px;
-	}
-	.name {
-		font-size: 60px;
-		margin-top: 15px;
-		margin-bottom: -35px;
-	}
-	.nameAbout {
-		font-size: 24px;
-	}
-	.thanks {
-		font-size: 26px;
-	}
-	.contact {
-		width: 350px;
-		margin: auto;
-	}
-	.fa {
-		font-size: 75px;
-	}
-	.scrollTop {
-		display: none !important;
-	}
-	.fa:hover {
-		color: rgb(45,45,45);
 	}
 	/* Remove hover stlying for each project on mobile: */
 	#google:hover #overlayGoogle {
@@ -852,5 +791,101 @@ a:hover {
 	}
 	#fileMeta:hover #overlayFileMeta {
 		opacity:0;
+	}
+}
+@media screen and (max-width: 775px) {
+	.main {
+		display: relative;
+		margin-top: 50px;
+	}
+	.imageBox {
+		width: 300px;
+		height: 150px;
 	}	
+	#wrapper {
+		padding-bottom: 150px;
+	}
+	.avatar {
+		width: 150px;
+		height: 150px;
+	}
+	.name {
+		font-size: 60px;
+		padding-bottom: 15px;
+	}
+	.nameAbout {
+		padding: 20px;
+	}
+	.thanks {
+		margin-top: -25px;
+	}
+	.contact {
+		display: relative;
+		width: 450px;
+		margin: auto;
+		padding-bottom: 125px;
+	}
+}
+@media screen and (max-width: 500px) {
+	.imageBox {
+		width: 300px;
+		height: 150px;
+	}	
+	#text {
+		font-size: 20px;
+	}
+	#wrapper {
+		padding-bottom: 125px;
+	}
+	.name {
+		font-size: 60px;
+		margin-top: 15px;
+		margin-bottom: -35px;
+	}
+	.nameAbout {
+		font-size: 20px;
+	}
+	.thanks {
+		font-size: 26px;
+	}
+	.contact {
+		width: 350px;
+		margin: auto;
+	}
+	.fa {
+		font-size: 75px;
+	}
+	.fa:hover {
+		color: rgb(45,45,45);
+	}
+}
+@media screen and (max-width: 400px) {
+	.imageBox {
+		width: 300px;
+		height: 150px;
+	}	
+	#text {
+		font-size: 20px;
+	}
+	#wrapper {
+		padding-bottom: 125px;
+	}
+	.name {
+		font-size: 50px;
+		margin-top: 15px;
+		margin-bottom: -35px;
+	}
+	.nameAbout {
+		font-size: 18px;
+	}
+	.thanks {
+		font-size: 26px;
+	}
+	.contact {
+		width: 300px;
+		margin: auto;
+	}
+	.fa {
+		font-size: 55px;
+	}
 }
