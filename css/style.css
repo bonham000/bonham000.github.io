@@ -99,6 +99,10 @@ a:hover {
 }
 
 /* Add project images for each flexbox div */
+#blog {
+	background: url('/assets/images/blog.png');
+	background-size: cover;
+}
 #google {
 	background: url('/assets/images/google.png');
 	background-size: cover;
@@ -257,6 +261,10 @@ a:hover {
 }
 
 /* Add base opacity for each project */
+#overlayBlog {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlayGoogle {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -415,6 +423,10 @@ a:hover {
 }
 
 /* Add hover stlying for each project */
+#blog:hover #overlayBlog {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 #google:hover #overlayGoogle {
 	opacity:1;
 	transition: opacity 1500ms ease;

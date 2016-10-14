@@ -43,6 +43,10 @@ $(function() {
 });
 
 // Click functions link portfolio image divs to assets:
+$("#blog").click(function() {
+	window.open('/assets/portfolio/blog/index.html', '_blank') ;
+});
+
 $("#google").click(function() {
 	window.open('/assets/portfolio/google/index.html', '_blank') ;
 });
