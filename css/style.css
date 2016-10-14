@@ -693,105 +693,40 @@ a:hover {
 		font-size: 28px;
 	}
 	/* Remove hover stlying for each project on mobile: */
-	#google:hover #overlayGoogle {
-		opacity:0;
-	}
-	#facebook:hover #overlayFacebook {
-		opacity:0;
-	}
-	#newRiver:hover #overlayNewRiver {
-		opacity:0;
-	}
-	#asia:hover #overlayAsia {
-		opacity:0;
-	}
-	#sejong:hover #overlaySejong {
-		opacity:0;
-	}
-	#quotes:hover #overlayQuotes {
-		opacity:0;
-	}
-	#weather:hover #overlayWeather {
-		opacity:0;
-	}
-	#wikipedia:hover #overlayWikipedia {
-		opacity:0;
-	}
-	#stocks:hover #overlayStocks {
-		opacity:0;
-	}
-	#twitch:hover #overlayTwitch {
-		opacity:0;
-	}
-	#calculator:hover #overlayCalculator {
-		opacity:0;
-	}
-	#pomodoro:hover #overlayPomodoro {
-		opacity:0;
-	}
-	#ticTacToe:hover #overlayTicTacToe {
-		opacity:0;
-	}
-	#simon:hover #overlaySimon {
-		opacity:0;
-	}
-	#fccFrontEnd:hover #overlayFccFrontEnd {
-		opacity:0;
-	}
-	#reactProjects:hover #overlayReactProjects {
-		opacity:0;
-	}
-	#spaceStation:hover #overlaySpaceStation {
-		opacity:0;
-	}
-	#markdown:hover #overlayMarkdown {
-		opacity:0;
-	}
-	#leaderboard:hover #overlayLeaderboard {
-		opacity:0;
-	}
-	#notesApp:hover #overlayNotesApp {
-		opacity:0;
-	}
-	#recipeBox:hover #overlayRecipeBox {
-		opacity:0;
-	}
-	#conway:hover #overlayConway {
-		opacity:0;
-	}
-	#dungeon:hover #overlayDungeon {
-		opacity:0;
-	}
-	#unix:hover #overlayUnix {
-		opacity:0;
-	}
-	#barChart:hover #overlayBarChart {
-		opacity:0;
-	}
-	#scatterplot:hover #overlayScatterPlot {
-		opacity:0;
-	}
-	#heatMap:hover #overlayHeatMap {
-		opacity:0;
-	}
-	#forceLayout:hover #overlayForceLayout {
-		opacity:0;
-	}
-	#globalMap:hover #overlayGlobalMap {
-		opacity:0;
-	}
-	#requestHeader:hover #overlayRequestHeader {
-		opacity:0;
-	}
-	#microUrl:hover #overlayMicroUrl {
-		opacity:0;
-	}
-	#imageSearch:hover #overlayImageSearch {
-		opacity:0;
-	}
-	#fileMeta:hover #overlayFileMeta {
-		opacity:0;
-	}
+	#overlayBlog { display: none; }
+	#overlayGoogle { display: none; }
+	#overlayFacebook { display: none; }
+	#overlayNewRiver { display: none; }
+	#overlayAsia { display: none; }
+	#overlaySejong { display: none; }
+	#overlayQuotes { display: none; }
+	#overlayWeather { display: none; }
+	#overlayWikipedia { display: none; }
+	#overlayStocks { display: none; }
+	#overlayTwitch { display: none; }
+	#overlayCalculator { display: none; }
+	#overlayPomodoro { display: none; }
+	#overlayTicTacToe { display: none; }
+	#overlaySimon { display: none; }
+	#overlayFccFrontEnd { display: none; }
+	#overlayReactProjects { display: none; }
+	#overlaySpaceStation { display: none; }
+	#overlayMarkdown { display: none; }
+	#overlayLeaderboard { display: none; }
+	#overlayNotesApp { display: none; }
+	#overlayRecipeBox { display: none; }
+	#overlayConway { display: none; }
+	#overlayDungeon { display: none; }
+	#overlayUnix { display: none; }
+	#overlayBarChart { display: none; }
+	#overlayScatterPlot { display: none; }
+	#overlayHeatMap { display: none; }
+	#overlayForceLayout { display: none; }
+	#overlayGlobalMap { display: none; }
+	#overlayRequestHeader { display: none; }
+	#overlayMicroUrl { display: none; }
+	#overlayImageSearch { display: none; }
+	#overlayFileMeta { display: none; }
 }
 @media screen and (max-width: 775px) {
 	.main {
