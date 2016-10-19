@@ -99,10 +99,6 @@ a:hover {
 }
 
 /* Add project images for each flexbox div */
-#blog {
-	background: url('/assets/images/blog.png');
-	background-size: cover;
-}
 #google {
 	background: url('/assets/images/google.png');
 	background-size: cover;
@@ -259,12 +255,12 @@ a:hover {
 	background: url('/assets/images/file-metadata.png');
 	background-size: cover;
 }
+#blog {
+	background: url('/assets/images/blog.png');
+	background-size: cover;
+}
 
 /* Add base opacity for each project */
-#overlayBlog {
-	opacity:0;
-	transition: opacity 1250ms ease;
-}
 #overlayGoogle {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -421,12 +417,12 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayBlog {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 
 /* Add hover stlying for each project */
-#blog:hover #overlayBlog {
-	opacity:1;
-	transition: opacity 1500ms ease;
-}
 #google:hover #overlayGoogle {
 	opacity:1;
 	transition: opacity 1500ms ease;
@@ -583,6 +579,10 @@ a:hover {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#blog:hover #overlayBlog {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 
 /* Styling for Contact Me div */
 .contact {
@@ -727,6 +727,7 @@ a:hover {
 	#overlayMicroUrl { display: none; }
 	#overlayImageSearch { display: none; }
 	#overlayFileMeta { display: none; }
+	#overlayBlog { display: none; }
 }
 @media screen and (max-width: 775px) {
 	.main {
