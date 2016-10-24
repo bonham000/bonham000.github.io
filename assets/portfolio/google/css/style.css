@@ -45,6 +45,8 @@ ul li a:hover {
 }
 .content {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   top: 50px;
 }
@@ -52,7 +54,9 @@ img#logo{
   margin: auto;
   height: 225px;
   -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
 }
 img#logo:hover {
   -webkit-transform: rotate(360deg);

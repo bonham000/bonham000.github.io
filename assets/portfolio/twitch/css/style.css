@@ -1,8 +1,5 @@
 body {
   background: url('http://i1361.photobucket.com/albums/r662/bonham000/Twitch%20API/central-part-light-green-live-wallpaper-for-mobile_zpsikoc1wjq.jpg') no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
   background-size: cover;
   font-family: Avenir;
   color: rgb(15,15,15);
@@ -58,11 +55,21 @@ button:focus:hover {
 	margin-bottom: 15px;
 }
 #twitchBox {
+	display: -webkit-box;
+	display: -ms-flexbox;
 	display: flex;
-	flex-wrap: wrap;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+	-ms-flex-wrap: wrap;
+	    flex-wrap: wrap;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	    -ms-flex-direction: row;
+	        flex-direction: row;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
 }
 .twitchDiv {
 	background: rgba(250,250,250,.25);

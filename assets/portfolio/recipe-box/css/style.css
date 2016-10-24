@@ -1,5 +1,6 @@
 body {
   background: #379BFF;
+  background: -webkit-linear-gradient(#379BFF, #3773FF) fixed no-repeat;
   background: linear-gradient(#379BFF, #3773FF) fixed no-repeat;
   color: #272932;
   font-family: "Montserrat", sans-serif;
@@ -16,10 +17,19 @@ body {
 }
 
 .aboutWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 70vh;
   color: #272932;
 }
@@ -56,13 +66,20 @@ body {
   height: 100vh;
   padding: 5px 10px 5px 10px;
   background: #9388F2;
+  background: -webkit-linear-gradient(#9388F2, #6464D7) fixed no-repeat;
   background: linear-gradient(#9388F2, #6464D7) fixed no-repeat;
   border-right: 1px solid rgba(20, 20, 20, 0.5);
 }
 .listWrapper .titleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
   margin-bottom: 15px;
 }
@@ -276,6 +293,7 @@ body {
 
 .transitionDiv-enter.transitionDiv-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 1500ms ease-in;
   transition: opacity 1500ms ease-in;
 }
 
@@ -285,6 +303,7 @@ body {
 
 .transitionDiv-leave.transitionDiv-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 50ms ease-in;
   transition: opacity 50ms ease-in;
 }
 
@@ -294,6 +313,7 @@ body {
 
 .editTransitionDiv-appear.editTransitionDiv-appear-active {
   opacity: 1;
+  -webkit-transition: opacity 750ms ease-in;
   transition: opacity 750ms ease-in;
 }
 

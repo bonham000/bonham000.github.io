@@ -1,4 +1,5 @@
 body {
+  background: -webkit-linear-gradient(bottom left, #00dffc, #67D5B5) fixed no-repeat;
   background: linear-gradient(to top right, #00dffc, #67D5B5) fixed no-repeat;
   color: #274555;
   padding: 0;
@@ -29,8 +30,12 @@ body {
 }
 
 .flexWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .flexWrapper .controlPanel {
   background: rgba(20, 20, 20, 0.5);
@@ -84,9 +89,15 @@ body {
   height: 480px;
   padding-left: 1px;
   padding-bottom: 1px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .flexWrapper .boardWrapper .gameBox:hover {
   cursor: pointer;

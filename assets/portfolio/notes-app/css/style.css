@@ -1,5 +1,6 @@
 body {
   background: #4829D2;
+  background: -webkit-linear-gradient(#4829D2, #093888) fixed no-repeat;
   background: linear-gradient(#4829D2, #093888) fixed no-repeat;
   background: #323232;
   color: #272932;
@@ -17,10 +18,19 @@ body {
 }
 
 .aboutWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 70vh;
   color: #aacfd0;
 }
@@ -60,9 +70,15 @@ body {
   border-right: 1px solid rgba(250, 250, 250, 0.35);
 }
 .listWrapper .titleBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 15px;
   margin-bottom: 5px;
 }
@@ -100,6 +116,7 @@ body {
   background: #274555;
   color: #10EB7D;
   border: 1px solid rgba(20, 20, 20, 0.5);
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .listWrapper .listBtn {
@@ -108,23 +125,28 @@ body {
   margin: 5px;
   background: #FFE37D;
   border: 1px solid rgba(20, 20, 20, 0.5);
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .listWrapper .removeBtn {
   background: #FF6464;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .listWrapper .noteListItem:hover, .listWrapper .listBtn:hover {
   cursor: pointer;
   background: #FFD150;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .listWrapper .noteListItem:hover {
   background: #234B69;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .listWrapper .removeBtn:hover {
   background: #FA3D57;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .listWrapper .allBtn {
@@ -158,26 +180,32 @@ body {
   margin-top: 15px;
   padding: 10px 0 10px 0;
   border: 1px solid rgba(20, 20, 20, 0.5);
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .submitForm button:hover {
   cursor: pointer;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .submitForm .submitBtn {
   background: #10D091;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .submitForm .submitBtn:hover {
   background: #10EB7D;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .submitForm .cancelBtn {
   background: #FF6464;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .submitForm .cancelBtn:hover {
   background: #FA3D57;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 
@@ -242,14 +270,17 @@ body {
   padding: 5px 0 5px 0;
   border: 1px solid rgba(20, 20, 20, 0.5);
   background: #FFE37D;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .noteView .editBtn:hover {
   background: #FFD150;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .noteView .editBtn:focus {
   outline: none;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .noteView .removeBtn {
@@ -262,10 +293,12 @@ body {
   padding: 5px 0 5px 0;
   border: 1px solid rgba(20, 20, 20, 0.5);
   background: #FF6464;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .noteView .removeBtn:hover {
   background: #FA3D57;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 
@@ -307,21 +340,25 @@ body {
 .editBox .submitBtn {
   background: #10D091;
   margin-left: 15px;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .editBox .submitBtn:hover {
   background: #10EB7D;
   cursor: pointer;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .editBox .cancelBtn {
   background: #FF6464;
   margin-left: 15px;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 .editBox .cancelBtn:hover {
   background: #FA3D57;
   cursor: pointer;
+  -webkit-transition: background 500ms ease;
   transition: background 500ms ease;
 }
 
@@ -331,6 +368,7 @@ body {
 
 .aboutDiv-enter.aboutDiv-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 1000ms ease-in;
   transition: opacity 1000ms ease-in;
 }
 
@@ -340,6 +378,7 @@ body {
 
 .aboutDiv-leave.aboutDiv-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
@@ -349,6 +388,7 @@ body {
 
 .submitDiv-enter.submitDiv-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 750ms ease-in;
   transition: opacity 750ms ease-in;
 }
 
@@ -358,6 +398,7 @@ body {
 
 .submitDiv-leave.submitDiv-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 100ms ease;
   transition: opacity 100ms ease;
 }
 
@@ -367,6 +408,7 @@ body {
 
 .transitionDiv-enter.transitionDiv-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 750ms ease-in;
   transition: opacity 750ms ease-in;
 }
 
@@ -376,6 +418,7 @@ body {
 
 .transitionDiv-leave.transitionDiv-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 
@@ -385,6 +428,7 @@ body {
 
 .editTransitionDiv-appear.editTransitionDiv-appear-active {
   opacity: 1;
+  -webkit-transition: opacity 750ms ease-in;
   transition: opacity 750ms ease-in;
 }
 
@@ -394,6 +438,7 @@ body {
 
 .editTransitionDiv-leave.editTransitionDiv-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 100ms ease-in;
   transition: opacity 100ms ease-in;
 }
 

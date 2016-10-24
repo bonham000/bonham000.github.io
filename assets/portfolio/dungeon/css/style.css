@@ -18,6 +18,7 @@ body {
 
 .aboutScreen-appear.aboutScreen-appear-active {
   opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in;
 }
 
@@ -27,6 +28,7 @@ body {
 
 .aboutScreen-enter.aboutScreen-enter-active {
   opacity: 1;
+  -webkit-transition: opacity 500ms ease-in;
   transition: opacity 500ms ease-in;
 }
 
@@ -36,6 +38,7 @@ body {
 
 .aboutScreen-leave.aboutScreen-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 1000ms ease-in;
   transition: opacity 1000ms ease-in;
 }
 
@@ -48,6 +51,7 @@ body {
   padding: 0;
   margin: 0;
   z-index: 5;
+  background: -webkit-linear-gradient(top left, #0f1419, #221416);
   background: linear-gradient(to bottom right, #0f1419, #221416);
 }
 .about .aboutContainer {
@@ -75,8 +79,13 @@ body {
   color: #ff4e50;
 }
 .about .aboutContainer .content .challenges {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 .about .aboutContainer .content .challenges img {
   width: 100px;
@@ -117,9 +126,15 @@ body {
   width: 100%;
   background: #19281E;
   border-bottom: 1px solid #67D5B5;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .header #headerSpacer {
   height: 0;
@@ -131,9 +146,15 @@ body {
 }
 
 .gameWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
   margin: 50px 0 0 0;
   padding: 0;
 }
@@ -168,16 +189,30 @@ body {
   margin-top: 7px;
 }
 .gameWrapper .sideBar .container .certFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gameWrapper .sideBar .container .certList {
   margin-top: 2px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 250px;
   padding-top: 5px;
   padding-bottom: 2px;
@@ -190,16 +225,30 @@ body {
   margin-top: 7px;
 }
 .gameWrapper .sideBar .container .skillsFlex {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 8px;
 }
 .gameWrapper .sideBar .container .skillsList {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 250px;
   padding-top: 4px;
   margin-top: 0px;
@@ -212,13 +261,23 @@ body {
 .gameWrapper .sideBar .container .soundContainer {
   position: relative;
   margin-top: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .gameWrapper .sideBar .container .soundContainer .soundControl {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 200px;
   height: 50px;
   border: 1px solid rgba(150, 150, 150, 0.45);
@@ -239,19 +298,32 @@ body {
   padding: 0;
   margin: 0;
   background: #232323;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .gameWrapper .game .map {
   width: 1000px;
   height: 600px;
   margin: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   overflow: hidden;
   border: 1px solid #00dffc;
+  background: -webkit-linear-gradient(#47327C, #1C2D63);
   background: linear-gradient(#47327C, #1C2D63);
 }
 .gameWrapper .game .map .gridItem {
@@ -259,12 +331,17 @@ body {
 }
 
 .headerChange-enter {
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
   transition: transform 1s ease-in-out;
-  transform: translate(1000px, 0);
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+  -webkit-transform: translate(1000px, 0);
+          transform: translate(1000px, 0);
 }
 
 .headerChange-enter.headerChange-enter-active {
-  transform: translate(0, 0);
+  -webkit-transform: translate(0, 0);
+          transform: translate(0, 0);
 }
 
 .headerChange-leave {
@@ -274,6 +351,7 @@ body {
 
 .headerChange-leave.headerChange-leave-active {
   opacity: 0.01;
+  -webkit-transition: opacity 10ms ease-in;
   transition: opacity 10ms ease-in;
 }
 
@@ -287,9 +365,15 @@ body {
   margin: 0;
   z-index: 5;
   background: rgba(25, 25, 25, 0.7);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   color: #f94e3f;
   font-size: 65px;
 }

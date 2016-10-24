@@ -116,7 +116,6 @@ input:focus + .sliderRight {
 
 input:checked + .slider:before {
   -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
   transform: translateX(26px);
 }
 
@@ -148,8 +147,11 @@ input:checked + .slider:before {
 }
 .row {
   width: 580px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto;
 }
 .container {
@@ -271,10 +273,17 @@ a:hover {
   top: 0;
   z-index: 5;
   background: rgba(5,5,5,.875);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: no-wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: no-wrap;
+      flex-wrap: no-wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .rules {
   color: rgb(235,235,235);1
@@ -296,6 +305,5 @@ a:hover {
   color: rgb(255, 113, 52);
   cursor: pointer;
 }
-
 
 

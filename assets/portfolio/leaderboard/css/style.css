@@ -1,5 +1,6 @@
 body {
   background: #2D1E2F;
+  background: -webkit-linear-gradient(#2D1E2F, #13293D) fixed no-repeat;
   background: linear-gradient(#2D1E2F, #13293D) fixed no-repeat;
   color: #CC444B;
   font-family: "Mukta Vaani", sans-serif;
@@ -18,8 +19,12 @@ body {
   text-align: center;
 }
 .wrapper .btnWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 25px;
 }
 .wrapper .btnWrapper .fa {

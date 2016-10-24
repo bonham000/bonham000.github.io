@@ -23,11 +23,21 @@ body {
   margin-bottom: -5px;
 }
 .pageDescription .tech {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .pageDescription .tech i {
   font-size: 75px;
@@ -43,10 +53,18 @@ body {
 }
 
 .projectLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   padding: 0;
   margin: 0;
   width: 100vw;
@@ -64,10 +82,12 @@ body {
   width: auto;
   margin: 5px;
   border-radius: 6px;
+  -webkit-transition: box-shadow 50ms ease;
   transition: box-shadow 50ms ease;
 }
 .projectLinks img:hover {
   box-shadow: 2px 2px 1px #272838;
+  -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
   cursor: pointer;
 }
@@ -86,10 +106,18 @@ body {
   margin-bottom: 0;
 }
 .projectLinks .intProjectsWrapper .intProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .projectLinks .advProjectsWrapper {
   background: #F1FFE7;
@@ -106,10 +134,18 @@ body {
   margin-bottom: 0;
 }
 .projectLinks .advProjectsWrapper .advProjects {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .metaData .analysis {
@@ -149,9 +185,15 @@ body {
 .metaData .codeComparison {
   width: 100vw;
   height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .metaData .codeComparison #chartContainer {
   width: 875px;
@@ -227,10 +269,17 @@ body {
   width: 100vw;
   height: 100vh;
   background: #272838;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .credits .creditsWrapper {
   width: 750px;
@@ -240,11 +289,13 @@ body {
   font-size: 40px;
   color: #FF6B6B;
   text-decoration: none;
+  -webkit-transition: color 150ms ease, text-decoration 150ms ease;
   transition: color 150ms ease, text-decoration 150ms ease;
 }
 .credits .creditsWrapper a:hover {
   color: #4ECDC4;
   text-decoration: underline;
+  -webkit-transition: color 150ms ease, text-decoration 150ms ease;
   transition: color 150ms ease, text-decoration 150ms ease;
 }
 
@@ -304,10 +355,18 @@ body {
   }
 
   .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -331,10 +390,18 @@ body {
     font-size: 22px;
   }
   .projectLinks .intProjectsWrapper .intProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projectLinks .advProjectsWrapper {
     margin: 45px 5px 5px 5px;
@@ -346,10 +413,18 @@ body {
     font-size: 22px;
   }
   .projectLinks .advProjectsWrapper .advProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .analysis .metaData .analysis h1 {
@@ -372,10 +447,17 @@ body {
     width: 100vw;
     height: 100vh;
     background: #272838;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .credits .creditsWrapper {
     width: 750px;
@@ -410,10 +492,18 @@ body {
   }
 
   .projectLinks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 0;
     margin: 0;
     width: 100vw;
@@ -439,10 +529,18 @@ body {
     width: 175px;
   }
   .projectLinks .intProjectsWrapper .intProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .projectLinks .advProjectsWrapper {
     margin: 5px;
@@ -453,10 +551,18 @@ body {
     width: 175px;
   }
   .projectLinks .advProjectsWrapper .advProjects {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 
   .metaData .analysis h1 {
