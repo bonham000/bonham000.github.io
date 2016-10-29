@@ -82,6 +82,7 @@ $("#requestHeader").click(function() { window.open('https://request-header-parse
 $("#microUrl").click(function() { window.open('https://micro-url-service.herokuapp.com/', '_blank'); });
 $("#imageSearch").click(function() { window.open('https://custom-image-search.herokuapp.com/', '_blank'); });
 $("#fileMeta").click(function() { window.open('https://upload-metadata-microservice.herokuapp.com/', '_blank'); });
+$("#flashcards").click(function() { window.open('', '_blank'); });
 $("#blog").click(function() { window.open('/assets/portfolio/blog/index.html', '_blank'); });
 
 

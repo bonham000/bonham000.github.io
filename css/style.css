@@ -255,6 +255,10 @@ a:hover {
 	background: url('/assets/images/file-metadata.png');
 	background-size: cover;
 }
+#flashcards {
+	background: url('/assets/images/flashcards-app.png');
+	background-size: cover;
+}
 #blog {
 	background: url('/assets/images/blog.png');
 	background-size: cover;
@@ -417,6 +421,10 @@ a:hover {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayFlashcards {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 #overlayBlog {
 	opacity:0;
 	transition: opacity 1250ms ease;
@@ -576,6 +584,10 @@ a:hover {
 	transition: opacity 1500ms ease;
 }
 #fileMeta:hover #overlayFileMeta {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#flashcards:hover #overlayFlashcards {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
