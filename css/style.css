@@ -259,6 +259,10 @@ a:hover {
 	background: url('/assets/images/flashcards-app.png');
 	background-size: cover;
 }
+#votingApp {
+	background: url('/assets/images/voting-app.png');
+	background-size: cover;
+}
 #blog {
 	background: url('/assets/images/blog.png');
 	background-size: cover;
@@ -422,6 +426,10 @@ a:hover {
 	transition: opacity 1250ms ease;
 }
 #overlayFlashcards {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayVotingApp {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
@@ -591,6 +599,10 @@ a:hover {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#votingApp:hover #overlayVotingApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 #blog:hover #overlayBlog {
 	opacity:1;
 	transition: opacity 1500ms ease;
@@ -739,6 +751,8 @@ a:hover {
 	#overlayMicroUrl { display: none; }
 	#overlayImageSearch { display: none; }
 	#overlayFileMeta { display: none; }
+	#overlayFlashcards { display: none; }
+	#overlayVotingApp { display: none; }
 	#overlayBlog { display: none; }
 }
 @media screen and (max-width: 775px) {
