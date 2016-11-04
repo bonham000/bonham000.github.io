@@ -84,6 +84,9 @@ $("#imageSearch").click(function() { window.open('https://custom-image-search.he
 $("#fileMeta").click(function() { window.open('https://upload-metadata-microservice.herokuapp.com/', '_blank'); });
 $("#flashcards").click(function() { window.open('https://obscure-chamber-70801.herokuapp.com/', '_blank'); });
 $("#votingApp").click(function() { window.open('https://blooming-beach-19422.herokuapp.com/', '_blank'); });
+$("#nightlifeApp").click(function() { window.open('https://radiant-journey-47296.herokuapp.com/', '_blank'); });
+$("#stocksApp").click(function() { window.open('https://blooming-ocean-10450.herokuapp.com/', '_blank'); });
+$("#bookClubApp").click(function() { window.open('https://murmuring-chamber-37829.herokuapp.com/', '_blank'); });
 $("#blog").click(function() { window.open('/assets/portfolio/blog/index.html', '_blank'); });
 
 

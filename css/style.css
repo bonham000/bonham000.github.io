@@ -263,6 +263,18 @@ a:hover {
 	background: url('/assets/images/voting-app.png');
 	background-size: cover;
 }
+#nightlifeApp {
+	background: url('/assets/images/nightlife-app.png');
+	background-size: cover;
+}
+#stocksApp {
+	background: url('/assets/images/stocks-app.png');
+	background-size: cover;
+}
+#bookClubApp {
+	background: url('/assets/images/book-club-app.png');
+	background-size: cover;
+}
 #blog {
 	background: url('/assets/images/blog.png');
 	background-size: cover;
@@ -430,6 +442,18 @@ a:hover {
 	transition: opacity 1250ms ease;
 }
 #overlayVotingApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayNightlifeApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayStocksApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayBookClubApp {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
@@ -603,6 +627,18 @@ a:hover {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#nightlifeApp:hover #overlayNightlifeApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#stocksApp:hover #overlayStocksApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#bookClubApp:hover #overlayBookClubApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 #blog:hover #overlayBlog {
 	opacity:1;
 	transition: opacity 1500ms ease;
@@ -753,6 +789,9 @@ a:hover {
 	#overlayFileMeta { display: none; }
 	#overlayFlashcards { display: none; }
 	#overlayVotingApp { display: none; }
+	#overlayNightlifeApp { display: none; }
+	#overlayStocksApp { display: none; }
+	#overlayBookClubApp { display: none; }
 	#overlayBlog { display: none; }
 }
 @media screen and (max-width: 775px) {
