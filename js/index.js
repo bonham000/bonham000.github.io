@@ -1,11 +1,12 @@
 
-// Resive top and bottom divs based on window height:
+//Resive top and bottom divs based on window height:
 $(document).ready(function() {
 
   function setHeight() {
     windowHeight = $(window).innerHeight();
-    $('.main').css('min-height', windowHeight);
-    $('.contact').css('min-height', windowHeight);
+    // $('.main').css('min-height', windowHeight);
+    // $('.contact').css('min-height', windowHeight);
+    $('.certificatesWrapper').css('min-height', windowHeight);
 
   };
   setHeight();
@@ -82,13 +83,13 @@ $("#requestHeader").click(function() { window.open('https://request-header-parse
 $("#microUrl").click(function() { window.open('https://micro-url-service.herokuapp.com/', '_blank'); });
 $("#imageSearch").click(function() { window.open('https://custom-image-search.herokuapp.com/', '_blank'); });
 $("#fileMeta").click(function() { window.open('https://upload-metadata-microservice.herokuapp.com/', '_blank'); });
+$("#blog").click(function() { window.open('/assets/portfolio/blog/index.html', '_blank'); });
 $("#flashcards").click(function() { window.open('https://obscure-chamber-70801.herokuapp.com/', '_blank'); });
 $("#votingApp").click(function() { window.open('https://blooming-beach-19422.herokuapp.com/', '_blank'); });
 $("#nightlifeApp").click(function() { window.open('https://radiant-journey-47296.herokuapp.com/', '_blank'); });
 $("#stocksApp").click(function() { window.open('https://blooming-ocean-10450.herokuapp.com/', '_blank'); });
 $("#bookClubApp").click(function() { window.open('https://murmuring-chamber-37829.herokuapp.com/', '_blank'); });
 $("#pinterestClone").click(function() { window.open('http://hidden-woodland-32853.herokuapp.com/', '_blank'); });
-$("#blog").click(function() { window.open('/assets/portfolio/blog/index.html', '_blank'); });
 
 
 
