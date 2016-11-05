@@ -87,6 +87,7 @@ $("#votingApp").click(function() { window.open('https://blooming-beach-19422.her
 $("#nightlifeApp").click(function() { window.open('https://radiant-journey-47296.herokuapp.com/', '_blank'); });
 $("#stocksApp").click(function() { window.open('https://blooming-ocean-10450.herokuapp.com/', '_blank'); });
 $("#bookClubApp").click(function() { window.open('https://murmuring-chamber-37829.herokuapp.com/', '_blank'); });
+$("#pinterestClone").click(function() { window.open('http://hidden-woodland-32853.herokuapp.com/', '_blank'); });
 $("#blog").click(function() { window.open('/assets/portfolio/blog/index.html', '_blank'); });
 
 

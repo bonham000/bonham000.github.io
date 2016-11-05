@@ -275,6 +275,10 @@ a:hover {
 	background: url('/assets/images/book-club-app.png');
 	background-size: cover;
 }
+#pinterestClone {
+	background: url('/assets/images/pinterest-clone.png');
+	background-size: cover;
+}
 #blog {
 	background: url('/assets/images/blog.png');
 	background-size: cover;
@@ -454,6 +458,10 @@ a:hover {
 	transition: opacity 1250ms ease;
 }
 #overlayBookClubApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayPinterestClone {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
@@ -639,6 +647,10 @@ a:hover {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#pinterestClone:hover #overlayPinterestClone {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 #blog:hover #overlayBlog {
 	opacity:1;
 	transition: opacity 1500ms ease;
@@ -792,6 +804,7 @@ a:hover {
 	#overlayNightlifeApp { display: none; }
 	#overlayStocksApp { display: none; }
 	#overlayBookClubApp { display: none; }
+	#overlayPinterestClone { display: none; }
 	#overlayBlog { display: none; }
 }
 @media screen and (max-width: 775px) {
