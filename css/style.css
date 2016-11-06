@@ -94,19 +94,9 @@ a:hover {
 
 /* Styling for portfolio flexbox */
 .container {
-/*  display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	flex-wrap: wrap;*/
-
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -118,7 +108,7 @@ a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;	
-  	-webkit-justify-content: center;
+  -webkit-justify-content: center;
 	justify-content: center;
 }
 .imageBox {  
@@ -134,13 +124,20 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-/*	display: -webkit-flex;
-	display: flex;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;	
+  -webkit-justify-content: center;
 	justify-content: center;
-	flex-wrap: wrap;*/
 }
 .overlay:hover {
 	cursor: pointer;
@@ -717,20 +714,9 @@ a:hover {
 	height: 100vh;
 	padding: 0;
 	margin: 0;
-	/*display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
-*/
-
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   -webkit-box-align: center;
@@ -738,13 +724,13 @@ a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  	-webkit-justify-content: center;
+  -webkit-justify-content: center;
 	justify-content: center;
 }
 .awesome {
-  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
   flex-direction: row;
@@ -756,17 +742,8 @@ a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-
-
-/*	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
+  -webkit-justify-content: center;
 	justify-content: center;
-	flex-wrap: wrap;*/
 }
 .fa {
 	margin: 20px;
@@ -796,7 +773,7 @@ a:hover {
 		width: 400px;
 		height: 200px;
 	}
-	#text {
+	.text {
 		font-size: 30px;
 	}
 	.fa {
@@ -829,7 +806,7 @@ a:hover {
 		width: 350px;
 		height: 175px;
 	}
-	#text {
+	.text {
 		font-size: 20px;
 	}
 	.fa {
@@ -855,49 +832,6 @@ a:hover {
 	.thanks {
 		font-size: 28px;
 	}
-	/* Remove hover styling for each project on mobile: */
-	/*#overlayBlog { display: none; }
-	#overlayGoogle { display: none; }
-	#overlayFacebook { display: none; }
-	#overlayNewRiver { display: none; }
-	#overlayAsia { display: none; }
-	#overlaySejong { display: none; }
-	#overlayQuotes { display: none; }
-	#overlayWeather { display: none; }
-	#overlayWikipedia { display: none; }
-	#overlayStocks { display: none; }
-	#overlayTwitch { display: none; }
-	#overlayCalculator { display: none; }
-	#overlayPomodoro { display: none; }
-	#overlayTicTacToe { display: none; }
-	#overlaySimon { display: none; }
-	#overlayFccFrontEnd { display: none; }
-	#overlayReactProjects { display: none; }
-	#overlaySpaceStation { display: none; }
-	#overlayMarkdown { display: none; }
-	#overlayLeaderboard { display: none; }
-	#overlayNotesApp { display: none; }
-	#overlayRecipeBox { display: none; }
-	#overlayConway { display: none; }
-	#overlayDungeon { display: none; }
-	#overlayUnix { display: none; }
-	#overlayBarChart { display: none; }
-	#overlayScatterPlot { display: none; }
-	#overlayHeatMap { display: none; }
-	#overlayForceLayout { display: none; }
-	#overlayGlobalMap { display: none; }
-	#overlayRequestHeader { display: none; }
-	#overlayMicroUrl { display: none; }
-	#overlayImageSearch { display: none; }
-	#overlayFileMeta { display: none; }
-	#overlayBlog { display: none; }
-	#overlayFlashcards { display: none; }
-	#overlayVotingApp { display: none; }
-	#overlayNightlifeApp { display: none; }
-	#overlayStocksApp { display: none; }
-	#overlayBookClubApp { display: none; }
-	#overlayPinterestClone { display: none; }*/
-
 }
 @media screen and (max-width: 775px) {
 	.main {
@@ -937,15 +871,61 @@ a:hover {
 		margin: auto;
 		padding-bottom: 125px;
 	}
+	/* Remove hover styling for each project on mobile: */
+	#overlayBlog { display: none; }
+	#overlayGoogle { display: none; }
+	#overlayFacebook { display: none; }
+	#overlayNewRiver { display: none; }
+	#overlayAsia { display: none; }
+	#overlaySejong { display: none; }
+	#overlayQuotes { display: none; }
+	#overlayWeather { display: none; }
+	#overlayWikipedia { display: none; }
+	#overlayStocks { display: none; }
+	#overlayTwitch { display: none; }
+	#overlayCalculator { display: none; }
+	#overlayPomodoro { display: none; }
+	#overlayTicTacToe { display: none; }
+	#overlaySimon { display: none; }
+	#overlayFccFrontEnd { display: none; }
+	#overlayAlgorithms { display: none; }
+	#overlayReactProjects { display: none; }
+	#overlayCodeGod { display: none; }
+	#overlaySpaceStation { display: none; }
+	#overlayToDoApp { display: none; }
+	#overlayMarkdown { display: none; }
+	#overlayLeaderboard { display: none; }
+	#overlayNotesApp { display: none; }
+	#overlayRecipeBox { display: none; }
+	#overlayConway { display: none; }
+	#overlayDungeon { display: none; }
+	#overlayUnix { display: none; }
+	#overlayReactBarChart { display: none; }
+	#overlayBarChart { display: none; }
+	#overlayScatterPlot { display: none; }
+	#overlayHeatMap { display: none; }
+	#overlayForceLayout { display: none; }
+	#overlayGlobalMap { display: none; }
+	#overlayRequestHeader { display: none; }
+	#overlayMicroUrl { display: none; }
+	#overlayImageSearch { display: none; }
+	#overlayFileMeta { display: none; }
+	#overlayBlog { display: none; }
+	#overlayFlashcards { display: none; }
+	#overlayVotingApp { display: none; }
+	#overlayNightlifeApp { display: none; }
+	#overlayStocksApp { display: none; }
+	#overlayBookClubApp { display: none; }
+	#overlayPinterestClone { display: none; }
+	.text {
+		display: none;
+	}
 }
 @media screen and (max-width: 500px) {
 	.imageBox {
 		width: 300px;
 		height: 150px;
 	}	
-	#text {
-		font-size: 20px;
-	}
 	#wrapper {
 		padding-bottom: 125px;
 	}
@@ -983,9 +963,6 @@ a:hover {
 		width: 300px;
 		height: 150px;
 	}	
-	#text {
-		font-size: 20px;
-	}
 	#wrapper {
 		padding-bottom: 125px;
 	}
