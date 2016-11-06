@@ -808,8 +808,8 @@ a:hover {
 	.thanks {
 		font-size: 28px;
 	}
-	/* Remove hover stlying for each project on mobile: */
-	#overlayBlog { display: none; }
+	/* Remove hover styling for each project on mobile: */
+	/*#overlayBlog { display: none; }
 	#overlayGoogle { display: none; }
 	#overlayFacebook { display: none; }
 	#overlayNewRiver { display: none; }
@@ -849,7 +849,7 @@ a:hover {
 	#overlayNightlifeApp { display: none; }
 	#overlayStocksApp { display: none; }
 	#overlayBookClubApp { display: none; }
-	#overlayPinterestClone { display: none; }
+	#overlayPinterestClone { display: none; }*/
 
 }
 @media screen and (max-width: 775px) {
