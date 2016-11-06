@@ -1,5 +1,6 @@
 body {
 	padding: 0;
+	margin: 0;
 	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
 	font-family: Avenir, sans-serif;
 }
