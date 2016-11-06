@@ -53,7 +53,6 @@ var Root = React.createClass({
       dataType: "jsonp",
       success: function (data) {
         this.setState({ numberPeople: data.number, people: data.people });
-        console.log(this.state.people);
       }.bind(this),
       error: function error(jqXHR, textStatus, errorThrown) {
         console.log("Error in the astros API call");
@@ -63,6 +62,7 @@ var Root = React.createClass({
     this.call();
   },
   call: function call() {
+    console.log('calling');
     var timer = setInterval(function () {
       var currLat = this.state.latitude;
       var currLon = this.state.longitude;
@@ -108,7 +108,7 @@ var Root = React.createClass({
           var currCount = this.state.count;
           var newCount = Number(currCount) + 1;
 
-          currTable.push([currCount, data.iss_position.latitude.toFixed(2), data.iss_position.longitude.toFixed(2), data.timestamp, natural.toString().substr(0, 9), velocity.toString().substr(0, 5), (velocity / 1.609344).toString().substr(0, 5)]);
+          currTable.push([currCount, data.iss_position.latitude, data.iss_position.longitude, data.timestamp, natural.toString().substr(0, 9), velocity.toString().substr(0, 5), (velocity / 1.609344).toString().substr(0, 5)]);
 
           this.setState({
             latitude: data.iss_position.latitude,
