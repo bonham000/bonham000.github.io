@@ -264,10 +264,10 @@ body {
 	.carousel,
 	.item,
 	.active {
-	    width: 100vw;
+	  width: 100vw;
 	}
 	.carousel-inner {
-	    width: 100vw;
+	   width: 100vw;
 	}
 	.title_caption {
 		font-size: 45px;
@@ -278,29 +278,32 @@ body {
 		height: auto;
 	}
 	#width_title {
-		font-size: 40px;
+		font-size: 28px;
 	}
 	#width_title_1 {
-		font-size: 40px;
+		font-size: 28px;
 	}	
 	#width_title_2 {
-		font-size: 40px;
+		font-size: 28px;
 	}
 	#width_title_3 {
-		font-size: 40px;
+		font-size: 28px;
 	}	
 	.tri_img, .activity_img {
-		width: 350px;
-		height: 350px;
+		width: 275px;
+		height: 275px;
+		margin: 15px auto;
+		border: 5px solid rgb(60,60,60);
 	}
-	.tri_img {
-		margin: 10px auto;
+	.tri_img:hover, .activity_img:hover {
+		border: 5px solid rgb(60,60,60);
 	}
 	.activity {
 		padding: 0;
 	}
 	#map {
-		width: 100vw;
+		width: 80vw;
+		height: 250px;
 		padding: 0;
 		margin: 15px auto;
 	}
@@ -325,19 +328,24 @@ body {
 		width: 100vw;
 	}
 	.span_text{
-		font-size: 22px;
-		width: 95vw;
+		font-size: 18px;
+		width: 90vw;
 		padding: 0;
-		margin: auto;
+		margin: 15px auto;
 	}
 	.cont {
 		width: 100vw;
 		padding: 0;
 	}
+	.content {
+		font-size: 18px;
+		width: 90vw;
+		margin: 15px auto;
+	}
 	.cont_text {
-		font-size: 22px;
+		font-size: 18px;
 		width: 90vw;
 		padding: 0 0 0 0;
-		margin: auto;
+		margin: 15px auto;
 	}
 }
