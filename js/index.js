@@ -1,22 +1,4 @@
 
-//Resive top and bottom divs based on window height:
-$(document).ready(function() {
-
-  function setHeight() {
-    windowHeight = $(window).innerHeight();
-    // $('.main').css('min-height', windowHeight);
-    // $('.contact').css('min-height', windowHeight);
-    $('.certificatesWrapper').css('min-height', windowHeight);
-
-  };
-  setHeight();
-  
-  $(window).resize(function() {
-    setHeight();
-  });
-
-});
-
 // Show/Hide scroll to top arrow based on page position:
 $(window).scroll(function() {
 	if ($(this).scrollTop()) {
