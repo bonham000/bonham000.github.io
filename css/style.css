@@ -94,7 +94,7 @@ a:hover {
 
 /* Styling for portfolio flexbox */
 .container {
-  display: -webkit-flex;
+/*  display: -webkit-flex;
 	display: flex;
 	-webkit-flex-direction: row;
 	flex-direction: row;
@@ -102,7 +102,24 @@ a:hover {
 	align-items: center;
 	-webkit-justify-content: center;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
+
+  display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
+  display: -moz-box; /* OLD - Firefox 19- (buggy but mostly works) */
+  display: -ms-flexbox; /* TWEENER - IE 10 */
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; 
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;	
+  	-webkit-justify-content: center;
+	justify-content: center;
 }
 .imageBox {  
 	width: 500px;
@@ -117,13 +134,13 @@ a:hover {
 	width: 100%;
 	height: 100%;
 	border-radius: 10px;
-	display: -webkit-flex;
+/*	display: -webkit-flex;
 	display: flex;
 	-webkit-align-items: center;
 	align-items: center;
 	-webkit-justify-content: center;
 	justify-content: center;
-	flex-wrap: wrap;
+	flex-wrap: wrap;*/
 }
 .overlay:hover {
 	cursor: pointer;
@@ -721,6 +738,8 @@ a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  	-webkit-justify-content: center;
+	justify-content: center;
 }
 .awesome {
   display: -webkit-box; /* OLD - iOS 6-, Safari 3.1-6 */
@@ -737,6 +756,7 @@ a:hover {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+
 
 /*	display: -webkit-flex;
 	display: flex;
