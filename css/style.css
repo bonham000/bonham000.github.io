@@ -17,7 +17,7 @@ body {
 	justify-content: center;
 	flex-wrap: wrap;
 	width: 100vw;
-	height: 100vh;
+	min-height: 100vh;
 }
 #wrapper {
 	width: 900px;
@@ -867,6 +867,9 @@ a:hover {
 		width: 215px;
 		margin: 5px;
 	}
+	.certificatesTitle {
+		font-size: 22px;
+	}
 	.contact {
 		width: 450px;
 		margin: auto;
@@ -944,7 +947,7 @@ a:hover {
 	.certificatesTitle {
 		font-size: 20px;
 		width: 90vw;
-	}	
+	}
 	.thanks {
 		font-size: 26px;
 	}
