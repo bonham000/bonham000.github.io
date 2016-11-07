@@ -2,7 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
-	font-family: Avenir, sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
 }
 .main {
 	text-align: center;
@@ -39,15 +39,16 @@ body {
 .name {
 	font-size: 90px;
 	margin: -5px 0 0 0;
+	font-family: 'Montserrat', sans-serif;
 }
 .nameAbout {
-	margin-top: -5px;
+	margin: 12px auto;
 	font-size: 32px;
 	max-width: 900px;
+	line-height: 33px;
 }
 .thanks {
-	margin-top: -20px;
-	font-size: 40px;
+	font-size: 38px;
 	max-width: 900px;
 }
 a, a:visited {
@@ -65,9 +66,10 @@ a:hover {
 
 .certificatesTitle {
 	font-size: 28px;
-	width: 75vw;
+	max-width: 850px;
 	margin: auto;
 	text-align: center;
+	line-height: 33px;
 }
 
 .certificates {
@@ -789,7 +791,6 @@ a:hover {
 	}
 	.name, .nameAbout {
 		display: block !important;
-		font-family: Avenir;
 	}
 	.nameAbout {
 		font-size: 28px;
@@ -856,6 +857,7 @@ a:hover {
 	}
 	.nameAbout {
 		padding: 20px;
+		line-height: 26px;
 	}
 	.thanks {
 		margin-top: -25px;
@@ -869,6 +871,7 @@ a:hover {
 	}
 	.certificatesTitle {
 		font-size: 22px;
+		line-height: 26px;
 	}
 	.contact {
 		width: 450px;
@@ -940,6 +943,7 @@ a:hover {
 	}
 	.nameAbout {
 		font-size: 20px;
+		line-height: 22px;
 	}
 	.certificatesWrapper {
 		margin-bottom: 55px;
@@ -947,9 +951,10 @@ a:hover {
 	.certificatesTitle {
 		font-size: 20px;
 		width: 90vw;
+		line-height: 22px;
 	}
 	.thanks {
-		font-size: 26px;
+		font-size: 24px;
 	}
 	.contact {
 		width: 350px;
