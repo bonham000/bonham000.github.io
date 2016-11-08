@@ -1,7 +1,12 @@
 body {
   background: url('http://i1361.photobucket.com/albums/r662/bonham000/Twitch%20API/central-part-light-green-live-wallpaper-for-mobile_zpsikoc1wjq.jpg') no-repeat center center fixed;
   background-size: cover;
-  font-family: Avenir;
+
+  font-family: 'Gentium Basic', serif;
+
+
+
+
   color: rgb(15,15,15);
   text-align: center;
   padding: 10px 0 20px 0;

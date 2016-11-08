@@ -239,7 +239,7 @@ input:checked + .slider:before {
   position: fixed;
   bottom: -5px;
   left: 10px;
-  font-family: Avenir;
+
   font-size: 15px;
   text-decoration: underline;
 }
@@ -252,7 +252,7 @@ input:checked + .slider:before {
   position: fixed;
   bottom: -5px;
   right: 10px;
-  font-family: Avenir;
+
   font-size: 15px;
 }
 a, a:visited {
@@ -287,7 +287,7 @@ a:hover {
 }
 .rules {
   color: rgb(235,235,235);1
-  font-family: Avenir;
+  font-family: 'Cormorant Garamond', serif;
   font-size: 55px;
 }
 .rulesList {

@@ -22,7 +22,9 @@ body {
   text-align: center;
   color: rgb(150,150,150);
   font-size: 15px;
-  font-family: Avenir;
+
+font-family: 'Cormorant Garamond', serif;
+
 }
 a, a:visited {
   color: rgb(211, 30, 203);
@@ -144,7 +146,6 @@ button:focus {
   text-align: right;
   color: rgb(150,150,150);
   font-size: 12.5px;
-  font-family: Avenir;
   padding-right: 2.5px;
 }
 

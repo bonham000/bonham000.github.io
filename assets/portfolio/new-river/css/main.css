@@ -76,7 +76,7 @@ body {
 	color: black;
 	padding: 25px;
 	text-align: center;
-	width: 100vw;
+	width: 100%;
 	border-bottom: .15px solid rgb(200,200,200);
 }
 
@@ -95,7 +95,7 @@ body {
 
 #cont_1 {
 	background: rgba(100,100,100, 0);
-	width: 100vw;
+	width: 100%;
 	border-bottom: .15px solid rgb(200,200,200);
 }
 .cont_text {
@@ -103,12 +103,12 @@ body {
 }
 #cont_2 {
 	background: rgba(100,100,100, .07);
-	width: 100vw;
+	width: 100%;
 	border-bottom: .15px solid rgb(200,200,200);
 }
 #cont_3 {
 	background: rgba(100,100,100, .0);
-	width: 100vw;
+	width: 100%;
 	border-bottom: .15px solid rgb(200,200,200);	
 }
 .rows {
@@ -140,7 +140,7 @@ body {
 #cont_4 {
 	padding: 50px;
 	text-align: center;
-	width: 100vw;
+	width: 100%;
 	background: rgba(100,100,100,.07);
 }
 
@@ -259,22 +259,22 @@ body {
 		padding: 0;
 	}
 	.fill {
-		width: 100vw;
+		width: 100%;
 	}
 	.carousel,
 	.item,
 	.active {
-	  width: 100vw;
+	  width: 100%;
 	}
 	.carousel-inner {
-	   width: 100vw;
+	   width: 100%;
 	}
 	.title_caption {
 		font-size: 45px;
 	}
 
 	.full_width, .img_span {
-		width: 100vw;
+		width: 100%;
 		height: auto;
 	}
 	#width_title {
@@ -309,23 +309,23 @@ body {
 	}
 	#cont_0 {
 		padding: 15px 0;
-		width: 100vw;
+		width: 100%;
 	}
 	#cont_1 {
 		padding: 25px 5px;
-		width: 100vw;
+		width: 100%;
 	}
 	#cont_2 {
 		padding: 25px 5px;
-		width: 100vw;
+		width: 100%;
 	}
 	#cont_3 {
 		padding: 25px 5px;
-		width: 100vw;
+		width: 100%;
 	}
 	#cont_4 {
 		padding: 25px 5px;
-		width: 100vw;
+		width: 100%;
 	}
 	.span_text{
 		font-size: 18px;
@@ -334,7 +334,7 @@ body {
 		margin: 15px auto;
 	}
 	.cont {
-		width: 100vw;
+		width: 100%;
 		padding: 0;
 	}
 	.content {

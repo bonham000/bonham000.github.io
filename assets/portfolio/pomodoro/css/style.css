@@ -1,7 +1,8 @@
 body {
   background: rgb(50,50,50);
   font-size: 60px;
-  font-family: Avenir;
+  font-family: 'Cormorant Garamond', serif;
+  min-width: 1200px;
 }
 .title {
   font-size: 25px;
