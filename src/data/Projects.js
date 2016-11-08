@@ -3,56 +3,56 @@ const Portfolio = [
 		ID: 'google',
 		src: '/assets/portfolio/google/index.html',
 		title: 'Google Homepage Mockup',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'facebook',
 		src: '/assets/portfolio/facebook/index.html',
 		title: 'Facebook Homepage Mockup',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'newRiver',
 		src: '/assets/portfolio/new-river/index.html',
 		title: 'The New River Gorge',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'asia',
 		src: '/assets/portfolio/asia/index.html',
 		title: 'Major Cities in Asia',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'zen',
 		src: '/assets/portfolio/css-zen-garden/index.html',
 		title: 'CSS Zen Garden',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'sejong',
 		src: '/assets/portfolio/sejong/index.html',
 		title: 'Tribute Page',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},	
 	{
 		ID: 'quotes_1',
 		src: '/assets/portfolio/quotes/index.html',
 		title: 'Random Quote Generator I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'quotes_2',
 		src: '/assets/portfolio/quotes-2/index.html',
 		title: 'Random Quote Generator II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 13,
 		showcase: false
 	},
@@ -60,14 +60,14 @@ const Portfolio = [
 		ID: 'weather_1',
 		src: '/assets/portfolio/weather/index.html',
 		title: 'Current Weather App I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'weather_2',
 		src: '/assets/portfolio/weather-2/index.html',
 		title: 'Current Weather App II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 14,
 		showcase: false
 	},
@@ -75,14 +75,14 @@ const Portfolio = [
 		ID: 'wikipedia_1',
 		src: '/assets/portfolio/wikipedia/index.html',
 		title: 'Wikipedia Article Viewer I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'wikipedia_2',
 		src: '/assets/portfolio/wikipedia-2/index.html',
 		title: 'Wikipedia Article Viewer II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 15,
 		showcase: false
 	},
@@ -90,14 +90,14 @@ const Portfolio = [
 		ID: 'twitch_1',
 		src: '/assets/portfolio/twitch/index.html',
 		title: 'Twitch API Project I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'twitch_2',
 		src: '/assets/portfolio/twitch-2/index.html',
 		title: 'Twitch API Project II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 16,
 		showcase: false
 	},
@@ -105,14 +105,14 @@ const Portfolio = [
 		ID: 'calculator_1',
 		src: '/assets/portfolio/calculator/index.html',
 		title: 'JavaScript Calculator I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'calculator_2',
 		src: '/assets/portfolio/calculator-2/index.html',
 		title: 'JavaScript Calculator II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 17,
 		showcase: false
 	},
@@ -120,14 +120,14 @@ const Portfolio = [
 		ID: 'pomodoro_1',
 		src: '/assets/portfolio/pomodoro/index.html',
 		title: 'Pomodoro Productivity Timer I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'pomodoro_2',
 		src: '/assets/portfolio/pomodoro-2/index.html',
 		title: 'Pomodoro Productivity Timer II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 18,
 		showcase: false
 	},
@@ -135,14 +135,14 @@ const Portfolio = [
 		ID: 'ticTacToe_1',
 		src: '/assets/portfolio/tic-tac-toe/index.html',
 		title: 'JavaScript Tic-Tac-Toe Game I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'ticTacToe_2',
 		src: '/assets/portfolio/tic-tac-toe-2/index.html',
 		title: 'JavaScript Tic-Tac-Toe Game II',
-		category: 'Front-End',
+		category: 'Front End',
 		reactOrder: 19,
 		showcase: false
 	},
@@ -150,14 +150,14 @@ const Portfolio = [
 		ID: 'simon_1',
 		src: '/assets/portfolio/simon/index.html',
 		title: 'JavaScript Simon Game I',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'simon_2',
 		src: '/assets/portfolio/simon-2/index.html',
 		title: 'JavaScript Simon Game II',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: true,
 		reactOrder: 20,
 		order: 8
@@ -166,14 +166,14 @@ const Portfolio = [
 		ID: 'stocks',
 		src: '/assets/portfolio/stocks/index.html',
 		title: 'Stock Market Search API',
-		category: 'Front-End',
+		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'fccFrontEnd',
 		src: '/assets/portfolio/front-end-projects/index.html',
-		title: 'Building the Free Code Camp Front-End Projects',
-		category: 'Front-End',
+		title: 'Building the Free Code Camp Front End Projects',
+		category: 'Front End',
 		showcase: true,
 		order: 13
 	},
@@ -398,35 +398,35 @@ const Portfolio = [
 		ID: 'unix',
 		src: 'https://unix-time-stamp.herokuapp.com/',
 		title: 'Unix Timestamp Microservice',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: false
 	},
 	{
 		ID: 'requestHeader',
 		src: 'https://request-header-parser-service.herokuapp.com/',
 		title: 'Request Header Parser Microservice',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: false
 	},
 	{
 		ID: 'microUrl',
 		src: 'https://micro-url-service.herokuapp.com/',
 		title: 'Url Shortener Microservice',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: false
 	},
 	{
 		ID: 'imageSearch',
 		src: 'https://custom-image-search.herokuapp.com/',
 		title: 'Image Search Abstraction Layer',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: false
 	},
 	{
 		ID: 'fileMeta',
 		src: 'https://upload-metadata-microservice.herokuapp.com/',
 		title: 'File Metadata Microservice',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: false
 	},
 	{
@@ -442,7 +442,7 @@ const Portfolio = [
 		ID: 'votingApp',
 		src: 'https://blooming-beach-19422.herokuapp.com/',
 		title: 'Voting App',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: true,
 		order: 5
 	},
@@ -450,7 +450,7 @@ const Portfolio = [
 		ID: 'pinterestClone',
 		src: 'http://hidden-woodland-32853.herokuapp.com/',
 		title: 'Pinterest Clone',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: true,
 		order: 4
 	},
@@ -458,7 +458,7 @@ const Portfolio = [
 		ID: 'nightlifeApp',
 		src: 'https://radiant-journey-47296.herokuapp.com/',
 		title: 'Nightlife Coordination App',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: true,
 		order: 3
 	},
@@ -466,7 +466,7 @@ const Portfolio = [
 		ID: 'stocksApp',
 		src: 'https://blooming-ocean-10450.herokuapp.com/',
 		title: 'Chart the Stock Market App',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: true,
 		order: 2
 	},
@@ -474,7 +474,7 @@ const Portfolio = [
 		ID: 'bookClubApp',
 		src: 'https://murmuring-chamber-37829.herokuapp.com/',
 		title: 'Book Trading Club App',
-		category: 'Back-End',
+		category: 'Back End',
 		showcase: true,
 		order: 1
 	},

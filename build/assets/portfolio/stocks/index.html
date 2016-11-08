@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>Stock Prices API</title>
+    
+        
+        <link href='https://fonts.googleapis.com/css?family=Fenix|Cormorant+Garamond' rel='stylesheet' type='text/css'>
+    
+        <link rel="stylesheet" href="css/style.css">
+
+  </head>
+
+  <body>
+
+<div class="header">
+  <p class="credit">API stock data provided by <a target="_blank" href="https://www.quandl.com/">Quandl</a>; please allow a few seconds for requests to fully load</p>
+  <p class="signature">This page built by <a target="_blank" href="http://sean-smith.me">Sean Smith</a></p>
+</div>
+
+<div class="formField">
+  
+  <h2>Obtain Price Data on U.S. Stocks</h2>
+
+  <form action="" onsubmit="return false">
+
+    Enter a Company Symbol to Retrieve Stock Data<br>
+    <div class="box">
+      <input id="ticker" type="text" autocomplete="off" placeholder="Type Here" autofocus/>
+      <button id="search">Submit Search</button>
+      <button id="reset">Clear List</button><br><br>
+    </div>
+
+    <p class="suggestion">Suggestions: FB, AMZN, NFLX, GOOG — or:</p>
+
+    <button id="random">Generate Data for 25 Random Stocks from the S&P 500</button>
+
+  </form>
+
+</div>
+
+<div class="content"></div>
+
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+
+        <script src="js/index.js"></script>
+    
+  </body>
+</html>

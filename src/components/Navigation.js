@@ -26,7 +26,7 @@ class Navigation extends React.Component {
 					:
 
 					<div className = 'navControlBar' onClick = {this.props.toggleNav}>
-						<p className = 'navLink'><i className = "fa fa-bars" id = 'navBars' aria-hidden = "true"></i> Show Navigation</p>
+						<p className = 'navLink navControlLink'><i className = "fa fa-bars" id = 'navBars' aria-hidden = "true"></i> Show Navigation</p>
 					</div>
 
 				}

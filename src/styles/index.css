@@ -1151,10 +1151,12 @@ select:focus {
 		width: 250px;
 		font-size: 24px;
 	}
-
 	.navLink {
 		font-size: 22px;
 		margin: auto 10px;
+	}
+	.navControlLink {
+		font-size: 28px;
 	}
 	.main {
 		display: relative;
@@ -1298,9 +1300,11 @@ select:focus {
 		margin: 0;
 		font-size: 35px;
 	}
-
+	.navLink {
+		font-size: 36px;
+	}
 	.navLink:hover {
-		color: black;
+		color: rgb(45,45,45);
 	}
 	.navigationBar {
 		height: auto;
@@ -1310,7 +1314,10 @@ select:focus {
 	  padding-bottom: 10px;
 	}
 	.navLink {
-		margin: 5px auto;
+		margin: 8px auto;
+	}
+	.navControlLink {
+		font-size: 26px;
 	}
 	.imageBox {
 		width: 300px;

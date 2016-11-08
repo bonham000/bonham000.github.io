@@ -5,6 +5,8 @@ class Certificates extends React.Component {
 		return (
 			<div className = 'certificatesWrapper' id = 'certificatesNav'>
 		    
+				<h1 className = 'portfolioTitle'>Certificates</h1>
+
 		    <p className = 'certificatesTitle'>These are the three certificates for my completion of Free Code Camp's core curriculum. Through this program I've created several projects and become proficient in HTML, CSS, Sass, JavaScript, Node.js, Express, MongoDB, React, Redux, and Git.</p>
 		  
 		  	  <div className = 'certificates'>

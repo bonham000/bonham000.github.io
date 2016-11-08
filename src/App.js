@@ -84,7 +84,10 @@ class App extends Component {
     } else if (selection === 'React') {
 
       const react = portfolio.filter( (project) => !isNaN(project.reactOrder) ).sort( (a, b) => a.reactOrder - b.reactOrder );
-      this.setState({ projects: react });
+      this.setState({
+        projects: react,
+        filterText: 'Displaying React Projects'
+      });
 
     } else if (selection !== '') {
 
@@ -126,8 +129,8 @@ class App extends Component {
             <option value = "">Filter Portfolio</option>
             <option value = "View All">View All Projects</option>
             <option value = "Showcase">Showcase</option>
-            <option value = "Front-End">Front End</option>
-            <option value = "Back-End">Back End</option>
+            <option value = "Front End">Front End</option>
+            <option value = "Back End">Back End</option>
             <option value = "D3">D3</option>
             <option value = "React">React</option>
           </select>
