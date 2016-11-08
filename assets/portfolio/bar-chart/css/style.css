@@ -17,13 +17,13 @@ svg {
 }
 
 .AxisStyle {
-  font-family: Avenir;
+  font-family: 'Josephin Sans', sans-serif;
   font-size: 16px;
   fill: #FCECC9;
 }
 
 .toolTip {
-  font-family: Avenir;
+  font-family: 'Josephin Sans', sans-serif;
   position: absolute;
   background: #1e1e1e;
   padding: 7px;
@@ -35,7 +35,7 @@ svg {
 }
 
 .title {
-  font-family: Avenir;
+  font-family: 'Josephin Sans', sans-serif;
   fill: #F2626F !important;
   font-size: 35px;
   right: 50px;

@@ -1,6 +1,8 @@
 body {
-  background: -webkit-linear-gradient(#33E3FC, #47b8e0) no-repeat center center fixed;
   background: linear-gradient(#33E3FC, #47b8e0) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
   font-family: "Montserrat", sans-serif;
   color: #3f4040;
@@ -41,18 +43,10 @@ img {
 .toggleTemp {
   width: 225px;
   margin: -25px auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
 }
 .toggleTemp div {
   font-family: "Pridi", serif;
@@ -77,18 +71,11 @@ img {
   height: 35px;
   width: 100%;
   background: rgba(39, 41, 50, 0.85);
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 .credits p {
-  font-family: Avenir, arial;
   font-size: 16px;
   text-align: center;
   color: #c8c8c8;

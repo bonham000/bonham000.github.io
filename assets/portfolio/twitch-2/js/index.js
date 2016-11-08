@@ -23,30 +23,46 @@ var Root = function (_React$Component) {
   }
 
   Root.prototype.componentWillMount = function componentWillMount() {
+    var _this2 = this;
+
     var users = this.state.twitch;
     users.map(function (user) {
-      $.getJSON('https://api.twitch.tv/kraken/streams/' + user + '?callback=?', function (response) {
-        var streamData = response;
-        $.getJSON('https://api.twitch.tv/kraken/users/' + user, function (data) {
-          var userData = data;
-          var state = 1;
+      $.ajax({
+        type: 'GET',
+        url: 'https://api.twitch.tv/kraken/streams/' + user,
+        headers: {
+          'Client-ID': '7plekxgs8xyo1fbtqglm8ngqf95z4ea'
+        },
+        success: function success(data) {
+          var streamData = data;
+          $.ajax({
+            type: 'GET',
+            url: 'https://api.twitch.tv/kraken/users/' + user,
+            headers: {
+              'Client-ID': '7plekxgs8xyo1fbtqglm8ngqf95z4ea'
+            },
+            success: function success(data) {
+              var userData = data;
+              var state = 1;
 
-          if (streamData.status === 422) {
-            state = 2;
-          } else if (streamData.stream === null) {
-            state = 3;
-          }
+              if (streamData.status === 422) {
+                state = 2;
+              } else if (streamData.stream === null) {
+                state = 3;
+              }
 
-          var currentData = this.state.data.slice(0);
-          currentData.push([streamData, userData, state]);
-          var dataCopy = currentData.slice(0);
-          this.setState({
-            permanentData: dataCopy,
-            data: currentData
+              var currentData = _this2.state.data.slice(0);
+              currentData.push([streamData, userData, state]);
+              var dataCopy = currentData.slice(0);
+              _this2.setState({
+                permanentData: dataCopy,
+                data: currentData
+              });
+            }
           });
-        }.bind(this));
-      }.bind(this));
-    }.bind(this));
+        }
+      });
+    });
   };
 
   Root.prototype.showStreaming = function showStreaming() {

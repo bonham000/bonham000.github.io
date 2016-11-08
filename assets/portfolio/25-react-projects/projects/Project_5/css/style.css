@@ -39,6 +39,7 @@ a:hover {
   margin-right: auto;
   border: 10px solid #2EC4B6;
   border-radius: 5px;
+  z-index: 1;
 }
 
 .bar {
@@ -61,7 +62,7 @@ a:hover {
   position: absolute;
   transform: rotateX(180deg);
   background: rgba(46, 196, 180, 0.25);
-  font-family: Avenir;
+  font-family: 'Fenix', serif;
   font-size: 30px;
   top: 500px;
   left: 15px;

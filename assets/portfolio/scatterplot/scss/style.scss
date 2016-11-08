@@ -1,7 +1,8 @@
 $tan: #FBF2C0;
 
 body {
-  background: #43281C;
+  background: $tan;
+  font-family: 'Cormorant Garamond', serif;
 }
 svg {
   background: #F96F5D;
@@ -20,14 +21,14 @@ svg {
   color: $tan;
   padding: 10px;
   padding-left: 20px;
-  font-family: Avenir;
+
 }
 .title {
-  font-family: Avenir;
+
   font-size: 30px;
 }
 .subtitle {
-  font-family: Avenir;
+
   font-size: 20px;
 }
 .axis {
@@ -37,7 +38,7 @@ svg {
 .tick {
   fill: black;
   stroke: none;
-  font-family: Avenir;
+
 }
 .tick line {
   fill: none;
@@ -46,11 +47,11 @@ svg {
 .label {
   fill: black;
   stroke: none;
-  font-family: Avenir;
+
 }
 .textLabels {
   font-size: 12px;
-  font-family: Avenir;
+
 }
 .textLabels:hover {
   fill: $tan;
@@ -61,12 +62,12 @@ svg {
   text-decoration: underline;
 }
 .links, .codeCamp {
-  font-family: Avenir;
+
   font-size: 14px;
   text-decoration: underline;
 }
 .dash, .details {
-  font-family: Avenir;
+
   font-size: 14px;
 }
 .links:hover, .codeCamp:hover {

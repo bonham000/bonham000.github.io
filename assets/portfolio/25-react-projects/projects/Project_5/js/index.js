@@ -18,7 +18,7 @@ var SliderControl = React.createClass({
         name: "slider",
         type: "range",
         min: "1",
-        max: "273",
+        max: "274",
         value: this.props.slider,
         onChange: this.props.handleRange.bind(this) })
     );
@@ -47,7 +47,7 @@ var Main = React.createClass({
     this.setState({ array: [] });
     this.setState({ slider: num });
     var currData = this.state.data.slice(0);
-    var scaledData = currData.splice(num, currData.length);
+    var scaledData = currData.splice(num, currData.length - 1);
     this.setState({ array: scaledData });
   },
   render: function render() {
@@ -68,7 +68,7 @@ var Main = React.createClass({
           {
             className: "bar",
             id: index,
-            style: { height: Math.round(parseFloat(item[1])) / 30, width: 1000 / (data.length - 1) } },
+            style: { height: Math.round(parseFloat(item[1])) / 30, width: 1000 / data.length } },
           React.createElement(
             "span",
             { className: "barValue" },
