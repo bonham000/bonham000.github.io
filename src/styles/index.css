@@ -197,8 +197,8 @@ a:hover {
 }
 
 select {
-  -webkit-appearance: button;
-  -moz-appearance: button;
+  -webkit-appearance: none;
+  -moz-appearance: none;
   -webkit-user-select: none;
   -moz-user-select: none;
   -webkit-padding-end: 20px;
@@ -227,6 +227,10 @@ select {
   padding-left: 50px;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+select:-moz-focusring {
+    color: transparent;
+    text-shadow: 0 0 0 #000;
 }
 select:hover {
 	cursor: pointer;
