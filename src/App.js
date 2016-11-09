@@ -17,6 +17,7 @@ class App extends Component {
       portfolio: Portfolio,
       projects: showcase,
       filterText: 'Displaying Showcase',
+      filtered: false,
       showNav: true
     }
     this.filterProjects = this.filterProjects.bind(this);
@@ -63,7 +64,8 @@ class App extends Component {
 
       this.setState({
         projects: portfolio,
-        filterText: 'Displaying All Projects'
+        filterText: 'Displaying All Projects',
+        filtered: true
       });
 
     } else if (selection === 'Showcase') {
@@ -78,7 +80,8 @@ class App extends Component {
 
       this.setState({
         projects: order,
-        filterText: 'Displaying Showcase'
+        filterText: 'Displaying Showcase',
+        filtered: true
       });
 
     } else if (selection === 'React') {
@@ -86,7 +89,8 @@ class App extends Component {
       const react = portfolio.filter( (project) => !isNaN(project.reactOrder) ).sort( (a, b) => a.reactOrder - b.reactOrder );
       this.setState({
         projects: react,
-        filterText: 'Displaying React Projects'
+        filterText: 'Displaying React Projects',
+        filtered: true
       });
 
     } else if (selection !== '') {
@@ -94,7 +98,8 @@ class App extends Component {
       const filtered = portfolio.filter( (project) => project.category === selection );
       this.setState({
         projects: filtered,
-        filterText: `Displaying ${selection} Projects`
+        filterText: `Displaying ${selection} Projects`,
+        filtered: true
       });
 
     }
@@ -126,7 +131,7 @@ class App extends Component {
           <h2 className = 'filteredTitle'>{this.state.filterText}</h2>
 
           <select onChange = {this.filterProjects}>
-            <option value = "">Filter Portfolio</option>
+            { !this.state.filtered && <option value = "">Filter Portfolio</option> }
             <option value = "View All">View All Projects</option>
             <option value = "Showcase">Showcase</option>
             <option value = "Front End">Front End</option>

@@ -58,16 +58,19 @@ body {
   -webkit-align-items: center;
   align-items: center;	
   -webkit-justify-content: center;
-	justify-content: center;		
+	justify-content: center;	
 }
 .navLink {
 	font-size: 26px;
 	margin: auto 15px;
 	font-family: 'Montserrat', sans-serif;
+	transition: color 450ms ease;
 }
+
 .navLink:hover {
 	cursor: pointer;
 	color: rgb(255, 211, 78);
+	transition: color 450ms ease;
 }
 .active {
 	color: rgb(255, 211, 78);
@@ -76,15 +79,22 @@ body {
 .main {
 	text-align: center;
 	color: rgb(45,45,45);
-	display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-align-items: center;
-	align-items: center;
-	-webkit-justify-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; 
+  -webkit-box-align: center;
+  -webkit-flex-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;	
+  -webkit-justify-content: center;
+	justify-content: center;	
 	width: 100%;
 	min-height: 100vh;
 }
@@ -145,16 +155,17 @@ a:hover {
 
 .certificates {
 	padding-top: 25px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
   display: -webkit-flex;
-	display: flex;
-	-webkit-flex-direction: row;
-	flex-direction: row;
-	-webkit-justify-content: center;
-	justify-content: center;
-	flex-wrap: wrap;
-
-
-
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: wrap;
+  -webkit-flex-wrap: wrap; 
+  -webkit-justify-content: center;
+	justify-content: center;	
 }
 .certificateContainer {
 	width: 250px;
@@ -186,13 +197,40 @@ a:hover {
 }
 
 select {
-	width: 350px;
-	font-size: 28px;
+  -webkit-appearance: button;
+  -moz-appearance: button;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -webkit-padding-end: 20px;
+  -moz-padding-end: 20px;
+  -webkit-padding-start: 2px;
+  -moz-padding-start: 2px;
 	font-family: 'Josefin Sans', sans-serif;
-	height: 42px;
-	padding-left: 7px;
-	background: rgba(250,250,250,0.85);
-	border: 1px solid rgba(20,20,20,0.6);
+  background-color: rgb(255, 211, 78);
+  transition: background-color 1000ms ease;
+  background-position: center right;
+  background-image: url('../../assets/images/down-arrow.png');
+  background-size: 32px;
+  background-position: 11px 6px;
+  background-repeat: no-repeat;
+  border: 1px solid rgb(20,20,20);
+  border-radius: 5px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
+  color: rgb(20,20,20);
+  height: 45px;
+	width: 350px;
+  font-size: 22px;
+  margin: auto;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 2px;
+  padding-left: 50px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+select:hover {
+	cursor: pointer;
+	background-color: rgb(255,205,65);
 }
 select:focus {
 	outline: none;
@@ -1061,12 +1099,12 @@ select:focus {
 .fa {
 	margin: 20px;
 	color: rgb(45,45,45);
-	transition: color 350ms ease;
+	transition: color 450ms ease;
 	font-size: 95px;
 }
 .fa:hover {
 	color: rgb(255, 211, 78);
-	transition: color 350ms ease;
+	transition: color 450ms ease;
 }
 
 /* Responsive styling */
@@ -1137,7 +1175,7 @@ select:focus {
 		padding-top: 20px;
 	}
 	.sortContainer {
-		width: 350px;
+		width: 100%;
 		margin-bottom: 85px;
 	}
 	.portfolioTitle {
@@ -1146,10 +1184,6 @@ select:focus {
 	}
 	.filteredTitle {
 		font-size: 26px;
-	}
-	select {
-		width: 250px;
-		font-size: 24px;
 	}
 	.navLink {
 		font-size: 22px;
@@ -1273,7 +1307,6 @@ select:focus {
 }
 @media screen and (max-width: 500px) {
 	.sortContainer {
-		width: 250px;
 		margin: auto;
 	}
 	.portfolioTitle {
@@ -1284,10 +1317,13 @@ select:focus {
 		font-size: 20px;
 	}
 	select {
-		width: 200px;
+		width: 275px;
 		margin: auto;
 		font-size: 22px;
-		border: 1px solid black;
+		padding-top: 7px;
+		padding-left: 45px;
+		background-size: 28px;
+		background-position: 11px 7px;
 	}
 
 	.navControl {
