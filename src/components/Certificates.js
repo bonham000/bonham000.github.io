@@ -7,7 +7,7 @@ class Certificates extends React.Component {
 		    
 				<h1 className = 'portfolioTitle'>Certificates</h1>
 
-		    <p className = 'certificatesTitle'>These are the three certificates for my completion of Free Code Camp's core curriculum. Through this program I've created several projects and become proficient in HTML, CSS, Sass, JavaScript, Node.js, Express, MongoDB, React, Redux, and Git.</p>
+		    <p className = 'certificatesTitle'>These are the three certificates for my completion of Free Code Camp's core curriculum. Through this program I've created a number of projects and become proficient in HTML, CSS, Sass, JavaScript, Node.js, Express, MongoDB, Socket.io, React, Redux, D3, and Git.</p>
 		  
 		  	  <div className = 'certificates'>
 
