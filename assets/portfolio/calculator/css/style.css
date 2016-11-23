@@ -1,0 +1,154 @@
+body {
+  background: rgb(40,40,40);
+  font-family: 'Arvo', serif;
+}
+.calcBox {
+  width: 450px;
+  border: 1px solid white;
+  border-radius: 25px;
+  margin: 25px auto;
+  padding: 15px;
+  background: rgb(44, 45, 68);
+}
+.title {
+  text-align: center;
+  color: rgb(211, 30, 203);
+  font-size: 30px;
+  padding: 0;
+  margin: 0 0 5px 0;
+}
+.keys {
+  margin-top: 0;
+  text-align: center;
+  color: rgb(150,150,150);
+  font-size: 15px;
+
+font-family: 'Cormorant Garamond', serif;
+
+}
+a, a:visited {
+  color: rgb(211, 30, 203);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.input {
+  border: 1px solid white;
+  border-radius: 5px;
+  height: 50px;
+  margin-top: 15px;
+  margin-bottom: 10px;
+  padding-right: 12px;
+  background: rgb(30,30,30);
+}
+#answer {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+}
+.operations {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+#multiply {
+  padding-top: 20px;
+}
+#subtract {
+  padding-bottom: 5px;
+}
+.buttons {
+  width: 300px;
+  margin: -10px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 15px;
+}
+button {
+  width: 75px;
+  height: 75px;
+  font-size: 45px;
+  margin: 5px;
+  font-family: 'Arvo', serif;
+}
+button:focus {
+  outline: none;
+}
+.operateBtn {
+  background: rgb(255, 221, 97);
+  border: 1px solid white;
+  border-radius: 5px;
+}
+.operateBtn:hover {
+  background: rgb(255, 106, 35);
+  cursor: pointer;
+}
+.clear {
+  background: rgb(205, 60, 83);
+}
+.clear:hover {
+  background: rgb(29, 215, 149);
+  cursor: pointer;
+}
+.numbersBtn {
+  border-radius: 15px;
+  background: rgb(45, 107, 137);
+  border: 1px solid white;
+}
+.numbersBtn:hover {
+  background: rgb(200,200,200);
+  cursor: pointer;
+}
+.submit {
+  width: 450px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -5px;
+}
+.enterBtn {
+  width: 300px;
+  background: rgb(21, 134, 70);
+  border: 1px solid white;
+  border-radius: 30px;
+}
+.enterBtn:hover {
+  background: rgb(119, 46, 212);
+  color: white;
+  cursor: pointer;
+}
+.credits {
+  margin-top: 10px;
+  margin-bottom: -37px;
+  text-align: right;
+  color: rgb(150,150,150);
+  font-size: 12.5px;
+  padding-right: 2.5px;
+}
+
+
+
+

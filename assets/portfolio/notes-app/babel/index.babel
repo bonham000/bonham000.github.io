@@ -1,0 +1,682 @@
+var ReactCSSTransitionGroup = React.addons.CSSTransitionGroup;
+
+// Set initial note for first page load:
+var initialNotes = [
+	['Studying', 'Finish Free Code Camp Front End Certification\nLearn Sass\nLearn React\nReact You Don"t Know JavaScript\nPractice Algorithm Challenges']
+]
+
+// Root Component:
+class App extends React.Component {
+	constructor() {
+		super();
+		this.state = {
+			empty: false,
+			showAbout: true,
+			showForm: false,
+			showOne: false,
+			showAll: false,
+			showEdit: false,
+			showOneKey: '',
+			noteBook: [],
+			note: [],
+			noteTitle: '',
+			noteText: '',
+			editKey: '',
+			editValue: '',
+			editTitle: ''
+		};		
+		this.handleInputTitle = this.handleInputTitle.bind(this);
+		this.handleInputText = this.handleInputText.bind(this);
+		this.submitNote = this.submitNote.bind(this);
+		this.showAllNotes = this.showAllNotes.bind(this);
+		this.showNote = this.showNote.bind(this);
+		this.removeAll = this.removeAll.bind(this);
+		this.removeOne = this.removeOne.bind(this);
+		this.setEdit = this.setEdit.bind(this);
+		this.handleEdit = this.handleEdit.bind(this);
+		this.submitEdit = this.submitEdit.bind(this);
+		this.showForm = this.showForm.bind(this);
+		this.showAll = this.showAll.bind(this);
+		this.cancelSubmit = this.cancelSubmit.bind(this);
+		this.cancelEdit = this.cancelEdit.bind(this);
+		this.handleEditTitle = this.handleEditTitle.bind(this);
+		this.updateStars = this.updateStars.bind(this);
+	}
+	showAllNotes() {
+		var keys = [];
+		for (var i = 0; i < localStorage.length; i++) {
+				keys[i] = localStorage.key(i);
+		}
+		for (var j = 0; j < keys.length; j++) {
+			if (keys[j] === 'firstLoad12345' || keys[j].substr(keys[j].length - 6, 6) === '_stars' || keys[j].substr(0, 9) === 'bonham000') {
+				keys.splice(j, 1);
+				j--;
+			}
+		}
+		this.setState({
+			noteBook: keys
+		});
+
+    var notes = [];
+    
+		for (var k = 0; k < keys.length; k++) {
+			notes[k] = [keys[k], localStorage.getItem(keys[k])];
+		}
+		this.setState({
+			note: notes
+		});
+	}
+	showNote(key) {
+		this.setState({
+			showAbout: false,
+			showAll: false,
+			showForm: false,
+			showOneKey: key,
+		});
+		setTimeout(function() {
+			this.setState({
+				showOne: true
+			});
+		}.bind(this), 500);
+	}
+	showAll() {
+		if (this.state.note.length === 0) {
+			this.setState({
+				empty: true,
+				showForm: false,
+				showOne: false,
+				showAll: false,
+				showEdit: false
+			});
+			setTimeout(function() {
+				this.setState({
+					showAbout: true
+				});
+			}.bind(this), 500);
+		}
+		else if (this.state.showAll === false) {
+			this.setState({
+				showAbout: false,
+				showForm: false,
+				showOne: false,
+				noteTitle: '',
+				noteText: '',
+				showEdit: false,
+				editValue: ''
+			});
+			setTimeout(function() {
+				this.setState({
+					showAll: true
+				});
+			}.bind(this), 500);
+		}
+		else {
+			this.setState({
+				showAll: false,
+				showOne: false,
+				showEdit: false
+			});
+			setTimeout(function() {
+				this.setState({
+					showAbout: true
+				});
+			}.bind(this), 500);
+		}
+	}
+	submitNote(event) {
+		event.preventDefault();
+    var currentTitle = this.state.noteTitle.slice();
+		// Prevent user from creating note with the same name:
+		if (localStorage.getItem(this.state.noteTitle)) {
+			alert("Sorry, you've already created this note!");
+		}
+		else {
+			if (this.state.noteTitle !== '' && this.state.noteText !== '') {
+				
+				// Verify local storage is available
+				if (typeof(Storage) !== undefined) {
+					localStorage.setItem(this.state.noteTitle, this.state.noteText);
+					localStorage.setItem(this.state.noteTitle + '_stars', 1);
+				} else {
+					alert("Local storage is unavailable");
+				}
+				this.setState({
+					showForm: false,
+					showOne: false,
+					noteTitle: '',
+					noteText: ''
+				});
+
+				setTimeout(function() {
+					this.setState({
+						showAll: true
+					});
+				}.bind(this), 500);
+
+				this.showAllNotes();
+
+			}
+		}
+	}
+	cancelSubmit() {
+		this.setState({
+			showForm: false,
+			noteTitle: '',
+			noteText: ''
+		});
+		setTimeout(function() {
+			this.setState({
+				showAbout: true
+			});
+		}.bind(this), 250);
+	}
+	handleInputTitle(event) {
+		this.setState({
+			noteTitle: event.target.value
+		})
+	}
+	handleInputText(event) {
+		this.setState({
+			noteText: event.target.value
+		})
+	}
+	showForm() {
+		this.setState({
+			showAbout: false,
+			showOne: false,
+			showAll: false,
+			showEdit: false,
+		});
+		setTimeout(function() {
+			this.setState({
+				showForm: true
+			});
+		}.bind(this), 250);
+	}
+	setEdit(key) {
+		this.setState({
+			showEdit: true,
+			editKey: key,
+			editTitle: key,
+			editValue: localStorage.getItem(key)
+		});
+	}
+	handleEdit(event) {
+		this.setState({
+			editValue: event.target.value
+		});
+	}
+	handleEditTitle(event) {
+		this.setState({
+			editTitle: event.target.value
+		});
+	}
+	submitEdit() {
+		if (this.state.editValue !== '') {
+			var oldKey = this.state.editKey;
+			localStorage.removeItem(oldKey);
+			
+			var newKey = this.state.editTitle;
+			localStorage.setItem(newKey, this.state.editValue);
+
+			this.setState({
+				showEdit: false,
+        showOne: false,
+        showAll: true,
+				editKey: '',
+				editValue: '',
+				editTitle: ''
+			});
+			this.showAllNotes();
+		}
+	}
+	cancelEdit() {
+		this.setState({
+			showEdit: false,
+			editKey: '',
+			editValue: ''
+		});
+		this.showAllNotes();
+	}
+	removeOne(key) {
+		localStorage.removeItem(key);
+		localStorage.removeItem(key + '_stars');
+		this.setState({
+			showOne: false
+		});
+		this.showAllNotes();
+	}
+	removeAll(event) {
+		event.preventDefault();
+		var currentNotes = this.state.noteBook.slice();
+		
+		for (var k = 0; k < currentNotes.length; k++) {
+			localStorage.removeItem(currentNotes[k]);
+			localStorage.removeItem(currentNotes[k] + '_stars');
+		}
+
+		this.setState({
+			empty: true,
+			showAbout: true,
+			showOne: false,
+			showAll: false,
+			showEdit: false,
+			noteBook: [],
+			note: []
+		});
+	}
+	updateStars(noteKey, stars) {
+		localStorage.removeItem(noteKey + '_stars');
+		localStorage.setItem(noteKey + '_stars', stars);
+		this.forceUpdate();
+	}
+	componentWillMount() {
+		// Perform the first time a user loads the page in order to load the initial note array:
+		if (!localStorage.getItem('firstLoad12345')) {
+
+			localStorage.setItem("firstLoad12345", "true");
+
+			for (var a = 0; a < initialNotes.length; a++) {
+				localStorage.setItem(initialNotes[a][0], initialNotes[a][1]);
+				localStorage.setItem(initialNotes[a][0] + '_stars', 3);
+			}
+
+		}
+		this.showAllNotes();
+	}
+	render() {
+		return (
+			<div id = "content">
+				<NoteList
+					note = {this.state.note}
+					showNote = {this.showNote}
+					showForm = {this.showForm}
+					removeAll = {this.removeAll}
+					empty = {this.state.empty}
+					showAll = {this.state.showAll}
+					handleShowAll = {this.showAll} />
+				<div className = "contentWrapper">
+					<About
+						showAbout = {this.state.showAbout} />
+					<SubmitNote
+						showForm = {this.state.showForm}
+						submitNote = {this.submitNote}
+						cancelSubmit = {this.cancelSubmit}
+						noteTitle = {this.state.noteTitle}
+						noteText = {this.state.noteText}
+						handleInputTitle = {this.handleInputTitle}
+						handleInputText = {this.handleInputText} />
+					<ShowOne
+						showOne = {this.state.showOne}
+						showOneKey = {this.state.showOneKey}
+						editKey = {this.state.editKey}
+						setEdit = {this.setEdit}
+						showEdit = {this.state.showEdit}
+						editValue = {this.state.editValue}
+						editTitle = {this.state.editTitle}
+						handleEdit = {this.handleEdit}
+						handleEditTitle = {this.handleEditTitle}
+						submitEdit = {this.submitEdit}
+						cancelEdit = {this.cancelEdit}
+						removeOne = {this.removeOne}
+						updateStars = {this.updateStars} />
+					<ShowAll
+						note = {this.state.note}
+						setEdit ={this.setEdit}
+						showAll = {this.state.showAll}
+						removeOne = {this.removeOne}
+						showEdit = {this.state.showEdit}
+						editKey = {this.state.editKey}
+						editValue = {this.state.editValue}
+						editTitle = {this.state.editTitle}
+						handleEdit = {this.handleEdit}
+						handleEditTitle = {this.handleEditTitle}
+						submitEdit = {this.submitEdit}
+						cancelEdit = {this.cancelEdit}
+						updateStars = {this.updateStars} />
+					</div>
+			</div>
+		);
+	}
+};
+
+// Component shows details about the project to the user:
+class About extends React.Component {
+	render() {
+		var component;
+		if (this.props.showAbout === true) {
+			component = (
+				<div className = "aboutWrapper">
+					<div className = "about">
+						<h1>This is a Notes App</h1>
+						<h2>You can record your notes here</h2>
+						<p>All your notes are stored in your browser's local storage and any changes you make will remain saved as long as you continue to access this page from the same browser.</p>
+						<p>Built by <a target = "_blank" href = "http://sean-smith.me">Sean Smith</a></p>
+					</div>
+				</div>
+			);
+		};
+		return (
+			<ReactCSSTransitionGroup
+				transitionName = "aboutDiv"
+				transitionEnterTimeout = {1000}
+				transitionLeaveTimeout = {100}>
+				{component}
+			</ReactCSSTransitionGroup>
+		);
+	}
+};
+
+// This is the control side bar that allows the user to navigate the app:
+class NoteList extends React.Component {
+	render() {
+		var noteListTitle = "Current Notes:";
+		if (this.props.empty === true) {
+			noteListTitle = "There Are No Notes";
+		}
+		var noteList = this.props.note.map( (note) => {
+			return (
+				<div className = "noteListItem" key = {note} onClick = {this.props.showNote.bind(this, note[0])}><i className="fa fa-file-text-o" aria-hidden="true"></i> {note[0]}</div>
+			);
+		});
+		var showHideStyle = "Show All Notes";
+		if (this.props.showAll === true) {
+			showHideStyle = "Hide All Notes";
+		}
+		return (
+			<div className = "listWrapper">
+				<div className = "titleBox">
+					<i className="fa fa-book" aria-hidden="true"></i>
+					<h1><a target = "_blank" href = "https://www.freecodecamp.com/challenges/build-a-note-box">Free Code Camp</a><br />Notes App</h1>
+				</div>
+					<div className = "listBtn addBtn" onClick = {this.props.showForm}><i className="fa fa-plus-square-o" aria-hidden="true"></i> Add a New Note</div>
+					<div className = "listBtn allBtn" onClick = {this.props.handleShowAll}><i className="fa fa-globe" aria-hidden="true"></i> {showHideStyle}</div>
+					<div className = "listBtn removeBtn" onClick = {this.props.removeAll}><i className="fa fa-trash-o" aria-hidden="true"></i> Remove All Notes</div>
+				<h1 className = "listTitle">{noteListTitle}</h1>
+					{noteList}
+			</div>
+		);
+	}
+};
+
+// Submit form for new note:
+class SubmitNote extends React.Component {
+	render() {
+		var component;
+		if (this.props.showForm === true) {
+			component = (
+				<div className = "submitForm">
+					<form onSubmit = {this.props.submitNote}>
+						<input
+							autoFocus
+							type = "text"
+							placeholder = "Note"
+							value = {this.props.noteTitle}
+							onChange = {this.props.handleInputTitle} /><br />
+						<textarea
+							type = "text"
+							placeholder = "Details"
+							value = {this.props.noteText}
+							onChange = {this.props.handleInputText} >
+						</textarea><br />
+						<button
+							className = "submitBtn"
+							onClick = {this.props.submitNote}>Submit Note</button><br />
+						<button
+							className = "cancelBtn"
+							onClick = {this.props.cancelSubmit}>Cancel</button>
+					</form>
+				</div>
+			);
+		}
+		return (
+			<ReactCSSTransitionGroup
+				transitionName = "submitDiv"
+				transitionEnterTimeout={750}
+				transitionLeaveTimeout={500}>
+				{component}
+			</ReactCSSTransitionGroup>
+		);
+	}
+};
+
+// Panel to show when one note is clicked:
+class ShowOne extends React.Component {
+	render() {
+		var component;
+		var editBox;
+			if (this.props.editKey === this.props.showOneKey) {
+				editBox = (
+					<EditNote
+					showEdit = {this.props.showEdit}
+					editKey = {this.props.editKey}
+					editValue = {this.props.editValue}
+					editTitle = {this.props.editTitle}
+					handleEdit = {this.props.handleEdit}
+					handleEditTitle = {this.props.handleEditTitle}
+					submitEdit = {this.props.submitEdit}
+					cancelEdit = {this.props.cancelEdit} />
+				);
+			}
+		if (this.props.showOne === true) {
+			component = (
+				<div className = "noteView">
+					<h1>{this.props.showOneKey}</h1>
+					<div className = "editBtnWrapper">
+						<button
+							className = "removeBtn"
+							onClick = {this.props.removeOne.bind(this, this.props.showOneKey)}><i className="fa fa-minus-circle" aria-hidden="true"></i> Remove This Note
+						</button>
+						<button
+							className = "editBtn"
+							onClick = {this.props.setEdit.bind(this, this.props.showOneKey)}><i className="fa fa-pencil" aria-hidden="true"></i> Edit This Note
+						</button>
+					</div>
+					<div>
+						<Stars
+							noteKey = {this.props.showOneKey} 
+							updateStars = {this.props.updateStars} />
+					</div>
+					<p><strong>Note Details:</strong></p>
+					<pre className = "ingredients">{localStorage.getItem(this.props.showOneKey)}</pre>
+					{editBox}
+				</div>
+			);
+		}
+		return (
+			<ReactCSSTransitionGroup
+			transitionName = "transitionDiv"
+			transitionEnterTimeout={750}
+			transitionLeaveTimeout={50}>
+				{component}
+			</ReactCSSTransitionGroup>
+		);
+	}
+};
+
+// Show all note view:
+class ShowAll extends React.Component {
+	render() {
+		var note = this.props.note.map( (note) => {
+			var editBox;
+			if (this.props.editKey === note[0]) {
+				editBox = (
+					<EditNote
+					showEdit = {this.props.showEdit}
+					editKey = {this.props.editKey}
+					editValue = {this.props.editValue}
+					editTitle = {this.props.editTitle}
+					handleEdit = {this.props.handleEdit}
+					handleEditTitle = {this.props.handleEditTitle}
+					submitEdit = {this.props.submitEdit}
+					cancelEdit = {this.props.cancelEdit} />
+				);
+			}
+			return (
+				<div className = "noteView" key = {note[0] + note[1].substr(0, 5)}>
+					<h1>{note[0]}</h1>
+					<div className = "editBtnWrapper">
+						<button
+							className = "removeBtn"
+							onClick = {this.props.removeOne.bind(this, note[0])}><i className="fa fa-minus-circle" aria-hidden="true"></i> Remove This Note
+						</button>
+						<button
+							className = "editBtn"
+							onClick = {this.props.setEdit.bind(this, note[0])}><i className="fa fa-pencil" aria-hidden="true"></i> Edit This Note
+						</button>
+					</div>
+					<div>
+						<Stars
+							noteKey = {note[0]} 
+							updateStars = {this.props.updateStars} />						
+					</div>
+					<p><strong>Note Details:</strong></p>
+					<pre className = "ingredients">{localStorage.getItem(note[0])}</pre>
+						{editBox}
+				</div>
+			);
+		});
+		var component;
+		if (this.props.showAll === true) {
+			component = (
+				<div className = "showAllWrapper">
+					{note}
+				</div>
+			);
+		}
+		return (
+			<ReactCSSTransitionGroup
+			transitionName = "transitionDiv"
+			transitionEnterTimeout={1500}
+			transitionLeaveTimeout={50}>
+				{component}
+			</ReactCSSTransitionGroup>
+		);
+	}
+};
+
+// Edit Note Component, will load in ShowOne or ShowAll view:
+class EditNote extends React.Component {
+	render() {
+		// Conditionally calculate height of textarea based on inner content:
+		var num = this.props.editValue.split(/\r\n|\r|\n/).length;
+		var textAreaStyle = {
+			height: 25 * num + 25
+		}
+		var component;
+		if (this.props.showEdit === true) {
+			component = (
+					<div className = "editBox">
+						<p>Edit Title:</p>
+						<input
+							type = "text"
+							value = {this.props.editTitle}
+							onChange = {this.props.handleEditTitle} />
+						<p>Edit Ingredients:</p>
+						<textarea
+							style = {textAreaStyle}
+							id = "edit"
+							value = {this.props.editValue}
+							onChange = {this.props.handleEdit}>
+						</textarea><br />
+						<button
+							className = "submitBtn"
+							onClick = {this.props.submitEdit}>Submit Edit</button>
+						<button
+							className = "cancelBtn"
+							onClick = {this.props.cancelEdit}>Cancel Edit</button>
+					</div>
+			);
+		}
+		return (
+			<ReactCSSTransitionGroup
+				transitionName = "editTransitionDiv"
+				transitionAppear = {true}
+				transitionAppearTimeout={750}
+				transitionEnterTimeout = {750}
+				transitionLeaveTimeout={100}>
+				{component}
+			</ReactCSSTransitionGroup>
+		);
+	}
+};
+
+class Stars extends React.Component {
+	render() {
+		var getStars = localStorage.getItem(this.props.noteKey + '_stars');
+		var renderStars;
+		if (getStars == 0) {
+			renderStars = (
+				<div>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 1)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 2)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 3)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 4)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 5)} aria-hidden="true"></i>
+				</div>
+			);
+		}
+		else if (getStars == 1) {
+			renderStars = (
+				<div>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 1)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 2)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 3)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 4)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 5)} aria-hidden="true"></i>
+				</div>
+			);
+		}
+		else if (getStars == 2) {
+			renderStars = (
+				<div>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 1)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 2)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 3)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 4)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 5)} aria-hidden="true"></i>
+				</div>
+			);
+		}
+		else if (getStars == 3) {
+			renderStars = (
+				<div>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 1)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 2)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 3)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 4)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 5)} aria-hidden="true"></i>
+				</div>
+			);
+		}
+		else if (getStars == 4) {
+			renderStars = (
+				<div>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 1)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 2)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 3)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 4)} aria-hidden="true"></i>
+					<i className="fa fa-star-o" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 5)} aria-hidden="true"></i>
+				</div>
+			);
+		}
+		else if (getStars == 5) {
+			renderStars = (
+				<div>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 1)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 2)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 3)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 4)} aria-hidden="true"></i>
+					<i className="fa fa-star" onClick = {this.props.updateStars.bind(this, this.props.noteKey, 5)} aria-hidden="true"></i>
+				</div>
+			);
+		}			
+		return (
+			<div className = "stars">
+				{renderStars}
+			</div>	
+		);
+	}
+};
+
+ReactDOM.render(<App />, document.getElementById('main'));
