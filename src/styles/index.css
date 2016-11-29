@@ -206,7 +206,7 @@ select {
   -webkit-padding-start: 2px;
   -moz-padding-start: 2px;
 	font-family: 'Josefin Sans', sans-serif;
-  background-color: rgb(255, 211, 78);
+  background-color: rgb(225,225,225);
   transition: background-color 1000ms ease;
   background-position: center right;
   background-image: url('../../assets/images/down-arrow.png');
@@ -234,7 +234,7 @@ select:-moz-focusring {
 }
 select:hover {
 	cursor: pointer;
-	background-color: rgb(255,205,65);
+	background-color: rgb(225,225,225);
 }
 select:focus {
 	outline: none;
@@ -513,6 +513,10 @@ select:focus {
 }
 #pinterestClone {
 	background: url('/assets/images/pinterest-clone.png');
+	background-size: cover;
+}
+#quizApp {
+	background: url('/assets/images/quiz-app.png');
 	background-size: cover;
 }
 
@@ -806,6 +810,10 @@ select:focus {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayquizApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
 
 /* Add hover stlying for each project */
 
@@ -1062,6 +1070,10 @@ select:focus {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#quizApp:hover #overlayquizApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 
 /* Styling for Contact Me div */
 .contact {
@@ -1298,6 +1310,7 @@ select:focus {
 	#overlaystocksApp { display: none; }
 	#overlaybookClubApp { display: none; }
 	#overlaypinterestClone { display: none; }
+	#overlayquizApp { display: none; }
 	#overlayrealTimeSearch { display: none; }
 	#overlayrave{ display: none; }
 	#overlaymultiSearch { display: none; }

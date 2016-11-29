@@ -93,6 +93,15 @@ class App extends Component {
         filtered: true
       });
 
+    } else if (selection === 'Writing') {
+
+      const filtered = portfolio.filter( (project) => project.writing === true );
+      this.setState({
+        projects: filtered,
+        filterText: `Displaying ${selection} Projects`,
+        filtered: true
+      }); 
+
     } else if (selection !== '') {
 
       const filtered = portfolio.filter( (project) => project.category === selection );
@@ -138,6 +147,7 @@ class App extends Component {
             <option value = "Back End">Back End</option>
             <option value = "D3">D3</option>
             <option value = "React">React</option>
+            <option value = "Writing">Writing</option>
           </select>
           
         </div>

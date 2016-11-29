@@ -32,7 +32,8 @@ const Portfolio = [
 		src: '/assets/portfolio/css-zen-garden/index.html',
 		title: 'CSS Zen Garden',
 		category: 'Front End',
-		showcase: false
+		showcase: true,
+		order: 13
 	},
 	{
 		ID: 'sejong',
@@ -84,7 +85,8 @@ const Portfolio = [
 		title: 'Wikipedia Article Viewer II',
 		category: 'Front End',
 		reactOrder: 15,
-		showcase: false
+		showcase: true,
+		order: 14
 	},
 	{
 		ID: 'twitch_1',
@@ -144,7 +146,8 @@ const Portfolio = [
 		title: 'JavaScript Tic-Tac-Toe Game II',
 		category: 'Front End',
 		reactOrder: 19,
-		showcase: false
+		showcase: true,
+		order: 12,
 	},
 	{
 		ID: 'simon_1',
@@ -160,7 +163,7 @@ const Portfolio = [
 		category: 'Front End',
 		showcase: true,
 		reactOrder: 20,
-		order: 8
+		order: 11
 	},
 	{
 		ID: 'stocks',
@@ -174,8 +177,9 @@ const Portfolio = [
 		src: '/assets/portfolio/front-end-projects/index.html',
 		title: 'Building the Free Code Camp Front End Projects',
 		category: 'Front End',
-		showcase: true,
-		order: 13
+		showcase: false,
+		writing: true,
+		writingOrder: 1
 	},
 	{
 		ID: 'barChart',
@@ -197,7 +201,7 @@ const Portfolio = [
 		title: 'Visualizing Global Surface Temperature with a Heat Map',
 		category: 'D3',
 		showcase: true,
-		order: 11
+		order: 15
 	},
 	{
 		ID: 'forceLayout',
@@ -212,7 +216,7 @@ const Portfolio = [
 		title: 'Charting Global Meteor Impacts with D3',
 		category: 'D3',
 		showcase: true,
-		order: 12
+		order: 16
 	},
 	{
 		ID: 'realTimeSearch',
@@ -341,7 +345,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 24,
 		showcase: true,
-		order: 7
+		order: 8
 	},
 	{
 		ID: 'dungeon',
@@ -350,7 +354,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 25,
 		showcase: true,
-		order: 6
+		order: 7
 	},
 	{
 		ID: 'dinoGame',
@@ -366,7 +370,9 @@ const Portfolio = [
 		title: 'JavaScript Algorithms',
 		category: 'React',
 		reactOrder: 27,
-		showcase: false
+		showcase: false,
+		writing: true,
+		writingOrder: 3
 	},	
 	{
 		ID: 'codeGod',
@@ -383,7 +389,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 29,
 		showcase: true,
-		order: 9
+		order: 10
 	},
 	{
 		ID: 'reactProjects',
@@ -391,8 +397,9 @@ const Portfolio = [
 		title: 'How I Learned React by Building over 25 Projects',
 		category: 'React',
 		reactOrder: 31,
-		showcase: true,
-		order: 14
+		showcase: false,
+		writing: true,
+		writingOrder: 2
 	},
 	{
 		ID: 'unix',
@@ -436,7 +443,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 30,
 		showcase: true,
-		order: 10
+		order: 9
 	},
 	{
 		ID: 'votingApp',
@@ -444,7 +451,7 @@ const Portfolio = [
 		title: 'Voting App',
 		category: 'Back End',
 		showcase: true,
-		order: 5
+		order: 6
 	},
 	{
 		ID: 'pinterestClone',
@@ -452,7 +459,7 @@ const Portfolio = [
 		title: 'Pinterest Clone',
 		category: 'Back End',
 		showcase: true,
-		order: 4
+		order: 5
 	},
 	{
 		ID: 'nightlifeApp',
@@ -460,7 +467,7 @@ const Portfolio = [
 		title: 'Nightlife Coordination App',
 		category: 'Back End',
 		showcase: true,
-		order: 3
+		order: 4
 	},
 	{
 		ID: 'stocksApp',
@@ -468,7 +475,7 @@ const Portfolio = [
 		title: 'Chart the Stock Market App',
 		category: 'Back End',
 		showcase: true,
-		order: 2
+		order: 3
 	},
 	{
 		ID: 'bookClubApp',
@@ -479,12 +486,21 @@ const Portfolio = [
 		order: 1
 	},
 	{
+		ID: 'quizApp',
+		src: 'https://pacific-retreat-29989.herokuapp.com/',
+		title: 'A React/Redux Quiz App',
+		category: 'Back End',
+		showcase: true,
+		order: 2
+	},	
+	{
 		ID: 'blog',
 		src: '/assets/portfolio/blog/index.html',
 		title: 'How I Taught Myself to Code',
 		category: 'blog',
-		showcase: true,
-		order: 15
+		showcase: false,
+		writing: true,
+		writingOrder: 4
 	},																												
 ];
 
