@@ -1343,7 +1343,6 @@ select:focus {
 		background-size: 28px;
 		background-position: 11px 7px;
 	}
-
 	.navControl {
 		display: block;
 		position: absolute;
@@ -1357,9 +1356,7 @@ select:focus {
 	.navLink {
 		font-size: 36px;
 	}
-	.navLink:hover {
-		color: #FFCE49;
-	}
+	
 	.navigationBar {
 		height: auto;
 	  flex-direction: column;
@@ -1370,8 +1367,17 @@ select:focus {
 	.navLink {
 		margin: 8px auto;
 	}
+	.navLink:hover {
+		color: white;
+	}
 	.navControlLink {
 		font-size: 26px;
+		color: white;
+	}
+	#closeNav:hover {
+		color: white;
+	}
+	#navBars:hover {
 		color: white;
 	}
 	.imageBox {
