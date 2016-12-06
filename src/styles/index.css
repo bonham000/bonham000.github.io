@@ -2,6 +2,8 @@ body {
 	padding: 0;
 	margin: 0;
 	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
+	background: rgb(250,250,250);
+	background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 }
@@ -13,6 +15,7 @@ body {
 	width: 100%;
 	height: 50px;
 	background: rgba(50, 150, 225, 0.90);
+	background: rgba(15,15,15,0.90);
 	border-bottom: 1px solid rgba(30,30,30,0.75);
 	position: fixed;
 	top: 0;
@@ -39,6 +42,7 @@ body {
 	text-align: center;
 	height: 50px;
 	background: rgba(50, 150, 225, 0.90);
+	background: rgba(15,15,15,0.90);
 	border-bottom: 1px solid rgba(30,30,30,0.75);
 	position: fixed;
 	top: 0;
@@ -64,13 +68,14 @@ body {
 	font-size: 26px;
 	margin: auto 15px;
 	font-family: 'Montserrat', sans-serif;
-	transition: color 450ms ease;
+	color: white;
+	transition: color 50ms ease;
 }
 
 .navLink:hover {
 	cursor: pointer;
 	color: rgb(255, 211, 78);
-	transition: color 450ms ease;
+	transition: color 50ms ease;
 }
 .active {
 	color: rgb(255, 211, 78);
@@ -108,12 +113,6 @@ body {
 	height: 200px;
 	border-radius: 50%;
 	border: 1px solid rgba(25,25,25,0.5);
-	transition: opacity 250ms ease, border 200ms ease;
-}
-.avatar:hover {
-	opacity: 0.87;
-	border: 1px solid rgba(25,25,25,1);
-	transition: opacity 250ms ease, border 200ms ease;
 }
 .name {
 	font-size: 90px;
@@ -207,7 +206,7 @@ select {
   -moz-padding-start: 2px;
 	font-family: 'Josefin Sans', sans-serif;
   background-color: rgb(225,225,225);
-  transition: background-color 1000ms ease;
+  transition: background-color 250ms ease;
   background-position: center right;
   background-image: url('../../assets/images/down-arrow.png');
   background-size: 32px;
@@ -234,7 +233,8 @@ select:-moz-focusring {
 }
 select:hover {
 	cursor: pointer;
-	background-color: rgb(225,225,225);
+	background-color: white;
+	transition: background-color 250ms ease;
 }
 select:focus {
 	outline: none;
@@ -1112,15 +1112,16 @@ select:focus {
   -webkit-justify-content: center;
 	justify-content: center;
 }
-.fa {
+.fa-contact {
 	margin: 20px;
 	color: rgb(45,45,45);
-	transition: color 450ms ease;
+	transition: color 150ms ease;
 	font-size: 95px;
 }
-.fa:hover {
+.fa-contact:hover {
 	color: rgb(255, 211, 78);
-	transition: color 450ms ease;
+	color: #FFCE49;
+	transition: color 150ms ease;
 }
 
 /* Responsive styling */
@@ -1357,7 +1358,7 @@ select:focus {
 		font-size: 36px;
 	}
 	.navLink:hover {
-		color: rgb(45,45,45);
+		color: #FFCE49;
 	}
 	.navigationBar {
 		height: auto;
@@ -1371,6 +1372,7 @@ select:focus {
 	}
 	.navControlLink {
 		font-size: 26px;
+		color: white;
 	}
 	.imageBox {
 		width: 300px;
@@ -1408,7 +1410,7 @@ select:focus {
 		font-size: 75px;
 	}
 	.fa:hover {
-		color: rgb(45,45,45);
+		color: #FFCE49;
 	}
 }
 @media screen and (max-width: 400px) {

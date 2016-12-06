@@ -2,17 +2,14 @@ import React, { Component } from 'react'
 
 import Navigation from './components/Navigation'
 import About from './components/About'
-import Certificates from './components/Certificates'
 import Contact from './components/Contact'
 
 import Portfolio from './data/Projects'
 
-class App extends Component {
+export default class App extends Component {
   constructor() {
     super();
-
     const showcase = Portfolio.filter( (project) => project.showcase ).sort( (a, b) => a.order - b.order);
-
     this.state = {
       portfolio: Portfolio,
       projects: showcase,
@@ -20,14 +17,17 @@ class App extends Component {
       filtered: false,
       showNav: true
     }
-    this.filterProjects = this.filterProjects.bind(this);
-    this.toggleNav = this.toggleNav.bind(this);
-    this.updateDimensions = this.updateDimensions.bind(this);
   }
-  componentWillMount() { this.updateDimensions(); }
-  componentDidMount() { window.addEventListener("resize", this.updateDimensions); }
-  componentWillUnmount() { window.removeEventListener("resize", this.updateDimensions); }
-  updateDimensions() {
+  componentWillMount() { 
+    this.updateDimensions();
+  }
+  componentDidMount() {
+    window.addEventListener("resize", this.updateDimensions);
+  }
+  componentWillUnmount() {
+    window.removeEventListener("resize", this.updateDimensions);
+  }
+  updateDimensions = () => {
 
     const w = window;
     const d = document;
@@ -48,14 +48,14 @@ class App extends Component {
     }
 
   }
-  toggleNav() {
+  toggleNav = () => {
     if (this.state.width < 550) {
       this.setState({
         showNav: !this.state.showNav
       });
     }
   }
-  filterProjects(event) {
+  filterProjects = (event) => {
 
     const selection = event.target.value;
     const { portfolio } = this.state;
@@ -115,45 +115,38 @@ class App extends Component {
   }
   render() {
     const { projects } = this.state;
-    const renderProjects = projects.map( (project, idx) => {
-      return (
-        <div className = "imageBox" id = {project.ID} key = {idx} onClick = { () => window.open(project.src) }>
-          <div className = "overlay" id = {`overlay${project.ID}`}>
-            <span className = "text">{project.title}</span>
-          </div>
-        </div>
-      );
-    });
     return (
-      <div className = "App">
+      <div className="App">
 
-        <Navigation showNav = {this.state.showNav} toggleNav = {this.toggleNav}/>
+        <Navigation showNav={this.state.showNav} toggleNav={this.toggleNav}/>
 
         <About />
 
-        <Certificates />
-
-        <div className = 'sortContainer' id = 'projectsNav'>
-
-          <h1 className = 'portfolioTitle'>Portfolio</h1>
-
-          <h2 className = 'filteredTitle'>{this.state.filterText}</h2>
-
-          <select onChange = {this.filterProjects}>
-            { !this.state.filtered && <option value = "">Filter Portfolio</option> }
-            <option value = "View All">View All Projects</option>
-            <option value = "Showcase">Showcase</option>
-            <option value = "Front End">Front End</option>
-            <option value = "Back End">Back End</option>
-            <option value = "D3">D3</option>
-            <option value = "React">React</option>
-            <option value = "Writing">Writing</option>
+        <div className='sortContainer' id='projectsNav'>
+          <h1 className='portfolioTitle'>Portfolio</h1>
+          <h2 className='filteredTitle'>{this.state.filterText}</h2>
+          <select onChange={this.filterProjects}>
+            { !this.state.filtered && <option value="">Filter Portfolio</option> }
+            <option value="View All">View All Projects</option>
+            <option value="Showcase">Showcase</option>
+            <option value="Front End">Front End</option>
+            <option value="Back End">Back End</option>
+            <option value="D3">D3</option>
+            <option value="React">React</option>
+            <option value="Writing">Writing</option>
           </select>
-          
         </div>
 
-        <div className = "container">
-          {renderProjects}
+        <div className="container">
+          {projects.map( (project, idx) => {
+            return (
+              <div className="imageBox" id={project.ID} key={idx} onClick={ () => window.open(project.src) }>
+                <div className="overlay" id={`overlay${project.ID}`}>
+                  <span className="text">{project.title}</span>
+                </div>
+              </div>
+            );
+          })}
         </div>
 
         <Contact />
@@ -161,6 +154,4 @@ class App extends Component {
       </div>
     );
   }
-}
-
-export default App;
+};
