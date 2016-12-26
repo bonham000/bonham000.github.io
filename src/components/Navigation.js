@@ -1,7 +1,7 @@
 import React from 'react'
 import { Link } from 'react-scroll';
 
-const Navigation = (props) => {
+export default function Navigation(props) {
 	return (
 		<div>
 			{ props.showNav ? 
@@ -44,5 +44,3 @@ const Navigation = (props) => {
 		</div>
 	);
 };
-
-export default Navigation;
