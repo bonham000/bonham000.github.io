@@ -2,7 +2,7 @@ body {
 	padding: 0;
 	margin: 0;
 	background: linear-gradient(rgb(10,225,135), rgb(50,150,225));
-	background: rgb(250,250,250);
+	background: rgb(252,252,252);
 	background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
 	font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
@@ -75,10 +75,12 @@ body {
 .navLink:hover {
 	cursor: pointer;
 	color: rgb(255, 211, 78);
+	color: rgb(40,200,255);
 	transition: color 50ms ease;
 }
 .active {
 	color: rgb(255, 211, 78);
+	color: rgb(40,200,255);
 }
 
 .main {
@@ -113,7 +115,6 @@ body {
 	height: 200px;
 	border-radius: 50%;
 	border: 1px solid rgba(25,25,25,0.5);
-	
 }
 .name {
 	font-size: 90px;
@@ -123,14 +124,18 @@ body {
 .nameAbout {
 	margin: 12px auto;
 	font-size: 32px;
-	max-width: 900px;
+	max-width: 800px;
 	line-height: 33px;
+	/*font-family: 'Scope One', sans-serif;
+	font-family: 'Cormorant', sans-serif;*/
 }
 .thanks {
 	font-size: 38px;
 	max-width: 900px;
+	margin-top: 25px;
 	margin-left: auto;
 	margin-right: auto;
+	/*font-family: 'Cormorant', sans-serif;*/
 }
 a, a:visited {
 	color: rgb(45,45,45);
@@ -189,11 +194,7 @@ a:hover {
 .portfolioTitle {
 	font-size: 55px;
 	margin-bottom: 12px;
-}
-
-.filteredTitle {
-	font-size: 28px;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'Montserrat', sans-serif;
 }
 
 select {
@@ -293,6 +294,7 @@ select:focus {
 .text {
 	font-family: 'EB Garamond', serif;
 	color: rgb(255, 211, 78);
+	color: rgb(40,200,255);
 	font-size: 40px;
 	padding: 50px;
 	text-align: center;
@@ -1121,6 +1123,7 @@ select:focus {
 .fa-contact:hover {
 	color: rgb(255, 211, 78);
 	color: #FFCE49;
+	color: rgb(40,200,255);
 	transition: color 150ms ease;
 }
 

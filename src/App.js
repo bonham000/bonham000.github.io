@@ -9,11 +9,11 @@ import Portfolio from './data/Projects'
 export default class App extends Component {
   constructor() {
     super();
-    const showcase = Portfolio.filter( (project) => project.showcase ).sort( (a, b) => a.order - b.order);
+    const showcase = Portfolio.filter(project => project.showcase ).sort((a, b) => a.order - b.order);
     this.state = {
       portfolio: Portfolio,
       projects: showcase,
-      filterText: 'Displaying Showcase',
+      filter: 'Showcase',
       filtered: false,
       showNav: true
     }
@@ -40,12 +40,12 @@ export default class App extends Component {
     if (width < 550) {
       this.setState({
         showNav: false
-      })
+      });
     } else if (width >= 550) {
       this.setState({
         showNav: true
       });
-    }
+    };
 
   }
   toggleNav = () => {
@@ -64,50 +64,44 @@ export default class App extends Component {
 
       this.setState({
         projects: portfolio,
-        filterText: 'Displaying All Projects',
+        filter: selection,
         filtered: true
       });
 
     } else if (selection === 'Showcase') {
 
-      const showcase = portfolio.filter( (project) => {
-        return project.showcase
-      });
-
-      const order = showcase.sort( (a, b) => {
-        return a.order - b.order;
-      });
-
+      const showcase = portfolio.filter(project => project.showcase);
+      const order = showcase.sort((a, b) => a.order - b.order );
       this.setState({
         projects: order,
-        filterText: 'Displaying Showcase',
+        filter: selection,
         filtered: true
       });
 
     } else if (selection === 'React') {
 
-      const react = portfolio.filter( (project) => !isNaN(project.reactOrder) ).sort( (a, b) => a.reactOrder - b.reactOrder );
+      const react = portfolio.filter(project => !isNaN(project.reactOrder) ).sort( (a, b) => a.reactOrder - b.reactOrder );
       this.setState({
         projects: react,
-        filterText: 'Displaying React Projects',
+        filter: selection,
         filtered: true
       });
 
     } else if (selection === 'Writing') {
 
-      const filtered = portfolio.filter( (project) => project.writing === true );
+      const filtered = portfolio.filter(project => project.writing === true );
       this.setState({
         projects: filtered,
-        filterText: `Displaying ${selection} Projects`,
+        filter: selection,
         filtered: true
       }); 
 
     } else if (selection !== '') {
 
-      const filtered = portfolio.filter( (project) => project.category === selection );
+      const filtered = portfolio.filter(project => project.category === selection );
       this.setState({
         projects: filtered,
-        filterText: `Displaying ${selection} Projects`,
+        filter: selection,
         filtered: true
       });
 
@@ -124,9 +118,7 @@ export default class App extends Component {
 
         <div className='sortContainer' id='projectsNav'>
           <h1 className='portfolioTitle'>Portfolio</h1>
-          <h2 className='filteredTitle'>{this.state.filterText}</h2>
-          <select onChange={this.filterProjects}>
-            { !this.state.filtered && <option value="">Filter Portfolio</option> }
+          <select onChange={this.filterProjects} value={this.state.filter}>
             <option value="View All">View All Projects</option>
             <option value="Showcase">Showcase</option>
             <option value="Front End">Front End</option>
@@ -138,9 +130,9 @@ export default class App extends Component {
         </div>
 
         <div className="container">
-          {projects.map( (project, idx) => {
+          {projects.map((project, idx) => {
             return (
-              <div className="imageBox" id={project.ID} key={idx} onClick={ () => window.open(project.src) }>
+              <div className="imageBox" id={project.ID} key={idx} onClick={() => window.open(project.src)}>
                 <div className="overlay" id={`overlay${project.ID}`}>
                   <span className="text">{project.title}</span>
                 </div>
