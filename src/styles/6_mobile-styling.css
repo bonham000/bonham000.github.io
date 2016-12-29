@@ -226,9 +226,6 @@
 	.fa {
 		font-size: 75px;
 	}
-	.fa:hover {
-		color: #FFCE49;
-	}
 }
 @media screen and (max-width: 400px) {
 	.imageBox {
