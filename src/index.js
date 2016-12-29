@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 
 import App from './App';
+
 import './styles/5_projects-mobile.css';
 import './styles/1_index.css';
 import './styles/2_project-images.css';
