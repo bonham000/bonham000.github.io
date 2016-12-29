@@ -1,0 +1,265 @@
+/* Add base opacity for each project */
+#overlaygoogle {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayfacebook {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaynewRiver {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayasia {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayzen {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaysejong {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaystocks {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayquotes_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayweather_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaywikipedia_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaytwitch_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaycalculator_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaypomodoro_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayticTacToe_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaysimon_1 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayquotes_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayweather_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaywikipedia_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaytwitch_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaycalculator_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaypomodoro_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayticTacToe_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaysimon_2 {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayrealTimeSearch {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayrave {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaymultiSearch {
+	opacity:0;
+	transition: opacity 1250ms ease;;
+}
+#overlaygiphy {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayhighchartsReact {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayreactMovement {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayformService {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaytimestampedNotes {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaycssTransitions {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayfccFrontEnd {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayalgorithms {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayreactProjects {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaycodeGod {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayspaceStation {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaytoDoApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaymarkdown {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayleaderboard {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaynotesApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayrecipeBox {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayconway {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaydungeon {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaydinoGame {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayunix {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayreactBarChart {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaybarChart {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayscatterplot {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayheatMap {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayforceLayout {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayglobalMap {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayrequestHeader {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaymicroUrl {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayimageSearch {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayfileMeta {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayblog {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayflashcards {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayvotingApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaynightlifeApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaystocksApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaybookClubApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaypinterestClone {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayquizApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayticketz {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaytestModule {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}

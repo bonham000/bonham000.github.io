@@ -1,0 +1,266 @@
+/* Add hover stlying for each project */
+#realTimeSearch:hover #overlayrealTimeSearch {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#rave:hover #overlayrave{
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#multiSearch:hover #overlaymultiSearch {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#giphy:hover #overlaygiphy {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#highchartsReact:hover #overlayhighchartsReact {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#reactMovement:hover #overlayreactMovement{
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#formService:hover #overlayformService {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#timestampedNotes:hover #overlaytimestampedNotes {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#cssTransitions:hover #overlaycssTransitions {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+
+#google:hover #overlaygoogle {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#facebook:hover #overlayfacebook {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#newRiver:hover #overlaynewRiver {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#asia:hover #overlayasia {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#zen:hover #overlayzen {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#sejong:hover #overlaysejong {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#quotes_1:hover #overlayquotes_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#weather_1:hover #overlayweather_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#wikipedia_1:hover #overlaywikipedia_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#stocks:hover #overlaystocks {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#twitch_1:hover #overlaytwitch_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#calculator_1:hover #overlaycalculator_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#pomodoro_1:hover #overlaypomodoro_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#ticTacToe_1:hover #overlayticTacToe_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#simon_1:hover #overlaysimon_1 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#quotes_2:hover #overlayquotes_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#weather_2:hover #overlayweather_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#wikipedia_2:hover #overlaywikipedia_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#twitch_2:hover #overlaytwitch_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#calculator_2:hover #overlaycalculator_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#pomodoro_2:hover #overlaypomodoro_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#ticTacToe_2:hover #overlayticTacToe_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#simon_2:hover #overlaysimon_2 {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#fccFrontEnd:hover #overlayfccFrontEnd {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#algorithms:hover #overlayalgorithms {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#reactProjects:hover #overlayreactProjects {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#codeGod:hover #overlaycodeGod {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#spaceStation:hover #overlayspaceStation {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#toDoApp:hover #overlaytoDoApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#markdown:hover #overlaymarkdown {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#leaderboard:hover #overlayleaderboard {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#notesApp:hover #overlaynotesApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#recipeBox:hover #overlayrecipeBox {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#conway:hover #overlayconway {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#dungeon:hover #overlaydungeon {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#dinoGame:hover #overlaydinoGame {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#unix:hover #overlayunix {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#reactBarChart:hover #overlayreactBarChart {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#barChart:hover #overlaybarChart {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#scatterplot:hover #overlayscatterplot {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#heatMap:hover #overlayheatMap {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#forceLayout:hover #overlayforceLayout {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#globalMap:hover #overlayglobalMap {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#requestHeader:hover #overlayrequestHeader {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#microUrl:hover #overlaymicroUrl {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#imageSearch:hover #overlayimageSearch {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#fileMeta:hover #overlayfileMeta {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#blog:hover #overlayblog {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#flashcards:hover #overlayflashcards {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#votingApp:hover #overlayvotingApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#nightlifeApp:hover #overlaynightlifeApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#stocksApp:hover #overlaystocksApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#bookClubApp:hover #overlaybookClubApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#pinterestClone:hover #overlaypinterestClone {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#quizApp:hover #overlayquizApp {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#ticketz:hover #overlayticketz {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#testModule:hover #overlaytestModule {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}

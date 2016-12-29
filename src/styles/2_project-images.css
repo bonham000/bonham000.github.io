@@ -1,0 +1,266 @@
+/* Add project images for each flexbox div */
+#google {
+	background: url('/assets/images/google.png');
+	background-size: cover;
+}
+#facebook {
+	background: url('/assets/images/facebook.png');
+	background-size: cover;
+}
+#newRiver {
+	background: url('/assets/images/new-river.png');
+	background-size: cover;
+}
+#asia {
+	background: url('/assets/images/asia.png');
+	background-size: cover;
+}
+#zen {
+	background: url('/assets/images/zen.png');
+	background-size: cover;
+}
+#sejong {
+	background: url('/assets/images/sejong.png');
+	background-size: cover;
+}
+#quotes_1 {
+	background: url('/assets/images/quotes.png');
+	background-size: cover;
+}
+#weather_1 {
+	background: url('/assets/images/weather.png');
+	background-size: cover;
+}
+#wikipedia_1 {
+	background: url('/assets/images/wikipedia.png');
+	background-size: cover;
+}
+#twitch_1 {
+	background: url('/assets/images/twitch.png');
+	background-size: cover;
+}
+#calculator_1 {
+	background: url('/assets/images/calculator.png');
+	background-size: cover;
+}
+#pomodoro_1 {
+	background: url('/assets/images/pomodoro.png');
+	background-size: cover;
+}
+#ticTacToe_1 {
+	background: url('/assets/images/tic-tac-toe.png');
+	background-size: cover;
+}
+#simon_1 {
+	background: url('/assets/images/simon.png');
+	background-size: cover;
+}
+#quotes_2 {
+	background: url('/assets/images/quotes-2.png');
+	background-size: cover;
+}
+#weather_2 {
+	background: url('/assets/images/weather-2.png');
+	background-size: cover;
+}
+#wikipedia_2 {
+	background: url('/assets/images/wikipedia-2.png');
+	background-size: cover;
+}
+#stocks {
+	background: url('/assets/images/stocks.png');
+	background-size: cover;
+}
+#twitch_2 {
+	background: url('/assets/images/twitch-2.png');
+	background-size: cover;
+}
+#calculator_2 {
+	background: url('/assets/images/calculator-2.png');
+	background-size: cover;
+}
+#pomodoro_2 {
+	background: url('/assets/images/pomodoro-2.png');
+	background-size: cover;
+}
+#ticTacToe_2 {
+	background: url('/assets/images/tic-tac-toe-2.png');
+	background-size: cover;
+}
+#simon_2 {
+	background: url('/assets/images/simon-2.png');
+	background-size: cover;
+}
+#fccFrontEnd {
+	background: url('/assets/images/front-end-projects.png');
+	background-size: cover;
+}
+#algorithms {
+	background: url('/assets/images/algorithms.png');
+	background-size: cover;
+}
+#reactProjects {
+	background: url('/assets/images/reactProjects.png');
+	background-size: cover;
+}
+#codeGod {
+	background: url('/assets/images/code-god.png');
+	background-size: cover;
+}
+#spaceStation {
+	background: url('/assets/images/space-station.png');
+	background-size: cover;
+}
+#toDoApp {
+	background: url('/assets/images/react-to-do-app.png');
+	background-size: cover;
+}
+#markdown {
+	background: url('/assets/images/markdown.png');
+	background-size: cover;
+}
+#leaderboard {
+	background: url('/assets/images/leaderboard.png');
+	background-size: cover;
+}
+#recipeBox {
+	background: url('/assets/images/recipe-box.png');
+	background-size: cover;
+}
+#notesApp {
+	background: url('/assets/images/notes-app.png');
+	background-size: cover;
+}
+#conway {
+	background: url('/assets/images/conway.png');
+	background-size: cover;
+}
+#dungeon {
+	background: url('/assets/images/dungeon.png');
+	background-size: cover;
+}
+#dinoGame {
+	background: url('/assets/images/dino-game.png');
+	background-size: cover;
+}
+#reactBarChart {
+	background: url('/assets/images/react-bar-chart.png');
+	background-size: cover;
+}
+#barChart {
+	background: url('/assets/images/bar-chart.png');
+	background-size: cover;
+}
+#scatterplot {
+	background: url('/assets/images/scatterplot.png');
+	background-size: cover;
+}
+#heatMap {
+	background: url('/assets/images/heat-map.png');
+	background-size: cover;
+}
+#forceLayout {
+	background: url('/assets/images/force-layout.png');
+	background-size: cover;
+}
+#globalMap {
+	background: url('/assets/images/global-map.png');
+	background-size: cover;
+}
+#unix {
+	background: url('/assets/images/unix.png');
+	background-size: cover;
+}
+#requestHeader {
+	background: url('/assets/images/request-header.png');
+	background-size: cover;
+}
+#microUrl {
+	background: url('/assets/images/micro-url.png');
+	background-size: cover;
+}
+#imageSearch {
+	background: url('/assets/images/image-search.png');
+	background-size: cover;
+}
+#fileMeta {
+	background: url('/assets/images/file-metadata.png');
+	background-size: cover;
+}
+#blog {
+	background: url('/assets/images/blog.png');
+	background-size: cover;
+}
+#flashcards {
+	background: url('/assets/images/flashcards-app.png');
+	background-size: cover;
+}
+#votingApp {
+	background: url('/assets/images/voting-app.png');
+	background-size: cover;
+}
+#nightlifeApp {
+	background: url('/assets/images/nightlife-app.png');
+	background-size: cover;
+}
+#stocksApp {
+	background: url('/assets/images/stocks-app.png');
+	background-size: cover;
+}
+#bookClubApp {
+	background: url('/assets/images/book-club-app.png');
+	background-size: cover;
+}
+#pinterestClone {
+	background: url('/assets/images/pinterest-clone.png');
+	background-size: cover;
+}
+#quizApp {
+	background: url('/assets/images/quiz-app.png');
+	background-size: cover;
+}
+
+#realTimeSearch {
+	background: url('/assets/images/simple-search.png');
+	background-size: cover;
+}
+#rave {
+	background: url('/assets/images/react-colors.png');
+	background-size: cover;
+}
+#multiSearch {
+	background: url('/assets/images/multi-search.png');
+	background-size: cover;
+}
+#giphy {
+	background: url('/assets/images/giphy.png');
+	background-size: cover;
+}
+#highchartsReact {
+	background: url('/assets/images/react-highcharts.png');
+	background-size: cover;
+}
+#reactMovement {
+	background: url('/assets/images/react-motion.png');
+	background-size: cover;
+}
+#formService {
+	background: url('/assets/images/form-service.png');
+	background-size: cover;
+}
+#timestampedNotes {
+	background: url('/assets/images/timestamped-notes.png');
+	background-size: cover;
+}
+#cssTransitions {
+	background: url('/assets/images/css-transitions.png');
+	background-size: cover;
+}
+#ticketz {
+	background: url('/assets/images/ticketz.png');
+	background-size: cover;
+}
+#testModule {
+	background: url('/assets/images/test-module.png');
+	background-size: cover;
+}
