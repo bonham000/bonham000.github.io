@@ -558,6 +558,14 @@ select:focus {
 	background: url('/assets/images/css-transitions.png');
 	background-size: cover;
 }
+#ticketz {
+	background: url('/assets/images/ticketz.png');
+	background-size: cover;
+}
+#testModule {
+	background: url('/assets/images/test-module.png');
+	background-size: cover;
+}
 
 /* Add base opacity for each project */
 #overlaygoogle {
@@ -813,6 +821,14 @@ select:focus {
 	transition: opacity 1250ms ease;
 }
 #overlayquizApp {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayticketz {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlaytestModule {
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
@@ -1076,6 +1092,14 @@ select:focus {
 	opacity:1;
 	transition: opacity 1500ms ease;
 }
+#ticketz:hover #overlayticketz {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
+#testModule:hover #overlaytestModule {
+	opacity:1;
+	transition: opacity 1500ms ease;
+}
 
 /* Styling for Contact Me div */
 .contact {
@@ -1324,6 +1348,8 @@ select:focus {
 	#overlayformService { display: none; }
 	#overlaytimestampedNotes { display: none; }
 	#overlaycssTransitions { display: none; }
+	#overlayticketz { display: none; }
+	#overlaytestModule { display: none; }
 	.text { display: none; }
 }
 @media screen and (max-width: 500px) {

@@ -33,7 +33,7 @@ const Portfolio = [
 		title: 'CSS Zen Garden',
 		category: 'Front End',
 		showcase: true,
-		order: 13
+		order: 15
 	},
 	{
 		ID: 'sejong',
@@ -86,7 +86,7 @@ const Portfolio = [
 		category: 'Front End',
 		reactOrder: 15,
 		showcase: true,
-		order: 14
+		order: 16
 	},
 	{
 		ID: 'twitch_1',
@@ -147,7 +147,7 @@ const Portfolio = [
 		category: 'Front End',
 		reactOrder: 19,
 		showcase: true,
-		order: 12,
+		order: 14,
 	},
 	{
 		ID: 'simon_1',
@@ -163,7 +163,7 @@ const Portfolio = [
 		category: 'Front End',
 		showcase: true,
 		reactOrder: 20,
-		order: 11
+		order: 13
 	},
 	{
 		ID: 'stocks',
@@ -201,7 +201,7 @@ const Portfolio = [
 		title: 'Visualizing Global Surface Temperature with a Heat Map',
 		category: 'D3',
 		showcase: true,
-		order: 15
+		order: 17
 	},
 	{
 		ID: 'forceLayout',
@@ -216,7 +216,7 @@ const Portfolio = [
 		title: 'Charting Global Meteor Impacts with D3',
 		category: 'D3',
 		showcase: true,
-		order: 16
+		order: 18
 	},
 	{
 		ID: 'realTimeSearch',
@@ -345,7 +345,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 24,
 		showcase: true,
-		order: 8
+		order: 10
 	},
 	{
 		ID: 'dungeon',
@@ -354,7 +354,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 25,
 		showcase: true,
-		order: 7
+		order: 9
 	},
 	{
 		ID: 'dinoGame',
@@ -389,7 +389,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 29,
 		showcase: true,
-		order: 10
+		order: 12
 	},
 	{
 		ID: 'reactProjects',
@@ -443,7 +443,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 30,
 		showcase: true,
-		order: 9
+		order: 11
 	},
 	{
 		ID: 'votingApp',
@@ -451,7 +451,7 @@ const Portfolio = [
 		title: 'Voting App',
 		category: 'Back End',
 		showcase: true,
-		order: 6
+		order: 8
 	},
 	{
 		ID: 'pinterestClone',
@@ -459,7 +459,7 @@ const Portfolio = [
 		title: 'Pinterest Clone',
 		category: 'Back End',
 		showcase: true,
-		order: 5
+		order: 7
 	},
 	{
 		ID: 'nightlifeApp',
@@ -467,7 +467,7 @@ const Portfolio = [
 		title: 'Nightlife Coordination App',
 		category: 'Back End',
 		showcase: true,
-		order: 4
+		order: 6
 	},
 	{
 		ID: 'stocksApp',
@@ -475,7 +475,7 @@ const Portfolio = [
 		title: 'Chart the Stock Market App',
 		category: 'Back End',
 		showcase: true,
-		order: 3
+		order: 5
 	},
 	{
 		ID: 'bookClubApp',
@@ -483,7 +483,7 @@ const Portfolio = [
 		title: 'Book Trading Club App',
 		category: 'Back End',
 		showcase: true,
-		order: 1
+		order: 3
 	},
 	{
 		ID: 'quizApp',
@@ -491,7 +491,23 @@ const Portfolio = [
 		title: 'A React/Redux Quiz App',
 		category: 'Back End',
 		showcase: true,
+		order: 4
+	},
+	{
+		ID: 'ticketz',
+		src: 'https://ticketz-io.herokuapp.com/',
+		title: 'Custom Work Order System for IT',
+		category: 'Back End',
+		showcase: true,
 		order: 2
+	},
+	{
+		ID: 'testModule',
+		src: 'http://hysterical-amusement.surge.sh/',
+		title: 'Testing Prototype for Free Code Camp Challenges',
+		category: 'React',
+		showcase: true,
+		order: 1
 	},	
 	{
 		ID: 'blog',
