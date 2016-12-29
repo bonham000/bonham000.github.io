@@ -137,12 +137,6 @@ body {
 	margin-right: auto;
 	/*font-family: 'Cormorant', sans-serif;*/
 }
-a, a:visited {
-	color: rgb(45,45,45);
-}
-a:hover {
-	color: rgb(255, 211, 78);
-}
 
 .certificatesWrapper {
 	width: 100%;

@@ -1,259 +1,259 @@
 /* Add project images for each flexbox div */
 #google {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034690/google_gtj8xl.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034690/google_gtj8xl.png');
 	background-size: cover;
 }
 #facebook {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034689/facebook_swxgun.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034689/facebook_swxgun.png');
 	background-size: cover;
 }
 #newRiver {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034698/new-river_tbgykm.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034698/new-river_tbgykm.jpg');
 	background-size: cover;
 }
 #asia {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034675/asia_g48x3c.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034675/asia_g48x3c.jpg');
 	background-size: cover;
 }
 #zen {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034715/zen_myfzte.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034715/zen_myfzte.png');
 	background-size: cover;
 }
 #sejong {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034707/sejong_brbafw.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034707/sejong_brbafw.jpg');
 	background-size: cover;
 }
 #quotes_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034700/quotes_mb37bd.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034700/quotes_mb37bd.jpg');
 	background-size: cover;
 }
 #weather_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034715/weather_mdghxt.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034715/weather_mdghxt.jpg');
 	background-size: cover;
 }
 #wikipedia_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034714/wikipedia_bkz1hx.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034714/wikipedia_bkz1hx.jpg');
 	background-size: cover;
 }
 #twitch_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034714/twitch_vj3a1g.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034714/twitch_vj3a1g.jpg');
 	background-size: cover;
 }
 #calculator_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034684/calculator_eswtea.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034684/calculator_eswtea.jpg');
 	background-size: cover;
 }
 #pomodoro_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034697/pomodoro_nlzlt4.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034697/pomodoro_nlzlt4.jpg');
 	background-size: cover;
 }
 #ticTacToe_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034707/tic-tac-toe_o8xkyp.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034707/tic-tac-toe_o8xkyp.jpg');
 	background-size: cover;
 }
 #simon_1 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034706/simon_jdlqmm.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034706/simon_jdlqmm.jpg');
 	background-size: cover;
 }
 #quotes_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034698/quotes-2_l7hub3.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034698/quotes-2_l7hub3.png');
 	background-size: cover;
 }
 #weather_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034714/weather-2_dbmp3g.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034714/weather-2_dbmp3g.png');
 	background-size: cover;
 }
 #wikipedia_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034714/wikipedia-2_evly55.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034714/wikipedia-2_evly55.png');
 	background-size: cover;
 }
 #stocks {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034708/stocks_kt7smy.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034708/stocks_kt7smy.jpg');
 	background-size: cover;
 }
 #twitch_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034709/twitch-2_knxq4b.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034709/twitch-2_knxq4b.png');
 	background-size: cover;
 }
 #calculator_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034683/calculator-2_vsxebg.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034683/calculator-2_vsxebg.png');
 	background-size: cover;
 }
 #pomodoro_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034697/pomodoro-2_nhgsbz.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034697/pomodoro-2_nhgsbz.jpg');
 	background-size: cover;
 }
 #ticTacToe_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034707/tic-tac-toe-2_xxquvo.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034707/tic-tac-toe-2_xxquvo.png');
 	background-size: cover;
 }
 #simon_2 {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034706/simon-2_gzpeeu.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034706/simon-2_gzpeeu.png');
 	background-size: cover;
 }
 #fccFrontEnd {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034690/front-end-projects_awcm7v.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034690/front-end-projects_awcm7v.jpg');
 	background-size: cover;
 }
 #algorithms {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034674/algorithms_fiqv7p.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034674/algorithms_fiqv7p.png');
 	background-size: cover;
 }
 #reactProjects {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034705/reactProjects_ye78zq.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034705/reactProjects_ye78zq.png');
 	background-size: cover;
 }
 #codeGod {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034684/code-god_c2bhhi.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034684/code-god_c2bhhi.png');
 	background-size: cover;
 }
 #spaceStation {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034709/space-station_rxcivj.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034709/space-station_rxcivj.jpg');
 	background-size: cover;
 }
 #toDoApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034700/react-to-do-app_qs25sz.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034700/react-to-do-app_qs25sz.png');
 	background-size: cover;
 }
 #markdown {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034696/markdown_eg8sbt.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034696/markdown_eg8sbt.png');
 	background-size: cover;
 }
 #leaderboard {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034695/leaderboard_y9yxxw.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034695/leaderboard_y9yxxw.png');
 	background-size: cover;
 }
 #recipeBox {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034705/recipe-box_qr3z65.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034705/recipe-box_qr3z65.png');
 	background-size: cover;
 }
 #notesApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034696/notes-app_crqd7o.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034696/notes-app_crqd7o.png');
 	background-size: cover;
 }
 #conway {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034684/conway_ug1wnz.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034684/conway_ug1wnz.png');
 	background-size: cover;
 }
 #dungeon {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034689/dungeon_pshy0h.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034689/dungeon_pshy0h.jpg');
 	background-size: cover;
 }
 #dinoGame {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483036980/dino-game_tcxs8s.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483036980/dino-game_tcxs8s.png');
 	background-size: cover;
 }
 #reactBarChart {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034700/react-bar-chart_w4hs5u.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034700/react-bar-chart_w4hs5u.png');
 	background-size: cover;
 }
 #barChart {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034683/bar-chart_oexcgb.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034683/bar-chart_oexcgb.png');
 	background-size: cover;
 }
 #scatterplot {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034706/scatterplot_bwktoi.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034706/scatterplot_bwktoi.png');
 	background-size: cover;
 }
 #heatMap {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034691/heat-map_xmoxuo.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034691/heat-map_xmoxuo.png');
 	background-size: cover;
 }
 #forceLayout {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034689/force-layout_mefcus.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034689/force-layout_mefcus.jpg');
 	background-size: cover;
 }
 #globalMap {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034690/global-map_rnlytb.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034690/global-map_rnlytb.png');
 	background-size: cover;
 }
 #unix {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034714/unix_ym9ncn.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034714/unix_ym9ncn.png');
 	background-size: cover;
 }
 #requestHeader {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034705/request-header_h1ud0k.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034705/request-header_h1ud0k.png');
 	background-size: cover;
 }
 #microUrl {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034696/micro-url_tt2c51.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034696/micro-url_tt2c51.png');
 	background-size: cover;
 }
 #imageSearch {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034691/image-search_w1lrxj.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034691/image-search_w1lrxj.jpg');
 	background-size: cover;
 }
 #fileMeta {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034689/file-metadata_cegymr.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034689/file-metadata_cegymr.png');
 	background-size: cover;
 }
 #blog {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034684/blog_ljkhkn.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034684/blog_ljkhkn.png');
 	background-size: cover;
 }
 #flashcards {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034689/flashcards-app_dqlps0.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034689/flashcards-app_dqlps0.png');
 	background-size: cover;
 }
 #votingApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034714/voting-app_ltc415.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034714/voting-app_ltc415.png');
 	background-size: cover;
 }
 #nightlifeApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034697/nightlife-app_lyuboe.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034697/nightlife-app_lyuboe.png');
 	background-size: cover;
 }
 #stocksApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034706/stocks-app_uvf6oz.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034706/stocks-app_uvf6oz.png');
 	background-size: cover;
 }
 #bookClubApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034687/book-club-app_ygwtjn.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034687/book-club-app_ygwtjn.png');
 	background-size: cover;
 }
 #pinterestClone {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_50/v1483037899/pinterest-clone_hb0fw1.jpg');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483037899/pinterest-clone_hb0fw1.jpg');
 	background-size: cover;
 }
 #quizApp {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034700/quiz-app_o5lm0f.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034700/quiz-app_o5lm0f.png');
 	background-size: cover;
 }
 
 #realTimeSearch {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034706/simple-search_rxwhmf.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034706/simple-search_rxwhmf.png');
 	background-size: cover;
 }
 #rave {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034698/react-colors_o9nwep.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034698/react-colors_o9nwep.png');
 	background-size: cover;
 }
 #multiSearch {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034696/multi-search_wozhyi.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034696/multi-search_wozhyi.png');
 	background-size: cover;
 }
 #giphy {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034690/giphy_omwpyb.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034690/giphy_omwpyb.png');
 	background-size: cover;
 }
 #highchartsReact {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034701/react-highcharts_kt5uu8.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034701/react-highcharts_kt5uu8.png');
 	background-size: cover;
 }
 #reactMovement {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034700/react-motion_rfoxgv.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034700/react-motion_rfoxgv.png');
 	background-size: cover;
 }
 #formService {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034689/form-service_m62dyy.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034689/form-service_m62dyy.png');
 	background-size: cover;
 }
 #timestampedNotes {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034707/timestamped-notes_ca46os.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034707/timestamped-notes_ca46os.png');
 	background-size: cover;
 }
 #cssTransitions {
-	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_1/v1483034684/css-transitions_bztqp6.png');
+	background: url('http://res.cloudinary.com/sean-smith-me/image/upload/q_25/v1483034684/css-transitions_bztqp6.png');
 	background-size: cover;
 }
 #ticketz {
