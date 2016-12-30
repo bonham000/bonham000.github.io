@@ -75,14 +75,14 @@ const Portfolio = [
 	{
 		ID: 'wikipedia_1',
 		src: '/assets/portfolio/wikipedia/index.html',
-		title: 'Wikipedia Article Viewer I',
+		title: 'Wikipedia Viewer I',
 		category: 'Front End',
 		showcase: false
 	},
 	{
 		ID: 'wikipedia_2',
 		src: '/assets/portfolio/wikipedia-2/index.html',
-		title: 'Wikipedia Article Viewer II',
+		title: 'Wikipedia Viewer II',
 		category: 'Front End',
 		reactOrder: 15,
 		showcase: true,
@@ -472,7 +472,7 @@ const Portfolio = [
 	{
 		ID: 'stocksApp',
 		src: 'https://blooming-ocean-10450.herokuapp.com/',
-		title: 'Chart the Stock Market App',
+		title: 'Chart the Stock Market',
 		category: 'Back End',
 		showcase: true,
 		order: 5
@@ -488,7 +488,7 @@ const Portfolio = [
 	{
 		ID: 'quizApp',
 		src: 'https://pacific-retreat-29989.herokuapp.com/',
-		title: 'A React/Redux Quiz App',
+		title: 'A Web App for Creating Quizzes',
 		category: 'Back End',
 		showcase: true,
 		order: 4
