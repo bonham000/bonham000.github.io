@@ -352,7 +352,7 @@ var App = function (_React$Component) {
 					" made by ",
 					React.createElement(
 						"a",
-						{ href: "http://sean.smith.me" },
+						{ href: "http://sean-smith.me" },
 						"Sean Smith"
 					)
 				)
