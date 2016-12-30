@@ -1,0 +1,576 @@
+
+// Define Style Variables:
+$brown: #3F292B;
+$darkBrown: #332C23;
+$pink: #D34F73;
+$orange: #DB7F67;
+$brightBlue: #73EEDC;
+$white: #F8F7FF;
+$tan: #FFEEDD;
+$peach: #FFD8BE;
+$mediumPurple: #9381FF;
+$mint: #32DE8A;
+$jungle: #32A287;
+$teal: #4ECDC4;
+$pastelRed: #FF6B6B;
+
+$honeydew: #F1FFE7;
+$jet: #363537;
+$gunmetal: #272838;
+
+// Define Page Styles:
+
+body {
+	background: $gunmetal;
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: $darkBrown;
+	font-family: Avenir;
+}
+
+.pageDescription {
+	.title {
+		font-size: 50px;
+		color: $pastelRed;
+		font-family: 'Mitr', sans-serif;
+		margin-bottom: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+	}
+	.subTitle {
+		width: 60vw;
+		margin: auto;
+		font-size: 30px;
+		color: $honeydew;
+		margin-bottom: -5px;
+	}
+	.tech {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		i {
+			font-size: 75px;
+			margin-left: 7px;
+			margin-right: 7px;
+		}
+		p {
+			font-size: 45px;
+			margin-left: 7px;
+			margin-right: 7px;
+			color: $honeydew;
+			font-family: 'Mitr', sans-serif;
+		}
+	}
+}
+
+.projectLinks {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 0;
+	margin: 0;
+	width: 100vw;
+	h1 {
+		font-family: 'Mitr', sans-serif;
+		margin-top: 12px;
+		margin-bottom: 12px;
+	}
+	i {
+		font-size: 50px;
+	}
+	img {
+		height: 125px;
+		width: auto;
+		margin: 5px;
+		border-radius: 6px;
+		transition: box-shadow 50ms ease;
+	}
+	img:hover {
+		box-shadow: 2px 2px 1px $gunmetal;
+		transition: box-shadow 150ms ease;
+		cursor: pointer;
+	}
+	.intProjectsWrapper {
+		background: $honeydew;
+		margin: 5px;
+		padding-bottom: 15px;
+		width: 550px;
+		border-radius: 25px;
+		.comparisonTitle {
+			width: 250px;
+			font-size: 30px;
+			font-family: 'Mitr', sans-serif;
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.intProjects {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+	.advProjectsWrapper {
+		background: $honeydew;
+		margin: 5px;
+		padding-bottom: 15px;
+		width: 550px;
+		border-radius: 25px;
+		.comparisonTitle {
+			width: 250px;
+			font-size: 30px;
+			font-family: 'Mitr', sans-serif;
+			margin-top: 0;
+			margin-bottom: 0;
+		}		
+		.advProjects {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+	}
+}
+
+.metaData {
+	.analysis {
+		width: 100vw;
+		background: $honeydew;
+		margin-top: 55px;
+		padding-top: 5px;
+		padding-bottom: 25px;
+		h1 {
+			font-size: 45px;
+			margin-top: 15px;
+			margin-bottom: -10px;
+			padding-left: 15px;
+			padding-right: 15px;
+			color: $gunmetal;
+			font-family: 'Mitr', sans-serif;
+		}
+		.learnTitle {
+			margin-top: -15px;
+		}
+		.analysisText {
+			width: 75vw;
+			margin: 25px auto;
+			font-size: 25px;
+			color: $gunmetal;
+			a, a:visited {
+				color: $pastelRed;
+				text-decoration: none;
+			}
+			a:hover {
+				cursor: pointer;
+				color: $teal;
+				text-decoration: underline;
+			}
+		}
+	}
+	.codeComparison {
+		width: 100vw;
+		height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		#chartContainer {
+			width: 875px;
+		}
+	}
+	.timeComparison {
+		width: 100vw;
+		background: $honeydew;
+		padding-top: 5px;
+		padding-bottom: 55px;
+		h1 {
+			font-size: 45px;
+			margin-top: 15px;
+			margin-bottom: -10px;
+			padding-left: 15px;
+			padding-right: 15px;			
+			color: $gunmetal;
+			font-family: 'Mitr', sans-serif;
+		}		
+		.analysisText {
+			width: 75vw;
+			margin: 25px auto;
+			font-size: 25px;
+			color: $gunmetal;
+			a, a:visited {
+				color: $pastelRed;
+				text-decoration: none;
+			}
+			a:hover {
+				cursor: pointer;
+				color: $teal;
+				text-decoration: underline;
+			}			
+		}
+		table {
+			margin: auto;
+			border-collapse: collapse;
+			th {
+				font-size: 26px;
+				text-align: left;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			td {
+				font-size: 24px;
+				text-align: left;
+				padding-left: 15px;
+				padding-top: 5px;
+				padding-bottom: 5px;
+				padding-right: 15px;
+			}
+			.dataRow:hover {
+				color: $pastelRed;
+				cursor: pointer;
+			}
+			.rowTitle {
+				border-top-radius: 15px;
+				border-bottom: 1px solid $gunmetal;
+				background: $peach;
+			}
+			.timeCol {
+				border-left: 1px solid $gunmetal;
+			}
+			.rowOn {
+				background: $tan;
+			}
+			.rowOff {
+				background: $white;
+			}
+		}
+	}
+}
+
+.credits {
+	width: 100vw;
+	height: 100vh;
+	background: $gunmetal;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	.creditsWrapper {
+		width: 750px;
+		a, a:visited {
+			font-family: 'Mitr', sans-serif;
+			font-size: 40px;
+			color: $pastelRed;
+			text-decoration: none;
+			transition: color 150ms ease, text-decoration 150ms ease;
+		}
+		a:hover {
+			color: $teal;
+			text-decoration: underline;
+			transition: color 150ms ease, text-decoration 150ms ease;
+		}
+	}
+}
+
+// Responsive Styling ---------------------------------------------------------------------------
+
+@media only screen and (max-width: 1100px) {
+	.pageDescription {
+		.title {
+			font-size: 40px;
+		}
+		.subTitle {
+			width: 65vw;
+			margin: auto;
+			font-size: 25px;
+		}
+		.tech {
+			i {
+				font-size: 65px;
+				margin-left: 6px;
+				margin-right: 6px;
+			}git st
+			p {
+				font-size: 40px;
+				margin-left: 7px;
+				margin-right: 7px;
+			}
+		}
+	}
+  .projectLinks {
+    .advProjectsWrapper {
+      margin-top: 45px;
+    }
+  }
+	.metaData {
+		.analysis {
+			h1 {
+				font-size: 35px;
+			}
+		}
+		.codeComparison {
+			#chartContainer {
+				width: 650px;
+			}
+		}
+		.timeComparison	{
+			h1 {
+				font-size: 35px;
+			}
+		}
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.pageDescription {
+		.title {
+			font-size: 35px;
+		}
+		.subTitle {
+			width: 75vw;
+			margin: auto;
+			font-size: 22px;
+		}
+		.tech {
+			i {
+				font-size: 50px;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+			p {
+				font-size: 30px;
+				margin-left: 5px;
+				margin-right: 5px;
+			}
+		}
+	}
+	.projectLinks {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		width: 100vw;
+		i {
+			font-size: 50px;
+		}
+		img {
+			height: 95px;
+			width: auto;
+			margin: 5px;
+			border-radius: 6px;
+		}
+		.intProjectsWrapper {
+			margin: 5px;
+			padding-bottom: 15px;
+			width: 450px;
+			.comparisonTitle {
+				width: 200px;
+				font-size: 22px;
+			}
+			.intProjects {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+		.advProjectsWrapper {
+			margin: 45px 5px 5px 5px;
+			padding-bottom: 15px;
+			width: 450px;
+			.comparisonTitle {
+				width: 200px;
+				font-size: 22px;
+			}			
+			.advProjects {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+	.analysis {
+		.metaData {
+			.analysis {
+				h1 {
+					font-size: 25px;
+					margin-bottom: -15px;
+				}
+			}
+			.analysisText {
+				width: 80vw;
+				margin: 25px auto;
+				font-size: 20px;
+			}
+			.codeComparison {
+				#chartContainer {
+					width: 450px;
+				}
+			}			
+			.timeComparison	{
+				h1 {
+					font-size: 25px;
+				}
+			}
+		}
+	}
+.credits {
+	width: 100vw;
+	height: 100vh;
+	background: $gunmetal;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	.creditsWrapper {
+		width: 750px;
+		padding-left: 25px;
+		padding-right: 25px;
+		a, a:visited {
+			font-size: 25px;
+		}
+		a:hover {
+			color: $teal;
+		}
+	}
+}	
+}
+
+
+@media only screen and (max-width: 550px) {
+	.pageDescription {
+		.title {
+			font-size: 30px;
+		}
+		.subTitle {
+			width: 80vw;
+			margin: auto;
+			font-size: 20px;
+		}
+		.tech {
+			i {
+				font-size: 35px;
+				margin-left: 3px;
+				margin-right: 3px;
+			}
+			p {
+				font-size: 28px;
+				margin-left: 3px;
+				margin-right: 3px;
+			}
+		}
+	}
+	.projectLinks {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		padding: 0;
+		margin: 0;
+		width: 100vw;
+		h1 {
+			font-size: 25px;
+		}
+		i {
+			font-size: 50px;
+		}
+		img {
+			height: 75px;
+			width: auto;
+			margin: 5px;
+			border-radius: 6px;
+		}
+		.intProjectsWrapper {
+			margin: 5px;
+			padding-bottom: 15px;
+			width: 350px;
+			.comparisonTitle {
+				width: 175px;
+			}	
+			.intProjects {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+		.advProjectsWrapper {
+			margin: 5px;
+			padding-bottom: 15px;
+			width: 350px;
+			.comparisonTitle {
+				width: 175px;
+			}			
+			.advProjects {
+				display: flex;
+				flex-direction: row;
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+		}
+	}
+	.metaData {
+		.analysis {
+			h1 {
+				font-size: 28px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.analysisText {
+				font-size: 18px;
+        width: 90vw;
+			}
+		}
+		.codeComparison {
+			#chartContainer {
+				width: 350px;
+			}
+		}		
+		.timeComparison {
+			h1 {
+				font-size: 28px;
+				padding-left: 15px;
+				padding-right: 15px;
+			}
+			.analysisText {
+				font-size: 18px;
+        width: 90vw;
+			}
+			table {
+				margin: auto;
+				border-collapse: collapse;
+				th {
+					font-size: 22px;
+					text-align: left;
+					padding-left: 15px;
+				}
+				td {
+					font-size: 18px;
+					text-align: left;
+					padding-left: 15px;
+					padding-top: 5px;
+					padding-bottom: 5px;
+					padding-right: 15px;
+				}
+				.rowTitle {
+					border-bottom: 1px solid $gunmetal;
+					background: $peach;
+				}
+				.timeCol {
+					border-left: 1px solid $gunmetal;
+				}
+				.rowOn {
+					background: $tan;
+				}
+				.rowOff {
+					background: $white;
+				}
+			}
+		}
+	}
+}

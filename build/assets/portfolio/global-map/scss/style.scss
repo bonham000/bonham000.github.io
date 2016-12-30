@@ -1,0 +1,32 @@
+$font: 'Lora', serif;
+
+body {
+  background: rgb(20,30,55);
+  padding-bottom: 25px;
+}
+.titleBox {
+  .title {
+    text-align: center;
+    font-family: $font;
+    color: rgb(200, 200, 200);
+    font-size: 50px;
+    margin: 20px 0 0 0;
+  }
+}
+#chart {
+  width: 960px;
+  margin: 30px auto;
+  svg {
+    background: rgba(0,0,0,0);
+    border: 1px solid rgba(150, 150, 150, 0.25);
+  }
+}
+.tooltip {
+  font-family: $font;
+  color: rgb(200, 200, 200);
+  font-size: 22px;
+  margin-top: -10px;
+}
+.dataPoint:hover {
+  cursor: pointer;
+}

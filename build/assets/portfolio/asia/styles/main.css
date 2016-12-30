@@ -1,0 +1,179 @@
+
+/* Header Navigation Stlying */
+
+.navbar {
+	font-size: 24px;
+	font-family: 'Poiret One', cursive;
+	color: white;
+	background: rgba(30,30,30,1);
+	border-bottom: 1px solid rgb(80,80,80);
+}
+
+.navbar .navbar-nav {
+    display: inline-block;
+    float: none;
+}
+	
+.navbar .navbar-collapse {
+    text-align: center;
+}
+
+.navbar-default .navbar-nav a .active, 
+.navbar-default .navbar-nav a:hover, 
+.navbar-default .navbar-nav a:focus {
+      color: white !important;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    color: white;
+    background-color: none !important;
+    background: none !important;
+}
+
+/* Full Width Content Styling */
+
+.full_width {
+	width: 100%;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	border-bottom: 1.5px solid rgb(150,150,150);
+	background: rgba(0,0,0,0.5);
+}
+.img_span {
+	position: relative;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	background-position: center;
+    background-size: cover;
+    -o-background-size: cover;
+    z-index: -5;
+}
+
+.titles {
+	position: absolute;
+	text-align: center;
+	margin: auto;
+	font-family: 'Crimson Text', serif;
+}
+#main_title {
+	width: 100%;
+	bottom: 10%;
+}
+#width_title {
+	color: white;
+	font-size: 135px;
+}
+#subtitle {
+	color: white;
+	font-size: 50px;
+	margin-top: -10px;
+}
+
+/* Destination Description Styling */
+
+.description {
+	position: relative;
+	top: 25px;
+}
+
+.titles_body {
+	max-width: 1000px;
+	bottom: 5%;
+	text-align: left;
+	padding-left: 25px;
+	padding-right: 25px;
+}
+#title_10 {
+	bottom: 2.5%;
+	padding-left: 50px;	
+}
+
+.width_title_body {
+	color: white;
+	font-size: 50px;
+}
+.subtitle_body {
+	color: white;
+	font-size: 25px;
+	margin-top: 0px;
+}
+.content_body {
+	color: white;
+	font-size: 16px;
+}
+
+/* Scroll to Top Styling */
+
+#top {
+	position: fixed;
+	bottom: 7.5px;
+	right: 7.5px;
+	background: rgba(50,50,50,.25);
+	border: none;
+	color: white;
+}
+#top:hover {
+	color: #FF4100;
+}
+#top:focus,
+#top:active {
+	outline: none;
+}
+/* Responsive Font Styling */
+
+
+@media screen and (max-width: 1200px) {
+	.navbar {
+		font-size: 20px;
+	}
+	#top {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1000px) {
+	.navbar {
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	#width_title {
+		font-size: 80px;
+	}
+	#subtitle {
+		font-size: 50px;
+	}
+	.width_title_body {
+		font-size: 24px;
+	}
+	.subtitle_body {
+		font-size: 22px;
+	}
+	.content_body {
+		font-size: 18px
+	}
+}
+
+@media screen and (max-width: 600px) {
+	#width_title {
+		font-size: 25px;
+	}
+	#subtitle {
+		font-size: 22px;
+	}
+	.width_title_body {
+		font-size: 24px;
+	}
+	.subtitle_body {
+		font-size: 22px;
+	}
+	.content_body {
+		display: none;
+	}
+}

@@ -5,21 +5,25 @@ export default function Contact() {
 		<div className="contact" id='contactNav'>
 	    <div className="awesome">
 	      <a
+	      	className='contact-tag'
 	      	target="_blank"
 	      	href="https://twitter.com/bonham_000">
 	      	<i className="fa-contact fa fa-twitter fa-4x" aria-hidden="true"></i>
 	      </a>
 	      <a
+	      	className='contact-tag'
 	      	target="_blank"
 	      	href="https://github.com/bonham000">
 	      	<i className="fa-contact fa fa-github-alt fa-4x" aria-hidden="true"></i>
 	      </a>
 	      <a
+	      	className='contact-tag'
 	      	target="_blank"
 	      	href="http://codepen.io/bonham000/">
 	      	<i className="fa-contact fa fa-codepen fa-4x" aria-hidden="true"></i>
 	      </a>
 	      <a
+	      	className='contact-tag'
 	      	target="_blank"
 	      	href="/assets/resume/cv.pdf">
 	      	<i className="fa-contact fa fa-file-text fa-4x" aria-hidden="true"></i>
@@ -29,6 +33,7 @@ export default function Contact() {
 	     	 	<i className="fa-contact fa fa-envelope-o fa-4x" aria-hidden="true"></i>
 	     	 </a>
 	      <a
+	      	className='contact-tag'
 	      	target="_blank"
 	      	href="https://www.linkedin.com/in/seanmatthewsmith">
 	      	<i className="fa-contact fa fa-linkedin fa-4x" aria-hidden="true"></i>

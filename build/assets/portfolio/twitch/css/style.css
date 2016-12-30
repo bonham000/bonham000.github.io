@@ -1,0 +1,123 @@
+body {
+  background: url('http://i1361.photobucket.com/albums/r662/bonham000/Twitch%20API/central-part-light-green-live-wallpaper-for-mobile_zpsikoc1wjq.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-family: 'Rubik', sans-serif;
+
+  color: rgb(15,15,15);
+  text-align: center;
+  padding: 10px 0 20px 0;
+  margin: 0;
+}
+#filter {
+	position: fixed;
+	background: rgba(15,15,15,.6);
+	width: 100%;
+	height: 100%;
+	z-index: -1;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	left: 0;
+}
+#container {
+	z-index: 2;
+	margin-top: 0;
+	margin-bottom: 25px;
+}
+button {
+	font-size: 24px;
+	border-radius: 10px;
+	background: rgb(40,200,165);
+	border: 2px solid rgb(39,40,34);
+	font-family: 'Rubik', sans-serif;
+}
+button:hover {
+	background: rgb(39,40,34);
+	color: rgb(40,200,165);
+	border: 2px solid rgb(39,40,34);
+	cursor: pointer;
+}
+button:focus {
+	outline: none;
+	background: rgb(147, 110, 223);
+}
+button:focus:hover {
+	background: rgb(39,40,34);
+	color: rgb(40,200,165);
+}
+.title {
+	padding: 0;
+	margin: 0;
+	color: rgb(147, 110, 223);
+	font-family: 'Sorts Mill Goudy', serif;
+	font-size: 30px;
+}
+.title h1 {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+#twitchBox {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.twitchDiv {
+	background: rgba(250,250,250,.25);
+	color: black;
+	text-align: center;
+	height: 350px;
+	width: 350px;
+	padding: 65px 15px 15px 15px;
+	border: .5px solid rgb(41, 198, 163);
+	margin: 10px;
+}
+.displayName {
+	font-size: 35px;
+	padding: 0;
+	margin: 20px 0 0 0;
+}
+.displayNameNull {
+	font-size: 30px;
+	width: 250px;
+	margin: 75px auto;
+}
+.userStatus {
+	font-size: 20px;
+}
+.logo {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	border: 10px solid rgba(40,200,165,1);
+}
+.logo:hover {
+	border: 10px solid rgb(255, 121, 111);
+}
+.twitchLink {
+	color: rgb(255,121,111);
+	font-size: 24px;
+}
+.twitchLink h5 {
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+.twitchLink a,
+.twitchLink a:visited {
+	color: rgb(255,121,111);
+}
+.credits {
+	color: white;
+}
+.credits a,
+.credits a:visited {
+	color: white;
+}
+.credits a:hover,
+.twitchLink a:hover {
+	color: rgb(40,200,165);
+}

@@ -167,7 +167,6 @@
 	.navLink {
 		font-size: 36px;
 	}
-	
 	.navigationBar {
 		height: auto;
 	  flex-direction: column;
@@ -225,6 +224,26 @@
 	}
 	.fa {
 		font-size: 75px;
+	}
+	.fa-contact:hover {
+		color: rgb(45,45,45);
+	}
+	.fa-contact:focus {
+		color: rgb(45,45,45);
+		outline: none;
+	}
+	.fa-contact:active {
+		color: rgb(45,45,45);
+		outline: none;
+	}
+	.contact-tag:focus {
+		outline: none;
+	}
+	.contact-tag:hover {
+		outline: none;
+	}
+	.contact-tag:active {
+		outline: none;
 	}
 }
 @media screen and (max-width: 400px) {
