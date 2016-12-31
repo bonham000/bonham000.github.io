@@ -511,7 +511,7 @@ const Portfolio = [
 	},	
 	{
 		ID: 'blog',
-		src: '/assets/portfolio/blog/index.html',
+		src: 'http://abashed-story.surge.sh/',
 		title: 'How I Taught Myself to Code',
 		category: 'blog',
 		showcase: false,
