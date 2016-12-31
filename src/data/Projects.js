@@ -448,7 +448,7 @@ const Portfolio = [
 	{
 		ID: 'votingApp',
 		src: 'https://blooming-beach-19422.herokuapp.com/',
-		title: 'Voting App',
+		title: 'An App for Creating Polls',
 		category: 'Back End',
 		showcase: true,
 		order: 8
@@ -459,7 +459,7 @@ const Portfolio = [
 		title: 'Pictur: an Image Sharing App',
 		category: 'Back End',
 		showcase: true,
-		order: 7
+		order: 5
 	},
 	{
 		ID: 'nightlifeApp',
@@ -475,7 +475,7 @@ const Portfolio = [
 		title: 'Chart the Stock Market',
 		category: 'Back End',
 		showcase: true,
-		order: 5
+		order: 7
 	},
 	{
 		ID: 'bookClubApp',
