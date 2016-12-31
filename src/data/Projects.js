@@ -456,7 +456,7 @@ const Portfolio = [
 	{
 		ID: 'pinterestClone',
 		src: 'http://hidden-woodland-32853.herokuapp.com/',
-		title: 'Pinterest Clone',
+		title: 'Pictur: an Image Sharing App',
 		category: 'Back End',
 		showcase: true,
 		order: 7
@@ -488,7 +488,7 @@ const Portfolio = [
 	{
 		ID: 'quizApp',
 		src: 'https://pacific-retreat-29989.herokuapp.com/',
-		title: 'A Web App for Creating Quizzes',
+		title: 'Quiz-it: a Web App for Creating Quizzes',
 		category: 'Back End',
 		showcase: true,
 		order: 4
