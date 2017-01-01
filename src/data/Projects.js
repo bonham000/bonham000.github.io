@@ -376,7 +376,7 @@ const Portfolio = [
 	},	
 	{
 		ID: 'codeGod',
-		src: '/assets/portfolio/code-god/index.html',
+		src: 'http://tremendous-low.surge.sh/',
 		title: 'Turn Off the Lights and Code Like a Pro',
 		category: 'React',
 		reactOrder: 28,
