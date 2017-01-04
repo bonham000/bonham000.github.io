@@ -3,7 +3,8 @@ body {
 	margin: 0;
 	background: rgb(252,252,252);
 	background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: garamond;
+  font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
 }
 
