@@ -17,11 +17,11 @@
 	.scroll {
 		display: none !important;
 	}
-	.name, .nameAbout {
-		display: block !important;
-	}
 	.nameAbout {
 		font-size: 28px;
+	}
+	.nameSub {
+		font-size: 24px;
 	}
 	.thanks {
 		font-size: 30px;
@@ -52,12 +52,15 @@
 	.nameAbout {
 		font-size: 25px;
 	}
+	.nameSub {
+		font-size: 22px;
+	}
 	.certificatesTitle {
 		font-size: 26px;
 		width: 80vw;
 	}	
 	.thanks {
-		font-size: 28px;
+		font-size: 26px;
 	}
 }
 @media screen and (max-width: 775px) {
@@ -106,15 +109,16 @@
 		height: 150px;
 	}
 	.name {
-		font-size: 60px;
+		font-size: 70px;
 		padding-bottom: 15px;
 	}
 	.nameAbout {
-		padding: 20px;
+		padding-top: 25px;
+		padding-bottom: 10px;
 		line-height: 26px;
 	}
 	.thanks {
-		margin-top: -25px;
+		margin-top: 6px;
 	}
 	.certificatesWrapper {
 		margin-bottom: 75px;
@@ -203,9 +207,18 @@
 		width: 85vw;
 	}
 	.nameAbout {
+		margin-top: 5px;
+		margin-bottom: 0px;
 		font-size: 20px;
 		line-height: 22px;
-		width: 85vw;
+		width: 65vw;
+	}
+	.nameSub {
+		margin-top: 5px;
+		margin-bottom: 5px;
+		font-size: 18px;
+		line-height: 18px;
+		width: 88vw;
 	}
 	.certificatesWrapper {
 		margin-bottom: 55px;
@@ -261,6 +274,9 @@
 	}
 	.nameAbout {
 		font-size: 18px;
+	}
+	.nameSub {
+		font-size: 17px;
 	}
 	.certificatesTitle {
 		font-size: 18px;
