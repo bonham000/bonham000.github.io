@@ -8,7 +8,7 @@ export default function About() {
       	<h1 className="name">Sean Smith</h1>
       	<p className="nameAbout">I am a software engineer and open source contributor.</p>
       	<p className="nameSub">Most recently I led the development of the React/Redux curriculum expansion at Free Code Camp.
-        I am currently looking for employment as a JavaScript developer in San Francisco.</p>
+        I am currently looking for employment as a JavaScript Developer in San Francisco.</p>
       	<p className="thanks">See my work below:</p>
   		</div>
 		</div>

@@ -289,6 +289,7 @@ select:focus {
 .text {
 	font-family: 'EB Garamond', serif;
 	color: rgb(40,200,255);
+  color: rgb(250,250,250);
 	font-size: 40px;
 	padding: 50px;
 	text-align: center;
@@ -341,4 +342,3 @@ select:focus {
 	color: rgb(40,200,255);
 	transition: color 150ms ease;
 }
-
