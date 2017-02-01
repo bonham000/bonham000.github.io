@@ -201,14 +201,15 @@ const Portfolio = [
 		title: 'Visualizing Global Surface Temperature with a Heat Map',
 		category: 'D3',
 		showcase: true,
-		order: 17
+		order: 18
 	},
 	{
 		ID: 'forceLayout',
 		src: '/assets/portfolio/force-layout/index.html',
 		title: 'Using a Force Directed Layout to Visualize National Contiguity',
 		category: 'D3',
-		showcase: false
+		showcase: true,
+		order: 16
 	},
 	{
 		ID: 'globalMap',
@@ -216,7 +217,7 @@ const Portfolio = [
 		title: 'Charting Global Meteor Impacts with D3',
 		category: 'D3',
 		showcase: true,
-		order: 18
+		order: 19
 	},
 	{
 		ID: 'realTimeSearch',
@@ -256,7 +257,8 @@ const Portfolio = [
 		title: 'US Quarterly GDP Charted with React',
 		category: 'React',
 		reactOrder: 5,
-		showcase: false
+		showcase: true,
+		order: 17
 	},
 	{
 		ID: 'giphy',
