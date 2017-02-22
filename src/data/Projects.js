@@ -221,7 +221,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'realTimeSearch',
-		src: '/assets/portfolio/25-React-projects/projects/Project_1/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_1/index.html',
 		title: 'Simple Search Tool in React',
 		category: 'React',
 		reactOrder: 1,
@@ -229,7 +229,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'rave',
-		src: '/assets/portfolio/25-React-projects/projects/Project_2/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_2/index.html',
 		title: 'Creating Colors in React',
 		category: 'React',
 		reactOrder: 2,
@@ -237,7 +237,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'multiSearch',
-		src: '/assets/portfolio/25-React-projects/projects/Project_3/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_3/index.html',
 		title: 'Multi Search Filter',
 		category: 'React',
 		reactOrder: 3,
@@ -245,7 +245,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'toDoApp',
-		src: '/assets/portfolio/25-React-projects/projects/Project_4/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_4/index.html',
 		title: 'A Simple To-Do App in React',
 		category: 'React',
 		reactOrder: 4,
@@ -253,7 +253,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'reactBarChart',
-		src: '/assets/portfolio/25-React-projects/projects/Project_5/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_5/index.html',
 		title: 'US Quarterly GDP Charted with React',
 		category: 'React',
 		reactOrder: 5,
@@ -262,7 +262,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'giphy',
-		src: '/assets/portfolio/25-React-projects/projects/Project_6/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_6/index.html',
 		title: 'Trendings GIFs from GIPHY',
 		category: 'React',
 		reactOrder: 6,
@@ -270,7 +270,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'highchartsReact',
-		src: '/assets/portfolio/25-React-projects/projects/Project_7/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_7/index.html',
 		title: 'Rendering Highcharts within React',
 		category: 'React',
 		reactOrder: 7,
@@ -278,7 +278,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'reactMovement',
-		src: '/assets/portfolio/25-React-projects/projects/Project_8/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_8/index.html',
 		title: 'An Interactive Movement Field',
 		category: 'React',
 		reactOrder: 8,
@@ -286,7 +286,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'formService',
-		src: '/assets/portfolio/25-React-projects/projects/Project_9/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_9/index.html',
 		title: 'A Basic Form Service',
 		category: 'React',
 		reactOrder: 9,
@@ -294,7 +294,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'spaceStation',
-		src: '/assets/portfolio/25-React-projects/projects/Project_10/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_10/index.html',
 		title: 'Data from the International Space Station',
 		category: 'React',
 		reactOrder: 10,
@@ -302,7 +302,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'timestampedNotes',
-		src: '/assets/portfolio/25-React-projects/projects/Project_19/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_19/index.html',
 		title: 'Timestamped Notes App',
 		category: 'React',
 		reactOrder: 11,
@@ -310,7 +310,7 @@ const Portfolio = [
 	},
 	{
 		ID: 'cssTransitions',
-		src: '/assets/portfolio/25-React-projects/projects/Project_20/index.html',
+		src: '/assets/portfolio/25-react-projects/projects/Project_20/index.html',
 		title: 'CSS Transitions in React',
 		category: 'React',
 		reactOrder: 12,
