@@ -19,7 +19,8 @@ export default function Navigation(props) {
 						smooth={true}
 						offset={-25}>Home
 					</Link>
-					<Link 
+					<Link
+						id='portfolioNavigationLink'
 						to='projectsNav'
 						activeClass='active'
 						className='navLink'

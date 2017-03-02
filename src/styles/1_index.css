@@ -1,8 +1,8 @@
 body {
 	padding: 0;
 	margin: 0;
-	background: rgb(252,252,252);
-	background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+  background: linear-gradient(rgb(255,255,255), rgb(240,240,240));
+	background: white;
 	font-family: garamond;
   font-family: 'Josefin Sans', sans-serif;
 	text-align: center;
@@ -80,6 +80,7 @@ body {
 }
 
 .main {
+  margin-top: 50px;
 	text-align: center;
 	color: rgb(45,45,45);
   display: -webkit-box;
@@ -99,13 +100,9 @@ body {
   -webkit-justify-content: center;
 	justify-content: center;	
 	width: 100%;
-	min-height: 100vh;
+	min-height: calc(100vh - 50px);
 }
-#wrapper {
-	width: 900px;
-	margin: auto;
-	padding-bottom: 45px;
-}
+
 .avatar {
 	width: 200px;
 	height: 200px;
@@ -130,13 +127,51 @@ body {
   max-width: 825px;
   line-height: 30px;
 }
-.thanks {
-	font-size: 34px;
-	max-width: 900px;
-	margin-top: 5px;
-	margin-left: auto;
-	margin-right: auto;
-  font-weight: bold;
+#projectsArrow {
+  position: relative;
+  top: 0;
+  margin: 5px auto 0 auto;
+}
+
+.arrow {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.fa-arrow {
+  font-size: 85px;
+  color: rgb(45,45,45);
+  transition: color 450ms ease;
+}
+
+.fa-arrow:hover {
+  cursor: pointer;
+  color: rgb(40,200,255);
+  transition: color 450ms ease;
+}
+
+@-webkit-keyframes slider {
+  0%: { top: 0px; color: black; }
+  100% { top: 25px; color: rgb(40,200,255); }
+}
+@-moz-keyframes slider {
+  0%: { top: 0px; color: black; }
+  100% { top: 25px; color: rgb(40,200,255); }
+}
+@-o-keyframes slider {
+  0%: { top: 0px; color: black; }
+  100% { top: 25px; color: rgb(40,200,255); }
+}
+@keyframes slider {
+  0%: { top: 0px; color: black; }
+  100% { top: 25px; color: rgb(40,200,255); }
+}
+
+#projectsArrow {
+  -webkit-animation: slider 1.5s infinite; /* Safari 4+ */
+  -moz-animation:    slider 1.5s infinite; /* Fx 1+ */
+  -o-animation:      slider 1.5s infinite; /* Opera 12+ */
+  animation:         slider 1.5s infinite; /* IE 10+, Fx 29+ */
 }
 
 .certificatesWrapper {
@@ -202,7 +237,7 @@ select {
   -webkit-padding-start: 2px;
   -moz-padding-start: 2px;
 	font-family: 'Josefin Sans', sans-serif;
-  background-color: rgb(225,225,225);
+  background-color: rgba(15,15,15,0.90);
   transition: background-color 250ms ease;
   background-position: center right;
   background-size: 32px;
@@ -211,7 +246,7 @@ select {
   border: 1px solid rgb(20,20,20);
   border-radius: 5px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.1);
-  color: rgb(20,20,20);
+  color: white;
   height: 45px;
 	width: 350px;
   font-size: 22px;
@@ -229,15 +264,16 @@ select:-moz-focusring {
 }
 select:hover {
 	cursor: pointer;
-	background-color: white;
-	transition: background-color 250ms ease;
+  background-color: rgb(40,200,255);
+  color: black;
+	transition: background-color color 250ms ease;
 }
 select:focus {
 	outline: none;
 }
 
 /* Styling for portfolio flexbox */
-.container {
+.projectAnimationWrapper {
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
@@ -334,10 +370,30 @@ select:focus {
 .fa-contact {
 	margin: 20px;
 	color: rgb(45,45,45);
-	transition: color 150ms ease;
+	transition: color 250ms ease;
 	font-size: 95px;
 }
 .fa-contact:hover {
 	color: rgb(40,200,255);
-	transition: color 150ms ease;
+	transition: color 250ms ease;
+}
+
+/* Project Animations */
+
+.projectAnimation-enter {
+  opacity: 0.01;
+}
+
+.projectAnimation-enter.projectAnimation-enter-active {
+  opacity: 1;
+  transition: opacity 2000ms ease-in;
+}
+
+.projectAnimation-leave {
+  opacity: 1;
+}
+
+.projectAnimation-leave.projectAnimation-leave-active {
+  opacity: 0.01;
+  transition: opacity 150ms ease-in;
 }

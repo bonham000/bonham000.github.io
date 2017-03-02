@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group'
 
 import Navigation from './components/Navigation'
 import About from './components/About'
@@ -47,6 +48,14 @@ export default class App extends Component {
       });
     };
 
+  }
+  navigate = () => {
+    if (this.state.showNav) {
+      var link = document.getElementById('portfolioNavigationLink');
+      var arrow = document.getElementById('projectsArrow');
+      if (link) link.click();
+      if (arrow) arrow.removeAttribute('id');
+    }
   }
   toggleNav = () => {
     if (this.state.width < 550) {
@@ -114,12 +123,12 @@ export default class App extends Component {
 
         <Navigation showNav={this.state.showNav} toggleNav={this.toggleNav}/>
 
-        <About />
+        <About navigate={this.navigate}/>
 
         <div className='sortContainer' id='projectsNav'>
           <h1 className='portfolioTitle'>Portfolio</h1>
           <select onChange={this.filterProjects} value={this.state.filter}>
-            <option value="View All">View All Projects</option>
+            <option value="View All">All Projects</option>
             <option value="Showcase">Showcase</option>
             <option value="Front End">Front End</option>
             <option value="Back End">Back End</option>
@@ -130,15 +139,27 @@ export default class App extends Component {
         </div>
 
         <div className="container">
-          {projects.map((project, idx) => {
-            return (
-              <div className="imageBox" id={project.ID} key={idx} onClick={() => window.open(project.src)}>
-                <div className="overlay" id={`overlay${project.ID}`}>
-                  <span className="text">{project.title}</span>
-                </div>
-              </div>
-            );
-          })}
+          <ReactCSSTransitionGroup
+            className="projectAnimationWrapper"
+            transitionName="projectAnimation"
+            transitionAppear={true}
+            transitionAppearTimeout={2000}
+            transitionEnterTimeout={2000}
+            transitionLeaveTimeout={150}>
+              {projects.map((project, idx) => {
+                return (
+                    <div
+                      id={project.ID}
+                      key={project.ID}
+                      className="imageBox"
+                      onClick={() => window.open(project.src)}>
+                      <div className="overlay" id={`overlay${project.ID}`}>
+                        <span className="text">{project.title}</span>
+                      </div>
+                    </div>
+                );
+              })}
+          </ReactCSSTransitionGroup>
         </div>
 
         <Contact />

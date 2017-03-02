@@ -10,10 +10,6 @@
 	.fa {
 		font-size: 90px;
 	}
-	#wrapper {
-		width: 100%;
-		height: auto;
-	}
 	.scroll {
 		display: none !important;
 	}
@@ -23,9 +19,8 @@
 	.nameSub {
 		font-size: 24px;
 	}
-	.thanks {
-		font-size: 30px;
-		font-family: Avenir;
+	.fa-arrow {
+		font-size: 80px;
 	}
 }
 @media screen and (max-width: 1030px) {
@@ -38,9 +33,6 @@
 	}
 	.fa {
 		font-size: 80px;
-	}
-	#wrapper {
-		width: 500px;
 	}
 	.avatar {
 		width: 175px;
@@ -59,8 +51,8 @@
 		font-size: 26px;
 		width: 80vw;
 	}	
-	.thanks {
-		font-size: 26px;
+	.fa-arrow {
+		font-size: 70px;
 	}
 }
 @media screen and (max-width: 775px) {
@@ -101,9 +93,6 @@
 	.text {
 		font-size: 26px;
 	}
-	#wrapper {
-		padding-bottom: 150px;
-	}
 	.avatar {
 		width: 150px;
 		height: 150px;
@@ -117,7 +106,7 @@
 		padding-bottom: 10px;
 		line-height: 26px;
 	}
-	.thanks {
+	.arrow {
 		margin-top: 6px;
 	}
 	.certificatesWrapper {
@@ -154,9 +143,12 @@
 		margin: auto;
 		font-size: 22px;
 		padding-top: 7px;
-		padding-left: 45px;
 		background-size: 28px;
 		background-position: 11px 7px;
+	}
+	select:hover {
+		background-color: rgba(15,15,15,0.90);
+		color: white;
 	}
 	.navControl {
 		display: block;
@@ -197,9 +189,6 @@
 	.imageBox {
 		width: 300px;
 		height: 150px;
-	}	
-	#wrapper {
-		padding-bottom: 125px;
 	}
 	.name {
 		font-size: 60px;
@@ -228,8 +217,11 @@
 		width: 85vw;
 		line-height: 22px;
 	}
-	.thanks {
-		font-size: 24px;
+	.fa-arrow {
+		font-size: 65px;
+	}
+	.fa-arrow:hover {
+		cursor: default;
 	}
 	.contact {
 		width: 350px;
@@ -263,9 +255,6 @@
 	.imageBox {
 		width: 300px;
 		height: 150px;
-	}	
-	#wrapper {
-		padding-bottom: 125px;
 	}
 	.name {
 		font-size: 50px;
@@ -281,7 +270,7 @@
 	.certificatesTitle {
 		font-size: 18px;
 	}	
-	.thanks {
+	.arrow {
 		font-size: 22px;
 	}
 	.contact {
@@ -290,6 +279,9 @@
 	}
 	.fa {
 		font-size: 55px;
+	}
+	.fa-arrow {
+		font-size: 50px;
 	}
 }
 
