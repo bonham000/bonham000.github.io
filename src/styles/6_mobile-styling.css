@@ -13,9 +13,6 @@
 	.scroll {
 		display: none !important;
 	}
-	.nameAbout {
-		font-size: 28px;
-	}
 	.nameSub {
 		font-size: 24px;
 	}
@@ -40,9 +37,6 @@
 	}
 	.name {
 		font-size: 80px;
-	}
-	.nameAbout {
-		font-size: 25px;
 	}
 	.nameSub {
 		font-size: 22px;
@@ -101,10 +95,8 @@
 		font-size: 70px;
 		padding-bottom: 15px;
 	}
-	.nameAbout {
-		padding-top: 25px;
-		padding-bottom: 10px;
-		line-height: 26px;
+	.nameSub {
+		width: 85vw;
 	}
 	.arrow {
 		margin-top: 6px;
@@ -195,22 +187,17 @@
 	}
 	.name {
 		font-size: 60px;
-		margin: 15px auto -35px auto;
+		margin: 15px auto -10px auto;
 		width: 85vw;
-	}
-	.nameAbout {
-		margin-top: 5px;
-		margin-bottom: 0px;
-		font-size: 20px;
-		line-height: 22px;
-		width: 65vw;
 	}
 	.nameSub {
 		margin-top: 5px;
 		margin-bottom: 5px;
-		font-size: 18px;
-		line-height: 18px;
-		width: 88vw;
+		font-size: 20px;
+		line-height: 22px;
+	}
+	#fccLink:hover {
+		color: rgb(45,45,45);
 	}
 	.certificatesWrapper {
 		margin-bottom: 55px;
@@ -262,13 +249,10 @@
 	.name {
 		font-size: 50px;
 		margin-top: 15px;
-		margin-bottom: -35px;
-	}
-	.nameAbout {
-		font-size: 18px;
 	}
 	.nameSub {
 		font-size: 17px;
+		width: 90vw;
 	}
 	.certificatesTitle {
 		font-size: 18px;
