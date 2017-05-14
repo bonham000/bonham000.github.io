@@ -16,9 +16,6 @@
 	.nameSub {
 		font-size: 24px;
 	}
-	.fa-arrow {
-		font-size: 80px;
-	}
 }
 @media screen and (max-width: 1030px) {
 	.imageBox {
@@ -44,9 +41,6 @@
 	.certificatesTitle {
 		font-size: 26px;
 		width: 80vw;
-	}	
-	.fa-arrow {
-		font-size: 70px;
 	}
 }
 @media screen and (max-width: 775px) {
@@ -97,9 +91,6 @@
 	}
 	.nameSub {
 		width: 85vw;
-	}
-	.arrow {
-		margin-top: 6px;
 	}
 	.certificatesWrapper {
 		margin-bottom: 75px;
@@ -207,12 +198,6 @@
 		width: 85vw;
 		line-height: 22px;
 	}
-	.fa-arrow {
-		font-size: 65px;
-	}
-	.fa-arrow:hover {
-		cursor: default;
-	}
 	.contact {
 		width: 350px;
 		margin: auto;
@@ -256,9 +241,6 @@
 	}
 	.certificatesTitle {
 		font-size: 18px;
-	}	
-	.arrow {
-		font-size: 22px;
 	}
 	.contact {
 		width: 300px;
@@ -266,9 +248,6 @@
 	}
 	.fa {
 		font-size: 55px;
-	}
-	.fa-arrow {
-		font-size: 50px;
 	}
 }
 
