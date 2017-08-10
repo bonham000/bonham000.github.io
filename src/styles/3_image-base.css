@@ -263,3 +263,11 @@
 	opacity:0;
 	transition: opacity 1250ms ease;
 }
+#overlayCCAW {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}
+#overlayFCCAN {
+	opacity:0;
+	transition: opacity 1250ms ease;
+}

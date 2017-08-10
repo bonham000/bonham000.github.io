@@ -1,4 +1,4 @@
-const Portfolio = [
+export default [
 	{
 		ID: 'google',
 		src: '/assets/portfolio/google/index.html',
@@ -33,7 +33,7 @@ const Portfolio = [
 		title: 'CSS Zen Garden',
 		category: 'Front End',
 		showcase: true,
-		order: 15
+		order: 17
 	},
 	{
 		ID: 'sejong',
@@ -41,7 +41,7 @@ const Portfolio = [
 		title: 'Tribute Page',
 		category: 'Front End',
 		showcase: false
-	},	
+	},
 	{
 		ID: 'quotes_1',
 		src: '/assets/portfolio/quotes/index.html',
@@ -86,7 +86,7 @@ const Portfolio = [
 		category: 'Front End',
 		reactOrder: 15,
 		showcase: true,
-		order: 16
+		order: 18
 	},
 	{
 		ID: 'twitch_1',
@@ -147,7 +147,7 @@ const Portfolio = [
 		category: 'Front End',
 		reactOrder: 19,
 		showcase: true,
-		order: 14,
+		order: 16,
 	},
 	{
 		ID: 'simon_1',
@@ -163,7 +163,7 @@ const Portfolio = [
 		category: 'Front End',
 		showcase: true,
 		reactOrder: 20,
-		order: 13
+		order: 15
 	},
 	{
 		ID: 'stocks',
@@ -201,7 +201,7 @@ const Portfolio = [
 		title: 'Visualizing Global Surface Temperature with a Heat Map',
 		category: 'D3',
 		showcase: true,
-		order: 18
+		order: 20
 	},
 	{
 		ID: 'forceLayout',
@@ -209,7 +209,7 @@ const Portfolio = [
 		title: 'Using a Force Directed Layout to Visualize National Contiguity',
 		category: 'D3',
 		showcase: true,
-		order: 16
+		order: 19
 	},
 	{
 		ID: 'globalMap',
@@ -217,7 +217,7 @@ const Portfolio = [
 		title: 'Charting Global Meteor Impacts with D3',
 		category: 'D3',
 		showcase: true,
-		order: 19
+		order: 21
 	},
 	{
 		ID: 'realTimeSearch',
@@ -258,7 +258,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 5,
 		showcase: true,
-		order: 17
+		order: 19
 	},
 	{
 		ID: 'giphy',
@@ -347,7 +347,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 24,
 		showcase: true,
-		order: 10
+		order: 12
 	},
 	{
 		ID: 'dungeon',
@@ -356,7 +356,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 25,
 		showcase: true,
-		order: 9
+		order: 11
 	},
 	{
 		ID: 'dinoGame',
@@ -375,7 +375,7 @@ const Portfolio = [
 		showcase: false,
 		writing: true,
 		writingOrder: 3
-	},	
+	},
 	{
 		ID: 'codeGod',
 		src: 'http://tremendous-low.surge.sh/',
@@ -391,7 +391,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 29,
 		showcase: true,
-		order: 12
+		order: 14
 	},
 	{
 		ID: 'reactProjects',
@@ -401,7 +401,7 @@ const Portfolio = [
 		reactOrder: 31,
 		showcase: false,
 		writing: true,
-		writingOrder: 2
+		writingOrder: 4
 	},
 	{
 		ID: 'unix',
@@ -445,7 +445,7 @@ const Portfolio = [
 		category: 'React',
 		reactOrder: 30,
 		showcase: true,
-		order: 11
+		order: 13
 	},
 	{
 		ID: 'votingApp',
@@ -453,7 +453,7 @@ const Portfolio = [
 		title: 'An App for Creating and Sharing Polls',
 		category: 'Back End',
 		showcase: true,
-		order: 8
+		order: 10
 	},
 	{
 		ID: 'pinterestClone',
@@ -461,7 +461,7 @@ const Portfolio = [
 		title: 'Pictur: an Image Sharing App',
 		category: 'Back End',
 		showcase: true,
-		order: 5
+		order: 7
 	},
 	{
 		ID: 'nightlifeApp',
@@ -469,7 +469,7 @@ const Portfolio = [
 		title: 'Nightlife Coordination App',
 		category: 'Back End',
 		showcase: true,
-		order: 6
+		order: 8
 	},
 	{
 		ID: 'stocksApp',
@@ -477,7 +477,7 @@ const Portfolio = [
 		title: 'Chart the Stock Market',
 		category: 'Back End',
 		showcase: true,
-		order: 3
+		order: 5
 	},
 	{
 		ID: 'bookClubApp',
@@ -485,7 +485,7 @@ const Portfolio = [
 		title: 'Book Trading Club App',
 		category: 'Back End',
 		showcase: true,
-		order: 7
+		order: 9
 	},
 	{
 		ID: 'quizApp',
@@ -493,24 +493,24 @@ const Portfolio = [
 		title: 'Quiz-it: a Web App for Creating Quizzes',
 		category: 'Back End',
 		showcase: true,
-		order: 4
+		order: 6
 	},
 	{
 		ID: 'ticketz',
 		src: 'https://ticketz-io.herokuapp.com/',
-		title: 'Custom Work Order System for IT',
+		title: 'Ticketz: Custom Work Order System',
 		category: 'Back End',
 		showcase: true,
-		order: 2
+		order: 4
 	},
 	{
 		ID: 'testModule',
 		src: 'http://hysterical-amusement.surge.sh/',
-		title: 'Testing Prototype for Free Code Camp Challenges',
+		title: 'freeCodeCamp React/Redux Curriculum Design',
 		category: 'React',
 		showcase: true,
-		order: 1
-	},	
+		order: 3
+	},
 	{
 		ID: 'blog',
 		src: 'http://abashed-story.surge.sh/',
@@ -519,7 +519,21 @@ const Portfolio = [
 		showcase: false,
 		writing: true,
 		writingOrder: 4
-	},																												
+	},
+	{
+		ID: 'CCAW',
+		src: 'https://ccaw-angcli.herokuapp.com/',
+		title: 'CCAW Conference Management App',
+		category: 'Front End',
+		showcase: true,
+		order: 2
+	},
+	{
+		ID: 'FCCAN',
+		src: 'https://www.fcc-alumni.com/',
+		title: 'freeCodeCamp Alumni Mentorship Network',
+		category: 'React',
+		showcase: true,
+		order: 1
+	},
 ];
-
-export default Portfolio;

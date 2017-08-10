@@ -7,6 +7,24 @@ import Contact from './components/Contact'
 
 import Portfolio from './data/Projects'
 
+const projectCounts = Portfolio.reduce((counts, { category, showcase, writing }) => {
+  if (showcase) counts.showcaseCount++;
+  if (category === 'Front End') counts.frontendCount++;
+  if (category === 'Back End') counts.backendCount++;
+  if (category === 'D3') counts.d3Count++;
+  if (category === 'React') counts.reactCount++;
+  if (writing) counts.writingCount++;
+  return counts;
+}, {
+  allProjectsCount: 0,
+  showcaseCount: 0,
+  frontendCount: 0,
+  backendCount: 0,
+  d3Count: 0,
+  reactCount: 0,
+  writingCount: 0
+});
+
 export default class App extends Component {
   constructor() {
     super();
@@ -19,10 +37,11 @@ export default class App extends Component {
       showNav: true
     }
   }
-  componentWillMount() { 
+  componentWillMount() {
     this.updateDimensions();
   }
   componentDidMount() {
+    console.log(Portfolio)
     window.addEventListener("resize", this.updateDimensions);
   }
   componentWillUnmount() {
@@ -51,8 +70,8 @@ export default class App extends Component {
   }
   navigate = () => {
     if (this.state.showNav) {
-      var link = document.getElementById('portfolioNavigationLink');
-      var arrow = document.getElementById('projectsArrow');
+      const link = document.getElementById('portfolioNavigationLink');
+      const arrow = document.getElementById('projectsArrow');
       if (link) link.click();
       if (arrow) arrow.removeAttribute('id');
     }
@@ -103,7 +122,7 @@ export default class App extends Component {
         projects: filtered,
         filter: selection,
         filtered: true
-      }); 
+      });
 
     } else if (selection !== '') {
 
@@ -118,6 +137,14 @@ export default class App extends Component {
   }
   render() {
     const { projects } = this.state;
+    const {
+      allProjectsCount,
+      showcaseCount,
+      frontendCount,
+      backendCount,
+      d3Count,
+      reactCount,
+      writingCount } = projectCounts;
     return (
       <div className="App">
 
@@ -128,13 +155,13 @@ export default class App extends Component {
         <div className='sortContainer' id='projectsNav'>
           <h1 className='portfolioTitle'>Portfolio</h1>
           <select onChange={this.filterProjects} value={this.state.filter}>
-            <option value="View All">All Projects</option>
-            <option value="Showcase">Showcase</option>
-            <option value="Front End">Front End</option>
-            <option value="Back End">Back End</option>
-            <option value="D3">D3</option>
-            <option value="React">React</option>
-            <option value="Writing">Writing</option>
+            <option value="View All">All Projects ({Portfolio.length})</option>
+            <option value="Showcase">Showcase ({showcaseCount})</option>
+            <option value="Front End">Front End ({frontendCount})</option>
+            <option value="Back End">Back End ({backendCount})</option>
+            <option value="D3">D3 ({d3Count})</option>
+            <option value="React">React ({reactCount})</option>
+            <option value="Writing">Writing ({writingCount})</option>
           </select>
         </div>
 

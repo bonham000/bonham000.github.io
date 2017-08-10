@@ -25,8 +25,8 @@ export default function Contact() {
 	      <a
 	      	className='contact-tag'
 	      	target="_blank"
-	      	href="/assets/resume/cv.pdf">
-	      	<i className="fa-contact fa fa-file-text fa-4x" aria-hidden="true"></i>
+	      	href="https://medium.com/@bonham000/latest">
+	      	<i className="fa-contact fa fa-medium fa-4x" aria-hidden="true"></i>
 	      </a>
 	      <a
 	      	href="mailto:sean.smith.2009@gmail.com">

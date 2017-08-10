@@ -103,7 +103,7 @@ body {
 }
 
 .aboutLink {
-  color: rgb(45,45,45);
+  color: rgb(5,5,5);
   text-decoration: none;
   transition: color 200ms ease;
 }
@@ -127,7 +127,7 @@ body {
 .nameSub {
   margin: 5px auto;
   font-size: 25px;
-  max-width: 825px;
+  max-width: 600px;
   line-height: 30px;
 }
 
