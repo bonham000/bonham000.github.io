@@ -138,7 +138,6 @@ export default class App extends Component {
   render() {
     const { projects } = this.state;
     const {
-      allProjectsCount,
       showcaseCount,
       frontendCount,
       backendCount,
