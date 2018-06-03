@@ -1,11 +1,11 @@
 import React from 'react'
 
-const TruSTAR = (
+const TenX = (
 	<a
 		className="aboutLink"
 		target="_blank"
-		href="https://www.trustar.co/">
-		TruSTAR Technology
+		href="https://www.tenx.tech/">
+		TenX
 	</a>
 );
 
@@ -35,7 +35,7 @@ export default function About(props) {
      	 <img className="avatar" src="https://res.cloudinary.com/sean-smith-me/image/upload/q_50/v1491674073/portfolio/profile-avatar_eeksgk.jpg" alt="Personal Avatar" />
       	<h1 className="name">Sean Smith</h1>
       	<p className="nameSub">
-					I am a software engineer at {TruSTAR} in San Francisco. I
+					I am a software engineer at {TenX} in Singapore. I
 					learned to code at {FCC} and wrote about my journey {Medium}.
 					You can find all the projects I built below.
 					Thanks for visiting and good luck coding!
