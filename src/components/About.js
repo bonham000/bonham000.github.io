@@ -32,7 +32,7 @@ export default function About(props) {
 	return (
 		 <div className="main" id='homeNav'>
   		<div>
-     	 <img className="avatar" src="https://res.cloudinary.com/sean-smith-me/image/upload/q_50/v1491674073/portfolio/profile-avatar_eeksgk.jpg" alt="Personal Avatar" />
+     	 <img className="avatar" src="https://res.cloudinary.com/sean-smith-me/image/upload/q_50/v1530283488/Sean_oailuv.jpg" alt="Personal Avatar" />
       	<h1 className="name">Sean Smith</h1>
       	<p className="nameSub">
 					I am a software engineer at {TenX} in Singapore. I
