@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/bonham000
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of http://sean-smith.me
+  * I am bonham000 (https://keybase.io/bonham000) on keybase.
+  * I have a public key ASBxfCp818hIQACws6go4TOK9KGXsuJC_ruRV1jS80kR-wo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0120f46f5ef5115d4531f55d3b3f401dce28a12160bef357d93303f36fa91d781fe60a",
+      "host": "keybase.io",
+      "kid": "0120717c2a7cd7c8484000b0b3a828e1338af4a197b2e242febb915758d2f34911fb0a",
+      "uid": "cd61d0cdbd98c181f791c6e59dfd0519",
+      "username": "bonham000"
+    },
+    "merkle_root": {
+      "ctime": 1557971244,
+      "hash": "219f1be73ba7333b6cd65650b171fab4366b8fa93b2591ce673b8f05204f06ec0af4cd41358d80032f1b7c372deb1096445158cbc2acbaaaf97595636d34d9b1",
+      "hash_meta": "e4e42ce5df007acdcdbcb768531f1f8f2b8fcad8777ad90a41bb7be756da46bd",
+      "seqno": 5382092
+    },
+    "service": {
+      "entropy": "By/vjAosixAI3+u0FWa6mJwJ",
+      "hostname": "sean-smith.me",
+      "protocol": "http:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "4.0.0"
+  },
+  "ctime": 1557971269,
+  "expire_in": 504576000,
+  "prev": "b74f7ca6f1cfa9ca111c0292144b90126beeb0e913c87eb31a1a95b9e73853a8",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgcXwqfNfISEAAsLOoKOEzivShl7LiQv67kVdY0vNJEfsKp3BheWxvYWTESpcCE8Qgt098pvHPqcoRHAKSFEuQEmvusOkTyH6zGhqVuec4U6jEIB5QNDixwP0gZWPX09afuyoHDwFUsZOEfeX74idtuuBVAgHCo3NpZ8RAOptInOHVsawljjbxyHvKr01U+FUoIJu6YerSZBE158XUa13NazmsqV8u3JVNxqMJWYlJ/NTq5Oxb8jbztaCpBahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIDPGuM+IMbSRMof0qZ973o/qqI97Ap6+XUcpNJpuyqRRo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/bonham000
+
+==================================================================
