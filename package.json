@@ -3,6 +3,7 @@
   "version": "0.0.1",
   "private": true,
   "devDependencies": {
+    "husky": "^2.3.0",
     "react-scripts": "0.7.0"
   },
   "dependencies": {
@@ -15,6 +16,12 @@
     "start": "react-scripts start",
     "build": "react-scripts build && cp ./build/index.html .",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "surge --project ./build --domain sean-smith.surge.sh"
+  },
+  "husky": {
+    "hooks": {
+      "pre-push": "npm run build && cp keybase.txt ./build && npm run deploy"
+    }
   }
 }
