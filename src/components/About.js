@@ -32,10 +32,10 @@ export default function About(props) {
 	return (
 		 <div className="main" id='homeNav'>
   		<div>
-     	 <img className="avatar" src="https://res.cloudinary.com/sean-smith-me/image/upload/q_50/v1530283488/Sean_oailuv.jpg" alt="Personal Avatar" />
+     	 <img className="avatar" src="https://res.cloudinary.com/sean-smith-me/image/upload/v1561699442/sean-profile_zkwclv.jpg" alt="Personal Avatar" />
       	<h1 className="name">Sean Smith</h1>
       	<p className="nameSub">
-					I am a software engineer at {TenX} in Singapore. I
+					I am a software engineer on Earth. I
 					learned to code at {FCC} and wrote about my journey {Medium}.
 					You can find all the projects I built below.
 					Thanks for visiting and good luck coding!
