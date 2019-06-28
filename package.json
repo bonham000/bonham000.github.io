@@ -2,16 +2,6 @@
   "name": "react-portfolio",
   "version": "0.0.1",
   "private": true,
-  "devDependencies": {
-    "husky": "^2.3.0",
-    "react-scripts": "0.7.0"
-  },
-  "dependencies": {
-    "react": "~15.4.2",
-    "react-addons-css-transition-group": "~15.4.2",
-    "react-dom": "~15.4.2",
-    "react-scroll": "~1.4.4"
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -19,6 +9,16 @@
     "eject": "react-scripts eject",
     "deploy": "surge --project ./build --domain sean-smith.surge.sh",
     "publish": "npm run build && cp keybase.txt ./build && npm run deploy"
+  },
+  "dependencies": {
+    "react": "~15.4.2",
+    "react-addons-css-transition-group": "~15.4.2",
+    "react-dom": "~15.4.2",
+    "react-scroll": "~1.4.4"
+  },
+  "devDependencies": {
+    "husky": "^2.3.0",
+    "react-scripts": "0.7.0"
   },
   "husky": {
     "hooks": {
