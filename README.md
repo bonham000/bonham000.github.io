@@ -1,1 +1,1 @@
-Portfolio repo for Sean Smith
+Original Personal Portfolio.
